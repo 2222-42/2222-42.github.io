@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Qoo Lock Si Jeus Nee</title>
+		<link>https://2222-42.github.io/tags/</link>
+		<description>Recent content in Tags </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>jp</language>
+		
+		<managingEditor>Page(/tags) (2222-42)</managingEditor>
+    	
+  		<lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>First Post</title>
+			<link>https://2222-42.github.io/2020/10/12/first-post/</link>
+			<pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/12/first-post/</guid>
+			<description>&lt;p&gt;これは私の投稿です。&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>
