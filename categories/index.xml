@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Categories on Qoo Lock Si Jeus Nee</title>
+		<title>Categories on Que Lock Si Jeus Nee</title>
 		<link>https://2222-42.github.io/categories/</link>
 		<description>Recent content in Categories </description>
 		<generator>Hugo -- gohugo.io</generator>
@@ -12,10 +12,18 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>First Post</title>
-			<link>https://2222-42.github.io/2020/10/12/first-post/</link>
+			<title>What I Learned from Using Hugo</title>
+			<link>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</link>
 			<pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/12/first-post/</guid>
+			<guid>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</guid>
+			<description>&lt;p&gt;Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>First Post</title>
+			<link>https://2222-42.github.io/2020/10/11/first-post/</link>
+			<pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/11/first-post/</guid>
 			<description>&lt;p&gt;これは私の投稿です。&lt;/p&gt;</description>
 		</item>
       	

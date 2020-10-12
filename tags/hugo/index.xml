@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Que Lock Si Jeus Nee on Que Lock Si Jeus Nee</title>
-		<link>https://2222-42.github.io/</link>
-		<description>Recent content in Que Lock Si Jeus Nee </description>
+		<title>hugo on Que Lock Si Jeus Nee</title>
+		<link>https://2222-42.github.io/tags/hugo/</link>
+		<description>Recent content in hugo </description>
 		<generator>Hugo -- gohugo.io</generator>
 		
   		<language>jp</language>
 		
-		<managingEditor>Page(&#34;Que Lock Si Jeus Nee&#34;) (2222-42)</managingEditor>
+		<managingEditor>Page(/tags/hugo) (2222-42)</managingEditor>
     	
   		<lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
 		
-		<atom:link href="/" rel="self" type="application/rss+xml" />
+		<atom:link href="/tags/hugo/" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>What I Learned from Using Hugo</title>

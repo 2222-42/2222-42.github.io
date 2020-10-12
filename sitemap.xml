@@ -7,12 +7,17 @@
   </url>
   
   <url>
-    <loc>https://2222-42.github.io/2020/10/12/first-post/</loc>
+    <loc>https://2222-42.github.io/tags/docker/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://2222-42.github.io/tags/life/</loc>
+    <loc>https://2222-42.github.io/tags/git/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://2222-42.github.io/tags/hugo/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,6 +34,26 @@
   <url>
     <loc>https://2222-42.github.io/tags/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://2222-42.github.io/tags/tech/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</loc>
+    <lastmod>2020-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://2222-42.github.io/2020/10/11/first-post/</loc>
+    <lastmod>2020-10-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://2222-42.github.io/tags/life/</loc>
+    <lastmod>2020-10-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>

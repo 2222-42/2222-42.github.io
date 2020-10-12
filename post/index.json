@@ -2,11 +2,21 @@
     
         
             {
-                "ref": "https://2222-42.github.io/2020/10/12/first-post/",
-                "title": "First Post",
+                "ref": "https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/",
+                "title": "What I Learned from Using Hugo",
                 "section": "post",
                 "date" : "2020.10.12",
-                "body": "これは私の投稿です。\nHugo使って個人ブログを構築してみました。\nどう表示されているでしょうか？\n"
+                "body": "Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。\nわかったこと わかっていなかったことが複数見つかった。\n Dockerとdocker-composeのことがよくわかっていない。  docker-compose で、複数の設定をどう使うか、知らなかった。 -f 指定はbuildに対しては利用できないとか。 image名の重複が発生したときのエラーがどういうものか、などを知らなかった。  git のことをよくわかってない  submoduleがどういうものかわかっていなかった。-\u0026gt; なんとなく使い方はわかった。 staged changeをgitがどう管理されているかわかっていない。 素朴にaddしたりcommitしたりしているが、どうgitがそれを管理しているのかよくわからない。   今後やりたいこと  CIで自動デプロイさせたい。 "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://2222-42.github.io/2020/10/11/first-post/",
+                "title": "First Post",
+                "section": "post",
+                "date" : "2020.10.11",
+                "body": "これは私の投稿です。\nwho 九鹿四十二だったり、ルグランだったり、大王だったりする人間のweblogです。\nwhat このweblogで記録すること：\n 日々の勉強のログ(e.g., 『Standard ML 入門』の読書状況)  および、その整理とアウトプット  考えていることの整理  現在やっていること やっていること:\n プログラミング  Ruby Standard ML Golang  形式手法  TLA+ 並行して分散合意アルゴリズムに関して学習中 Isabelle  チーム  よいチームメイトとして振舞えるようになるため。   Appendix 使用したツール このブログを構築するのに使ったのは以下の通りである。\n Docker Hugo "
             }
         
     

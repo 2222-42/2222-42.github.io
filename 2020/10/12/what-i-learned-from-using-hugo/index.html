@@ -2,7 +2,7 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-<title>Archives</title>
+<title>What I Learned from Using Hugo</title>
 
 
   
@@ -59,10 +59,16 @@
 
     <div class="intro-header">
       <div class="container">
-        <div class="archives-heading">
+        <div class="post-heading">
           
-            <h1>Archives</h1>
+            <h1>What I Learned from Using Hugo</h1>
           
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Oct 12, 2020
+  
+</span>
+
           
         </div>
       </div>
@@ -70,29 +76,60 @@
   </header>
 
 
-    <div class="container" id="main">
-        <article role="article" id="blog-archives">
-            <table class="archives">
-                <tbody>
-                    
-                        <tr>
-                            <td>2020&nbsp;Oct&nbsp;12</td>
-                            <td>
-                                <p><a href="https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/" title="What I Learned from Using Hugo">What I Learned from Using Hugo</a></p>
-                            </td>
-                        </tr>
-                    
-                        <tr>
-                            <td>2020&nbsp;Oct&nbsp;11</td>
-                            <td>
-                                <p><a href="https://2222-42.github.io/2020/10/11/first-post/" title="First Post">First Post</a></p>
-                            </td>
-                        </tr>
-                    
-                </tbody>
-            </table>
-        </article>
-    </div>
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。</p>
+
+<h1 id="わかったこと">わかったこと</h1>
+
+<p>わかっていなかったことが複数見つかった。</p>
+
+<ul>
+<li>Dockerとdocker-composeのことがよくわかっていない。
+
+<ul>
+<li><code>docker-compose</code> で、複数の設定をどう使うか、知らなかった。</li>
+<li><code>-f</code> 指定は<code>build</code>に対しては利用できないとか。</li>
+<li>image名の重複が発生したときのエラーがどういうものか、などを知らなかった。</li>
+</ul></li>
+<li>git のことをよくわかってない
+
+<ul>
+<li>submoduleがどういうものかわかっていなかった。-&gt; なんとなく使い方はわかった。</li>
+<li>staged changeをgitがどう管理されているかわかっていない。</li>
+<li>素朴にaddしたりcommitしたりしているが、どうgitがそれを管理しているのかよくわからない。</li>
+</ul></li>
+</ul>
+
+<h1 id="今後やりたいこと">今後やりたいこと</h1>
+
+<ul>
+<li>CIで自動デプロイさせたい。</li>
+</ul>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/git/">git</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/hugo/">hugo</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/docker/">docker</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/tech/">tech</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
     <footer>
   
 <div>
