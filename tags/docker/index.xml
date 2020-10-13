@@ -14,6 +14,14 @@
 		<atom:link href="/tags/docker/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201013log</title>
+			<link>https://2222-42.github.io/2020/10/13/20201013log/</link>
+			<pubDate>Tue, 13 Oct 2020 12:43:30 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/13/20201013log/</guid>
+			<description>&lt;p&gt;汚い言葉ではなく、感謝の言葉を。舌は山火事のもとである。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>What I Learned from Using Hugo</title>
 			<link>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</link>
 			<pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
