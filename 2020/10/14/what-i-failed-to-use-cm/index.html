@@ -2,7 +2,7 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8" />
-<title>sml</title>
+<title>What I Failed to Use CM</title>
 
 
   
@@ -59,10 +59,16 @@
 
     <div class="intro-header">
       <div class="container">
-        <div class="tags-heading">
+        <div class="post-heading">
           
-            <h1>sml</h1>
+            <h1>What I Failed to Use CM</h1>
           
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Oct 14, 2020
+  
+</span>
+
           
         </div>
       </div>
@@ -71,57 +77,49 @@
 
 
     
-<div class="container" role="main">
-    <div class="posts-list">
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
       
-        
-      
+    <p>昨日、<code>CM.make</code> が失敗するという<a href="https://github.com/2222-42/studyIntroductionToStandardML/issues/58">ISSUE</a>を建てたが、それの原因がわかった。</p>
 
-      
-        <article class="post-preview">
-  <a href="https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/">
-      <h2 class="post-title">What I Failed to Use CM</h2>
-  </a>
-  <div class="post-entry">
-    
-      <p><p>昨日、<code>CM.make</code> が失敗するという<a href="https://github.com/2222-42/studyIntroductionToStandardML/issues/58">ISSUE</a>を建てたが、それの原因がわかった。</p></p>
-        <a href="https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/" class="post-read-more"></a>
-    
-  </div>
+<p>発生していた問題は、分割コンパイルしているところで、StandardMLのBasis Libraryがautoloadされておらず、<code>unbound structure: X in path ...</code>というエラーメッセージが表示され、コンパイルができなかったことである。</p>
 
-  <div class="postmeta">
-    <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>&nbsp;Oct 14, 2020
-  
-</span>
+<h1 id="原因と対処方法">原因と対処方法</h1>
 
-  </div>
-</article>
+<p>SMLのライブラリはかなり破壊的な変更が加えられているので、『Standard ML入門』が書かれていた時期とはライブラリーの基本的な関数の引数やその型が変わっていることが多く見受けられる。</p>
 
-      
-        <article class="post-preview">
-  <a href="https://2222-42.github.io/2020/10/13/20201013log/">
-      <h2 class="post-title">20201013log</h2>
-  </a>
-  <div class="post-entry">
-    
-      <p><p>汚い言葉ではなく、感謝の言葉を。舌は山火事のもとである。</p></p>
-        <a href="https://2222-42.github.io/2020/10/13/20201013log/" class="post-read-more"></a>
-    
-  </div>
+<p>そこで、<a href="https://www.smlnj.org/doc/CM/new.pdf">CMの新しいライブラリのpdf</a>を読んで、そこに含まれるサンプルコードを見れば、以下のような記述がある。</p>
 
-  <div class="postmeta">
-    <span class="meta-post">
-  <i class="fa fa-calendar-alt"></i>&nbsp;Oct 13, 2020
-  
-</span>
+<pre><code>Group is
+    xxx.sml
+    yyy.sml
 
-  </div>
-</article>
+    $/basis.cm
+</code></pre>
+
+<p>上記の通りに設定すれあ、分割コンパイルは成功した。</p>
+
+<h1 id="残っている疑問点">残っている疑問点</h1>
+
+<p>なお、<code>CM.Library.known()</code>で出力されるリストには<code>basis.cm</code>が含まれているし、失敗するところでのautoloadにも表示されているが、なぜかは不明。</p>
+
+<h1 id="教訓">教訓</h1>
+
+<p>公式ドキュメントを読もう。</p>
+
 
       
-      </div>
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/sml/">sml</a>&nbsp;
+          
+        </div>
+      
+    </article>
     
+    
+      
+      
 </div>
 
     <footer>

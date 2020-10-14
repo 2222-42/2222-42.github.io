@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(/tags/sml) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Tue, 13 Oct 2020 12:43:30 +0000</lastBuildDate>
+  		<lastBuildDate>Wed, 14 Oct 2020 00:57:09 +0000</lastBuildDate>
 		
 		<atom:link href="/tags/sml/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>What I Failed to Use CM</title>
+			<link>https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/</link>
+			<pubDate>Wed, 14 Oct 2020 00:57:09 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/</guid>
+			<description>&lt;p&gt;昨日、&lt;code&gt;CM.make&lt;/code&gt; が失敗するという&lt;a href=&#34;https://github.com/2222-42/studyIntroductionToStandardML/issues/58&#34;&gt;ISSUE&lt;/a&gt;を建てたが、それの原因がわかった。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201013log</title>
 			<link>https://2222-42.github.io/2020/10/13/20201013log/</link>
