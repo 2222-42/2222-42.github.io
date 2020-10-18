@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(/tags/log) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Wed, 14 Oct 2020 10:43:30 +0000</lastBuildDate>
+  		<lastBuildDate>Sun, 18 Oct 2020 13:05:03 +0000</lastBuildDate>
 		
 		<atom:link href="/tags/log/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>log</title>
+			<link>https://2222-42.github.io/2020/10/18/20201018log/</link>
+			<pubDate>Sun, 18 Oct 2020 13:05:03 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/18/20201018log/</guid>
+			<description>&lt;p&gt;PCを買うよりも新しい机を買おうと思い直した。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201017log</title>
 			<link>https://2222-42.github.io/2020/10/17/20201017log/</link>
