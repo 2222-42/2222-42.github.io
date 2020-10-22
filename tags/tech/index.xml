@@ -14,6 +14,30 @@
 		<atom:link href="/tags/tech/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201022log</title>
+			<link>https://2222-42.github.io/2020/10/22/20201022log/</link>
+			<pubDate>Thu, 22 Oct 2020 12:58:05 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/22/20201022log/</guid>
+			<description>&lt;p&gt;虚無&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201021log</title>
+			<link>https://2222-42.github.io/2020/10/21/20201021log/</link>
+			<pubDate>Wed, 21 Oct 2020 09:32:39 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/21/20201021log/</guid>
+			<description>&lt;p&gt;虚無&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>log</title>
+			<link>https://2222-42.github.io/2020/10/20/20201020log/</link>
+			<pubDate>Tue, 20 Oct 2020 12:08:29 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/20/20201020log/</guid>
+			<description>&lt;p&gt;季節の変わり目と身体の疲れと心労とによって、魂の冷え込みを感じる。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201019log</title>
 			<link>https://2222-42.github.io/2020/10/19/20201019log/</link>
 			<pubDate>Mon, 19 Oct 2020 11:23:50 +0000</pubDate>
@@ -68,30 +92,6 @@
 			<pubDate>Wed, 14 Oct 2020 00:57:09 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/</guid>
 			<description>&lt;p&gt;昨日、&lt;code&gt;CM.make&lt;/code&gt; が失敗するという&lt;a href=&#34;https://github.com/2222-42/studyIntroductionToStandardML/issues/58&#34;&gt;ISSUE&lt;/a&gt;を建てたが、それの原因がわかった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201013log</title>
-			<link>https://2222-42.github.io/2020/10/13/20201013log/</link>
-			<pubDate>Tue, 13 Oct 2020 12:43:30 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/13/20201013log/</guid>
-			<description>&lt;p&gt;汚い言葉ではなく、感謝の言葉を。舌は山火事のもとである。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>What I Learned from Using Hugo</title>
-			<link>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</link>
-			<pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</guid>
-			<description>&lt;p&gt;Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>First Post</title>
-			<link>https://2222-42.github.io/2020/10/11/first-post/</link>
-			<pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/11/first-post/</guid>
-			<description>&lt;p&gt;これは私の投稿です。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
