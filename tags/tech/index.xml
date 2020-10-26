@@ -14,6 +14,14 @@
 		<atom:link href="/tags/tech/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201 26log</title>
+			<link>https://2222-42.github.io/2020/10/26/20201026log/</link>
+			<pubDate>Mon, 26 Oct 2020 13:00:34 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/26/20201026log/</guid>
+			<description>&lt;p&gt;虚無から脱出する方法を見つけられた。薬だ。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201025log</title>
 			<link>https://2222-42.github.io/2020/10/25/20201025log/</link>
 			<pubDate>Sun, 25 Oct 2020 12:50:19 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Sat, 17 Oct 2020 08:49:17 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/17/20201017log/</guid>
 			<description>&lt;p&gt;勤勉であるためには休息が必要である。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>log</title>
-			<link>https://2222-42.github.io/2020/10/16/20201016log/</link>
-			<pubDate>Fri, 16 Oct 2020 11:52:14 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/16/20201016log/</guid>
-			<description>&lt;p&gt;朝が寒すぎて、出社時の検温で、35度6分となってた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
