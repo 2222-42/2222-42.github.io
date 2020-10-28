@@ -14,6 +14,14 @@
 		<atom:link href="/tags/golden-rule/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201028log</title>
+			<link>https://2222-42.github.io/2020/10/28/20201028log/</link>
+			<pubDate>Wed, 28 Oct 2020 12:07:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/28/20201028log/</guid>
+			<description>&lt;p&gt;my new gear&amp;hellip;&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201027log</title>
 			<link>https://2222-42.github.io/2020/10/27/20201027log/</link>
 			<pubDate>Tue, 27 Oct 2020 13:57:23 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<guid>https://2222-42.github.io/2020/10/19/20201019log/</guid>
 			<description>&lt;p&gt;今日は寝坊した。
 そして、昨晩より続いていた気分の落ち込みが依然としてひどいことに気づいた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>log</title>
-			<link>https://2222-42.github.io/2020/10/18/20201018log/</link>
-			<pubDate>Sun, 18 Oct 2020 13:05:03 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/18/20201018log/</guid>
-			<description>&lt;p&gt;PCを買うよりも新しい机を買おうと思い直した。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
