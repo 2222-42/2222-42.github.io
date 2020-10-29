@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(/tags/rust) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Wed, 28 Oct 2020 12:07:56 +0000</lastBuildDate>
+  		<lastBuildDate>Thu, 29 Oct 2020 13:16:17 +0000</lastBuildDate>
 		
 		<atom:link href="/tags/rust/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>20201029log</title>
+			<link>https://2222-42.github.io/2020/10/29/20201029log/</link>
+			<pubDate>Thu, 29 Oct 2020 13:16:17 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/10/29/20201029log/</guid>
+			<description>&lt;p&gt;地獄への道は善意で舗装されている。善意で二回オフィスのWi-Fiの設定をしたら今回も依頼されて、地獄だ。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201028log</title>
 			<link>https://2222-42.github.io/2020/10/28/20201028log/</link>
@@ -83,15 +91,6 @@
 			<pubDate>Tue, 20 Oct 2020 12:08:29 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/20/20201020log/</guid>
 			<description>&lt;p&gt;季節の変わり目と身体の疲れと心労とによって、魂の冷え込みを感じる。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201019log</title>
-			<link>https://2222-42.github.io/2020/10/19/20201019log/</link>
-			<pubDate>Mon, 19 Oct 2020 11:23:50 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/19/20201019log/</guid>
-			<description>&lt;p&gt;今日は寝坊した。
-そして、昨晩より続いていた気分の落ち込みが依然としてひどいことに気づいた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
