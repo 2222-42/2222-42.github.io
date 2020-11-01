@@ -14,6 +14,14 @@
 		<atom:link href="/tags/wtf/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201101log</title>
+			<link>https://2222-42.github.io/2020/11/01/20201101log/</link>
+			<pubDate>Sun, 01 Nov 2020 14:08:01 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/01/20201101log/</guid>
+			<description>&lt;p&gt;葉巻を楽しんだ。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201031log</title>
 			<link>https://2222-42.github.io/2020/10/31/20201031log/</link>
 			<pubDate>Sat, 31 Oct 2020 08:01:34 +0000</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Fri, 23 Oct 2020 14:04:45 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/23/20201023log/</guid>
 			<description>&lt;p&gt;他人に果たして魂や心があるのかという問題に悩み始めた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201022log</title>
-			<link>https://2222-42.github.io/2020/10/22/20201022log/</link>
-			<pubDate>Thu, 22 Oct 2020 12:58:05 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/22/20201022log/</guid>
-			<description>&lt;p&gt;虚無&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
