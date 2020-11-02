@@ -14,6 +14,14 @@
 		<atom:link href="/tags/go/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201102log</title>
+			<link>https://2222-42.github.io/2020/11/02/20201102log/</link>
+			<pubDate>Mon, 02 Nov 2020 10:00:57 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/02/20201102log/</guid>
+			<description>&lt;p&gt;主戦場を探さねばならない。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201101log</title>
 			<link>https://2222-42.github.io/2020/11/01/20201101log/</link>
 			<pubDate>Sun, 01 Nov 2020 14:08:01 +0000</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 24 Oct 2020 12:50:36 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/24/20201024log/</guid>
 			<description>&lt;p&gt;虚無が続く&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201023log</title>
-			<link>https://2222-42.github.io/2020/10/23/20201023log/</link>
-			<pubDate>Fri, 23 Oct 2020 14:04:45 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/23/20201023log/</guid>
-			<description>&lt;p&gt;他人に果たして魂や心があるのかという問題に悩み始めた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
