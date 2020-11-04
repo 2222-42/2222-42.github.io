@@ -14,6 +14,22 @@
 		<atom:link href="/tags/meeting/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201104log</title>
+			<link>https://2222-42.github.io/2020/11/04/20201104log/</link>
+			<pubDate>Wed, 04 Nov 2020 10:01:12 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/04/20201104log/</guid>
+			<description>&lt;p&gt;昨日の予想通り体調が崩れた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201103log</title>
+			<link>https://2222-42.github.io/2020/11/03/20201103log/</link>
+			<pubDate>Tue, 03 Nov 2020 15:09:10 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/03/20201103log/</guid>
+			<description>&lt;p&gt;久しぶりに3時間ほど残業した。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201102log</title>
 			<link>https://2222-42.github.io/2020/11/02/20201102log/</link>
 			<pubDate>Mon, 02 Nov 2020 10:00:57 +0000</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Mon, 26 Oct 2020 13:00:34 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/26/20201026log/</guid>
 			<description>&lt;p&gt;虚無から脱出する方法を見つけられた。薬だ。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201025log</title>
-			<link>https://2222-42.github.io/2020/10/25/20201025log/</link>
-			<pubDate>Sun, 25 Oct 2020 12:50:19 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/25/20201025log/</guid>
-			<description>&lt;p&gt;虚無を終わらせたいが、これを終わらせる方法を私は知らない。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201024log</title>
-			<link>https://2222-42.github.io/2020/10/24/20201024log/</link>
-			<pubDate>Sat, 24 Oct 2020 12:50:36 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/24/20201024log/</guid>
-			<description>&lt;p&gt;虚無が続く&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
