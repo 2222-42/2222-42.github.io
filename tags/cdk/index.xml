@@ -14,6 +14,14 @@
 		<atom:link href="/tags/cdk/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201106log</title>
+			<link>https://2222-42.github.io/2020/11/06/20201106log/</link>
+			<pubDate>Fri, 06 Nov 2020 10:33:52 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/06/20201106log/</guid>
+			<description>&lt;p&gt;大凡の発言には裏がある。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201105log</title>
 			<link>https://2222-42.github.io/2020/11/05/20201105log/</link>
 			<pubDate>Thu, 05 Nov 2020 13:21:20 +0000</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 28 Oct 2020 12:07:56 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/28/20201028log/</guid>
 			<description>&lt;p&gt;my new gear&amp;hellip;&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201027log</title>
-			<link>https://2222-42.github.io/2020/10/27/20201027log/</link>
-			<pubDate>Tue, 27 Oct 2020 13:57:23 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/27/20201027log/</guid>
-			<description>&lt;p&gt;薬は偉大で、安定して活動できる。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
