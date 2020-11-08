@@ -12,6 +12,22 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201108log</title>
+			<link>https://2222-42.github.io/2020/11/08/20201108log/</link>
+			<pubDate>Sun, 08 Nov 2020 11:08:40 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/08/20201108log/</guid>
+			<description>&lt;p&gt;昨晩のお酒が残っていて、今日も虚無な一日を送ってしまった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201107log</title>
+			<link>https://2222-42.github.io/2020/11/07/20201107log/</link>
+			<pubDate>Sat, 07 Nov 2020 11:08:49 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/07/20201107log/</guid>
+			<description>&lt;p&gt;香水の一番良いところはその香りであるよりも、その残り香であり、離れた後でもその人のことを思い出せることにある。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201106log</title>
 			<link>https://2222-42.github.io/2020/11/06/20201106log/</link>
 			<pubDate>Fri, 06 Nov 2020 10:33:52 +0000</pubDate>
@@ -73,22 +89,6 @@
 			<pubDate>Fri, 30 Oct 2020 12:29:30 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/30/20201030log/</guid>
 			<description>&lt;p&gt;人にものを伝える時は 3 つのissue と 1 つのお願いという形式が楽。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201029log</title>
-			<link>https://2222-42.github.io/2020/10/29/20201029log/</link>
-			<pubDate>Thu, 29 Oct 2020 13:16:17 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/29/20201029log/</guid>
-			<description>&lt;p&gt;地獄への道は善意で舗装されている。善意で二回オフィスのWi-Fiの設定をしたら今回も依頼されて、地獄だ。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201028log</title>
-			<link>https://2222-42.github.io/2020/10/28/20201028log/</link>
-			<pubDate>Wed, 28 Oct 2020 12:07:56 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/28/20201028log/</guid>
-			<description>&lt;p&gt;my new gear&amp;hellip;&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
