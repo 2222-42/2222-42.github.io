@@ -9,10 +9,21 @@
 		
 		<managingEditor>Page(&#34;Que Lock Si Jeus Nee&#34;) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Sun, 08 Nov 2020 11:08:40 +0000</lastBuildDate>
+  		<lastBuildDate>Mon, 09 Nov 2020 05:24:02 +0000</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>20201109log</title>
+			<link>https://2222-42.github.io/2020/11/09/20201109log/</link>
+			<pubDate>Mon, 09 Nov 2020 05:24:02 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/09/20201109log/</guid>
+			<description>&lt;p&gt;コミュニケーション苦手ととらえ始めた時期があったことと、その原因と、どうしてコミュニケーションがある程度できるようになったかの項目のピックアップ。
+あと、OGP設定の話とか、Clean Architeture を意識して作ったMockのレポジトリの話とか。&lt;/p&gt;
+
+&lt;p&gt;今日の勉強は、Rustのスライスの話と構造体の話、Isabelleでの定数畳み込みと定数伝播、そして、Teamのハイレベルの同期の話。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201108log</title>
 			<link>https://2222-42.github.io/2020/11/08/20201108log/</link>
@@ -83,14 +94,6 @@
 			<pubDate>Sat, 31 Oct 2020 08:01:34 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/10/31/20201031log/</guid>
 			<description>&lt;p&gt;どうやって大人になるのか。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201030log</title>
-			<link>https://2222-42.github.io/2020/10/30/20201030log/</link>
-			<pubDate>Fri, 30 Oct 2020 12:29:30 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/30/20201030log/</guid>
-			<description>&lt;p&gt;人にものを伝える時は 3 つのissue と 1 つのお願いという形式が楽。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
