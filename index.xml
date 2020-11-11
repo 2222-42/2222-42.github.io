@@ -9,10 +9,20 @@
 		
 		<managingEditor>Page(&#34;Que Lock Si Jeus Nee&#34;) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Tue, 10 Nov 2020 13:33:08 +0000</lastBuildDate>
+  		<lastBuildDate>Wed, 11 Nov 2020 08:31:19 +0000</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>20201111log</title>
+			<link>https://2222-42.github.io/2020/11/11/20201111log/</link>
+			<pubDate>Wed, 11 Nov 2020 08:31:19 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/11/20201111log/</guid>
+			<description>&lt;p&gt;コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。&lt;/p&gt;
+
+&lt;p&gt;Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201110log</title>
 			<link>https://2222-42.github.io/2020/11/10/20201110log/</link>
@@ -88,14 +98,6 @@
 			<pubDate>Mon, 02 Nov 2020 10:00:57 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/02/20201102log/</guid>
 			<description>&lt;p&gt;主戦場を探さねばならない。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201101log</title>
-			<link>https://2222-42.github.io/2020/11/01/20201101log/</link>
-			<pubDate>Sun, 01 Nov 2020 14:08:01 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/01/20201101log/</guid>
-			<description>&lt;p&gt;葉巻を楽しんだ。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
