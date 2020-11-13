@@ -12,6 +12,24 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201113log</title>
+			<link>https://2222-42.github.io/2020/11/13/20201113log/</link>
+			<pubDate>Fri, 13 Nov 2020 12:00:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/13/20201113log/</guid>
+			<description>&lt;p&gt;22時に寝るようにするためにブログを簡略化することを決めた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201112log</title>
+			<link>https://2222-42.github.io/2020/11/12/20201112log/</link>
+			<pubDate>Thu, 12 Nov 2020 14:19:39 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/12/20201112log/</guid>
+			<description>&lt;p&gt;なじみのBarがまた消えた話。&lt;/p&gt;
+
+&lt;p&gt;rustのOption型に関する勉強メモ。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201111log</title>
 			<link>https://2222-42.github.io/2020/11/11/20201111log/</link>
 			<pubDate>Wed, 11 Nov 2020 08:31:19 +0000</pubDate>
@@ -80,22 +98,6 @@
 			<pubDate>Wed, 04 Nov 2020 10:01:12 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/04/20201104log/</guid>
 			<description>&lt;p&gt;昨日の予想通り体調が崩れた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201103log</title>
-			<link>https://2222-42.github.io/2020/11/03/20201103log/</link>
-			<pubDate>Tue, 03 Nov 2020 15:09:10 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/03/20201103log/</guid>
-			<description>&lt;p&gt;久しぶりに3時間ほど残業した。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201102log</title>
-			<link>https://2222-42.github.io/2020/11/02/20201102log/</link>
-			<pubDate>Mon, 02 Nov 2020 10:00:57 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/02/20201102log/</guid>
-			<description>&lt;p&gt;主戦場を探さねばならない。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
