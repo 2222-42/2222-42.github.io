@@ -12,6 +12,14 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201116log</title>
+			<link>https://2222-42.github.io/2020/11/16/20201116log/</link>
+			<pubDate>Mon, 16 Nov 2020 06:31:47 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/16/20201116log/</guid>
+			<description>&lt;p&gt;土曜日の体験からいくつか自分の特性について学んだことがあるのでその記録。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201115log</title>
 			<link>https://2222-42.github.io/2020/11/15/20201115log/</link>
 			<pubDate>Sun, 15 Nov 2020 11:54:54 +0000</pubDate>
@@ -90,14 +98,6 @@
 			<pubDate>Sat, 07 Nov 2020 11:08:49 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/07/20201107log/</guid>
 			<description>&lt;p&gt;香水の一番良いところはその香りであるよりも、その残り香であり、離れた後でもその人のことを思い出せることにある。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201106log</title>
-			<link>https://2222-42.github.io/2020/11/06/20201106log/</link>
-			<pubDate>Fri, 06 Nov 2020 10:33:52 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/06/20201106log/</guid>
-			<description>&lt;p&gt;大凡の発言には裏がある。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
