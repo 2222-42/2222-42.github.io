@@ -12,6 +12,14 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201117log</title>
+			<link>https://2222-42.github.io/2020/11/17/20201117log/</link>
+			<pubDate>Tue, 17 Nov 2020 11:49:12 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/17/20201117log/</guid>
+			<description>&lt;p&gt;月曜日から始めたこととして、25分勉強して、5分TRUE DetectiveをPrimeVideoで見る。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201116log</title>
 			<link>https://2222-42.github.io/2020/11/16/20201116log/</link>
 			<pubDate>Mon, 16 Nov 2020 06:31:47 +0000</pubDate>
@@ -90,14 +98,6 @@
 			<pubDate>Sun, 08 Nov 2020 11:08:40 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/08/20201108log/</guid>
 			<description>&lt;p&gt;昨晩のお酒が残っていて、今日も虚無な一日を送ってしまった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201107log</title>
-			<link>https://2222-42.github.io/2020/11/07/20201107log/</link>
-			<pubDate>Sat, 07 Nov 2020 11:08:49 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/07/20201107log/</guid>
-			<description>&lt;p&gt;香水の一番良いところはその香りであるよりも、その残り香であり、離れた後でもその人のことを思い出せることにある。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
