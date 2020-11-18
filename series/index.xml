@@ -12,6 +12,22 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201118log</title>
+			<link>https://2222-42.github.io/2020/11/18/20201118log/</link>
+			<pubDate>Wed, 18 Nov 2020 07:45:25 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/20201118log/</guid>
+			<description>&lt;p&gt;潜水をしているような気分だ。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Summary of Team Geek</title>
+			<link>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</link>
+			<pubDate>Wed, 18 Nov 2020 07:44:08 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</guid>
+			<description>&lt;p&gt;『Team Geek』の箇条書きを一つのページにまとめる。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201117log</title>
 			<link>https://2222-42.github.io/2020/11/17/20201117log/</link>
 			<pubDate>Tue, 17 Nov 2020 11:49:12 +0000</pubDate>
@@ -79,25 +95,6 @@
 			<description>&lt;p&gt;Samuel Becketの詩を思い出し、開発のために、上手な失敗を素早く失敗するためにどうするか、ということを考える。&lt;/p&gt;
 
 &lt;p&gt;Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関して、その所有権とその実装例とそのメソッドについて。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201109log</title>
-			<link>https://2222-42.github.io/2020/11/09/20201109log/</link>
-			<pubDate>Mon, 09 Nov 2020 05:24:02 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/09/20201109log/</guid>
-			<description>&lt;p&gt;コミュニケーション苦手ととらえ始めた時期があったことと、その原因と、どうしてコミュニケーションがある程度できるようになったかの項目のピックアップ。
-あと、OGP設定の話とか、Clean Architeture を意識して作ったMockのレポジトリの話とか。&lt;/p&gt;
-
-&lt;p&gt;今日の勉強は、Rustのスライスの話と構造体の話、Isabelleでの定数畳み込みと定数伝播、そして、Teamのハイレベルの同期の話。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201108log</title>
-			<link>https://2222-42.github.io/2020/11/08/20201108log/</link>
-			<pubDate>Sun, 08 Nov 2020 11:08:40 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/08/20201108log/</guid>
-			<description>&lt;p&gt;昨晩のお酒が残っていて、今日も虚無な一日を送ってしまった。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

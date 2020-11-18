@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>20201118log</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="20201118log" />
+<meta property="og:description" content="潜水をしているような気分だ。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2020/11/18/20201118log/" />
+
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="article:published_time" content="2020-11-18T07:45:25+00:00" />
+<meta property="article:modified_time" content="2020-11-18T07:45:25+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="20201118log"/>
+<meta name="twitter:description" content="潜水をしているような気分だ。"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>20201118log</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Nov 18, 2020
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>潜水をしているような気分だ。</p>
+
+<h1 id="diary">diary</h1>
+
+<p>潜水をしているような気分だ。深いところで何かを探っていて、ふっと海面から顔を出し、息をする。そしてまた深いところに潜り直す。</p>
+
+<p>こういう気分になったのは修士課程以来だ。</p>
+
+<p>何を探しているのかはわからないし、これがいい傾向なのかすらわからない。</p>
+
+<h2 id="pc">pc</h2>
+
+<p>パソコンの調子が何かおかしい。</p>
+
+<ul>
+<li>メモリ: 問題なし</li>
+<li>SSD: 正常　</li>
+<li>HDD: 注意</li>
+</ul>
+
+<p>おそらくこいつが悪さをしている。</p>
+
+<p>雑に交換しよう。</p>
+
+<h1 id="今日の勉強">今日の勉強</h1>
+
+<h2 id="team">team</h2>
+
+<p>メモを一通り作れたので、summaryとして箇条書きを1つのファイルにまとめ、セクションを適当に区切った。</p>
+
+<h2 id="rust">rust</h2>
+
+<p><em>TRPL</em> pp.146-155</p>
+
+<p>ベクタの中身を読む方法:</p>
+
+<ul>
+<li>添字記法(<code>&amp;v[n]</code>)
+
+<ul>
+<li><code>&amp;</code>と<code>[]</code>を使って、</li>
+<li>参照を作る</li>
+</ul></li>
+<li>getメソッド(<code>.get(n)</code>)
+
+<ul>
+<li><code>Option&lt;&amp;T&gt;</code>を取る</li>
+</ul></li>
+<li>振る舞いの違い
+
+<ul>
+<li>ベクタに要素が含まれない番号の値を使用する
+
+<ul>
+<li>添え字記法だと、パニックする
+
+<ul>
+<li>存在しない要素を参照するから</li>
+<li>ベクタの終端を超えて要素にアクセス使用としたときクラッシュさせたい場合に有用</li>
+</ul></li>
+<li>getメソッドを使うと、<code>None</code>が返される
+
+<ul>
+<li>普通の状態で、範囲外にアクセスする可能性がある場合に、有用</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>有効な参照がある場合、借用チェッカー(borrow checker)が所有権と借用規則を強要し、
+
+<ul>
+<li>ベクタの中身への、この参照や他の参照も有効であり続けさせる
+
+<ul>
+<li>可変と不変な参照は同時に成立しない</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<ol>
+<li>ベクタがある。</li>
+<li>ベクタのすでにある要素への参照を取る。
+
+<ol>
+<li>不変借用が発生する。</li>
+</ol></li>
+<li>ベクタにpushする。
+
+<ol>
+<li>可変借用が発生する。</li>
+<li>ここで可変借用が発生するのは、ベクタが現在存在する位置に隣あっている要素を入れるだけの領域がない場合に、メモリの新規確保をして、古い要素を新しいスペースにコピーする、というベクタの動作法がある。</li>
+</ol></li>
+<li>step2の参照を使おうとするとCompile Errorが発生する。</li>
+</ol>
+
+<ul>
+<li>ベクタの要素に順番にアクセスしたい。
+
+<ul>
+<li>forループで走査すればよい
+
+<ul>
+<li>ベクタの各要素に対して、
+
+<ul>
+<li>不変な参照を得て出力したり</li>
+</ul></li>
+<li>可変なベクタであれば、
+
+<ul>
+<li>可変な参照を走査して、参照外し演算子(<code>*</code>)を使用して、その値にたどり着き変更できる</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>ベクタに異なる型の要素を保存させたい
+
+<ul>
+<li>ベクタは同じ型の値しか保持できない</li>
+<li>enumを定義して、enum列挙子に異なる型の定義をし、enumの型のもとに定義されるようにすればいい
+
+<ul>
+<li>enumを使う利点
+
+<ul>
+<li>各要素を格納するのに、ヒープ上でどれくらいメモリが必要になるかわかるように、</li>
+<li>コンパイラがコンパイル時に入る型を知る必要がある。</li>
+</ul></li>
+<li>enumを使う副次的利点
+
+<ul>
+<li>どんな型が許容されるのか明示できる
+
+<ul>
+<li>ただし、プログラマが保持される一連の型を知らない場合はenumのテクニックはうまくいかない
+
+<ul>
+<li>その場合は、TraitObjectを使おう</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>文字列</p>
+
+<ul>
+<li>文字列で行き詰まる人が多い
+
+<ul>
+<li>3つの概念の組み合わせで行き詰まる
+
+<ul>
+<li>Rustのありうるエラーを晒す性質</li>
+<li>文字列あ複雑なデータ構造であること</li>
+<li>UTF-8</li>
+</ul></li>
+</ul></li>
+<li>文字列をコレクションの文脈で語ることは有用である
+
+<ul>
+<li>なぜなら文字列は
+
+<ul>
+<li>テキストとして解釈されたときに有用になる機能を提供するメソッドと</li>
+<li>バイトの塊で</li>
+<li>実装されているからだ
+
+<ul>
+<li>(メモ:これが理由となるのがわからない)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>文字列
+
+<ul>
+<li>言語の核としては１つの文字列型しかない
+
+<ul>
+<li>文字列スライス
+
+<ul>
+<li>別の場所に格納されたUTF-8エンコードされた文字列データへの参照</li>
+</ul></li>
+<li>ライブラリ
+
+<ul>
+<li>標準ライブラリの<code>String</code>
+
+<ul>
+<li>伸長可能、可変、所有権のあるUTF-8エンコードされた文字列型</li>
+</ul></li>
+<li>その他の色々な型があるが、その名前と性質は
+
+<ul>
+<li><code>XxxString</code>: 所有権あり</li>
+<li><code>YyyStr</code>: 借用されたバージョン</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>文字列式
+
+<ul>
+<li><code>String::new()</code> -&gt; String</li>
+<li><code>String::from(文字列リテラル)</code> -&gt; String</li>
+<li><code>文字列リテラル.to_string</code>
+
+<ul>
+<li>Displayトレイトを実装する型であればなんでもよい</li>
+<li>文字列はUTF-8エンコードされている
+
+<ul>
+<li>適切にエンコードされていたらなんでもよい</li>
+</ul></li>
+</ul></li>
+<li><code>s.push_str(文字列リテラル)</code>
+
+<ul>
+<li>文字列スライスを適用して、Stringを伸ばす</li>
+<li>所有権を得なくていいので、引数には文字列スライスを取る</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>文字列を組み合わせる
+
+<ul>
+<li><code>+</code>演算子
+
+<ul>
+<li><code>let s = s1 + &amp;s2</code>
+
+<ul>
+<li>addメソッドを使っている
+
+<ul>
+<li>addメソッドのシグニチャは<code>fn add(self, s:&amp;str) -&gt; String</code></li>
+</ul></li>
+<li><code>s1</code>の型は<code>String</code>であり、この所有権を奪って、</li>
+<li>第二引数の中身のコピーを追記し、
+
+<ul>
+<li><code>s2</code>の型は<code>String</code>であり、addシグニチャの第二引数の型が<code>&amp;str</code>で動くのか</li>
+<li>コンパイラが型強制、参照外し型強制をしている
+
+<ul>
+<li><code>&amp;s</code>を<code>&amp;s[..]</code>に変えていると考えてもよい</li>
+</ul></li>
+</ul></li>
+<li>そして、結果の所有権を返している</li>
+</ul></li>
+</ul></li>
+<li><code>format!</code>マクロ
+
+<ul>
+<li><code>format!(&quot;{}...&quot;, s1, ...)</code></li>
+<li>可読性が高い</li>
+<li>引数の所有権を奪わない</li>
+<li>Stringを返す</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>文字列に添え字でアクセスする</p>
+
+<ul>
+<li>添え字記法でStringの一部にアクセスできない
+
+<ul>
+<li>Rustはそのサポートをしていないから
+
+<ul>
+<li>サポートしていない理由は、Rustがメモリにどのように文字列を保存しているかについての議論からわかる。</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="isabelle">isabelle</h2>
+
+<p><em>Concrete Semantics</em></p>
+
+<p>証明を追いかけたもの</p>
+
+<ul>
+<li><code>defs_restrict</code></li>
+<li><code>big_step_pres_approx_restrict</code></li>
+<li><code>approx_map_le</code></li>
+<li><code>restrict_map_le</code></li>
+</ul>
+
+<p>疑問：declareの役割</p>
+
+<p><code>declare assign_simp[simp]</code>という表現がないと証明できない箇所があった。</p>
+
+<p>declareの役割は何か？　useみたいな感じで引っ張ってきて、それにsimpで使うように宣言したりするようにすることか？</p>
+
+<p>その線でやったら、declareしなくてもできたからこの認識で多少あっていそうだ。</p>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/team/">team</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/log/">log</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/pc/">pc</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/isabelle/">isabelle</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2020
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
