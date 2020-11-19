@@ -12,6 +12,14 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201119log</title>
+			<link>https://2222-42.github.io/2020/11/19/20201119log/</link>
+			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/19/20201119log/</guid>
+			<description>&lt;p&gt;潜水しているような気分が続く。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201118log</title>
 			<link>https://2222-42.github.io/2020/11/18/20201118log/</link>
 			<pubDate>Wed, 18 Nov 2020 07:45:25 +0000</pubDate>
@@ -85,16 +93,6 @@
 			<description>&lt;p&gt;コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。&lt;/p&gt;
 
 &lt;p&gt;Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201110log</title>
-			<link>https://2222-42.github.io/2020/11/10/20201110log/</link>
-			<pubDate>Tue, 10 Nov 2020 13:33:08 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/10/20201110log/</guid>
-			<description>&lt;p&gt;Samuel Becketの詩を思い出し、開発のために、上手な失敗を素早く失敗するためにどうするか、ということを考える。&lt;/p&gt;
-
-&lt;p&gt;Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関して、その所有権とその実装例とそのメソッドについて。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
