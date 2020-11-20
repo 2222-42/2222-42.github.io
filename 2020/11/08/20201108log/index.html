@@ -20,12 +20,11 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="20201108log" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201108log" />
 <meta property="og:description" content="昨晩のお酒が残っていて、今日も虚無な一日を送ってしまった。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/11/08/20201108log/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-11-08T11:08:40+00:00" />
 <meta property="article:modified_time" content="2020-11-08T11:08:40+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -97,93 +96,75 @@
     <article class="article" class="blog-post">
       
     <p>昨晩のお酒が残っていて、今日も虚無な一日を送ってしまった。</p>
-
 <h1 id="diary">diary</h1>
-
 <h2 id="alcohol">alcohol</h2>
-
 <p>昨晩のアルコールのせいで、だいぶ眠っていた。</p>
-
 <p>蕎麦を食べて、お腹を休ませる</p>
-
 <h2 id="friend">friend</h2>
-
 <p>昨日会った人は、久しぶりに、この人とまた会いたい、と思わせられる人物だった。</p>
-
 <p>なぜかはわからない。</p>
-
 <p>少なくとも、私は、その人との会話で幸福を覚えており、今日に至っても満足感がある。</p>
-
 <p>この人がどんな判断をするか、とか、この人と同じ体験を共有したいと思った。</p>
-
 <h2 id="humidity">Humidity</h2>
-
 <p>相手の判断について、私は、その判断をまず否定することをしなくなっている、ということに気づいた。</p>
-
 <p>だいぶ前は何事も「いや」という言葉からスタートしていた。
 しかし、最近は疑問に思っても「そうなんですか？」とか「ちょっとわからないですね」という言葉からスタートするようになっている。</p>
-
 <p>これで狭量が広いと判断されるようになっているのだろうか。</p>
-
 <p>少なくとも、相手の判断について、謙虚を私が抱きながら、接することできるようになったのだろう。</p>
-
 <h1 id="今日の勉強">今日の勉強</h1>
-
 <h2 id="rust">rust</h2>
-
 <p>TRPL</p>
-
 <ul>
 <li>pp. 80-85</li>
 <li>スライス型
-
 <ul>
 <li>所有権のないデータ型</li>
 <li>コレクション全体というよりかは、そのうちの一連の要素を参照することができる。</li>
 <li>コレクションの一部を参照しようとするときに問題になること
-
 <ul>
 <li>参照して、欲しい部分の添え字を取る</li>
 <li>参照＋添え字で意味を成す</li>
 <li>参照が可変なら変更され、全体の意味がなくなる</li>
 <li>同期が取れないという不安が発生する</li>
-</ul></li>
+</ul>
+</li>
 <li>そこでスライスが生きる</li>
-</ul></li>
+</ul>
+</li>
 <li>文字列スライス
-
 <ul>
 <li>Stringの一部への参照
-
 <ul>
 <li><code>&amp;s[starting_index..ending_index]</code>
-
 <ul>
 <li><code>..</code>で範囲を取る
-
 <ul>
 <li><code>starting_index</code>から<code>ending_index</code>未満の範囲</li>
-</ul></li>
+</ul>
+</li>
 <li><code>[</code>と<code>]</code>とで、スライスを生成する
-
 <ul>
 <li>スライスのデータ構造は、以下の2つを保持している。
-
 <ul>
 <li>開始地点へのポインタと</li>
 <li>スライスの長さ</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>範囲添え字は有効なUTF-8文字協会に置かねばならない</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>文字列スライスを表す型<code>&amp;str</code></li>
 <li>文字列スライスを使うことで、Stringへの参照が有効であることをコンパイラが保証してくれる
-
 <ul>
 <li>何かへの不変な借用があるときに、さらに可変な参照を得ることができないから。</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 

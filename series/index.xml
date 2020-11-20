@@ -12,6 +12,14 @@
 		<atom:link href="/series/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201120log</title>
+			<link>https://2222-42.github.io/2020/11/20/20201120log/</link>
+			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/20/20201120log/</guid>
+			<description>&lt;p&gt;増えたタスクに対してやりやすくしておくことが重要で、それが職業コードとしてよいコードであることなんだろうなと思った&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201119log</title>
 			<link>https://2222-42.github.io/2020/11/19/20201119log/</link>
 			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
@@ -81,18 +89,7 @@
 			<pubDate>Thu, 12 Nov 2020 14:19:39 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/12/20201112log/</guid>
 			<description>&lt;p&gt;なじみのBarがまた消えた話。&lt;/p&gt;
-
 &lt;p&gt;rustのOption型に関する勉強メモ。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201111log</title>
-			<link>https://2222-42.github.io/2020/11/11/20201111log/</link>
-			<pubDate>Wed, 11 Nov 2020 08:31:19 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/11/20201111log/</guid>
-			<description>&lt;p&gt;コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。&lt;/p&gt;
-
-&lt;p&gt;Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

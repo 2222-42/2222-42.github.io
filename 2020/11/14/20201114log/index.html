@@ -20,12 +20,11 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="20201114log" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201114log" />
 <meta property="og:description" content="コーヒー飲んでずっと人を待つということをやっていた" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/11/14/20201114log/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-11-14T04:18:22+00:00" />
 <meta property="article:modified_time" content="2020-11-14T04:18:22+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -97,274 +96,246 @@
     <article class="article" class="blog-post">
       
     <p>コーヒー飲んでずっと人を待つということをやっていた</p>
-
 <h1 id="diary">diary</h1>
-
 <h2 id="coffee">coffee</h2>
-
 <p>皇琲亭でブレンドコーヒーとストレートを2種類飲んだ。</p>
-
 <p>久しぶりに行ったが、あの雰囲気はよかった。</p>
-
 <p>後、1杯飲むなら高いが2杯以上だとちょうどよい値段になる。</p>
-
 <h2 id="friend">friend</h2>
-
 <p>友達に対する興味が一瞬で消えた。</p>
-
 <p>あんなに強い興味があったのに。</p>
-
 <p>原因はなんだろうか、相手が1時間半も遅刻したからだろうか。</p>
-
 <h1 id="今日の勉強">今日の勉強</h1>
-
 <h2 id="rust">rust</h2>
-
 <p>pp.118-128</p>
-
 <p>6章</p>
-
 <ul>
-<li><p><code>if let</code>記法</p>
-
+<li><code>if let</code>記法
 <ul>
 <li><code>if</code>と<code>let</code>をより徐儒調整の少ない方法で組み合わせ</li>
-
-<li><p>残りを無視しつつ、1つのパターンにマッチする値を扱うことができる</p>
-
+<li>残りを無視しつつ、1つのパターンにマッチする値を扱うことができる
 <ul>
 <li>match式だと追加すべき定型コードが多すぎる</li>
 <li>matchで強制される包括性チェックを失う</li>
-
-<li><p>やりたいことと、関係性を得ることが包括性チェックを失うのに適切な代償となりうるかによる</p>
-
-<pre><code class="language-rust">if let pattern = formula {
-code
-} else {
-code
-}
-</code></pre></li>
-</ul></li>
-</ul></li>
+<li>やりたいことと、関係性を得ることが包括性チェックを失うのに適切な代償となりうるかによる</li>
 </ul>
-
-<p>memo:</p>
-
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> pattern <span style="color:#f92672">=</span> formula {
+    code
+} <span style="color:#66d9ef">else</span> {
+    code
+}
+</code></pre></div><p>memo:</p>
 <ul>
 <li>借用と参照にまだ慣れていない</li>
 </ul>
-
 <p>まとめ:</p>
-
 <ul>
 <li><code>enum</code>を使用してワンセットの列挙された値のどれかになりうる独自の型を生成
-
 <ul>
 <li><code>Option&lt;T&gt;</code>でエラーを回避できる</li>
-</ul></li>
+</ul>
+</li>
 <li>enumの値がデータを乃武に含む場合、処理すべきケースの数に応じてmatchかif letを使って、値を取り出し使用できる</li>
 <li>Rustが型安全性を保証する
-
 <ul>
 <li>Compilerが各関数の予期する型の値のみを関数が得ることを確かめてくれる</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>7章</p>
-
 <ul>
 <li>コードのまとまりをよくする
-
 <ul>
 <li>関係した機能をまとめ、異なる特徴をもつコードを分割
-
 <ul>
 <li>見つけたり、変更したりするために、どこを探せばよいかを明確にできる</li>
-</ul></li>
+</ul>
+</li>
 <li>プログラムの整理
-
 <ul>
 <li>複数のファイル・複数のモジュールに分割</li>
 <li>パッケージは、複数のバイナリクレートからなり、またライブラリクレートを最大1つもつことができる
-
 <ul>
 <li>一部を分離したクレートにし、外部依存にするのもよい</li>
-</ul></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>機能のグループ化 + 実装の詳細のカプセル化
-
 <ul>
 <li>より高いレベルでコードを使える
-
 <ul>
 <li>実証の詳細を知ることなく、手続きで、そのコードを呼び出せる</li>
-</ul></li>
+</ul>
+</li>
 <li>コードの公開・非公開も書き手によって決定される
-
 <ul>
 <li>プログラマが記憶しておくべき細部の制御をできる</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>スコープ
-
 <ul>
 <li>「スコープ内」として定義される名前の集合
-
 <ul>
 <li>同じ名前の者を2つの同じスコープ内には持てない</li>
 <li>特定の名前 -&gt; どの要素か -&gt; 何を意味するか</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>モジュールシステム
-
 <ul>
 <li>コードのまとまりを保つためのたくさんの機能
-
 <ul>
 <li>公開・非公開、スコープ内外の管理等</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>クレート
-
 <ul>
 <li>バイナリクレート</li>
 <li>ライブラリクレート</li>
 <li>関連した機能を1つのスコープにまとめる</li>
 <li>ライブラリか実行可能ファイルを生成する木構造をしたモジュール群</li>
 <li>関連した機能を1つのスコープにまとめることで、その機能が複数のプロジェクト間で共有しやすいようにする
-
 <ul>
 <li>クレートの機能をそれ自身のスコープの中に入れたままにする
-
 <ul>
 <li>名前の衝突を予防する</li>
-</ul></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>クレートルート
-
 <ul>
 <li>Rustコンパイラの開始地点</li>
 <li>クレートのルートモジュールを作るソースファイルのこと</li>
-</ul></li>
+</ul>
+</li>
 <li>パッケージ
-
 <ul>
 <li>ある機能群を提供する1つ以上のクレート</li>
 <li>クレートをビルドし、テストし、共有することができるCargoの機能
-
 <ul>
 <li>Cargo.tomlがそれらのクレートをどのようにビルドするか説明するファイル
-
 <ul>
 <li>Cargoがクレートルートファイルをrustcに私、ライブラリやバイナリをビルドする
-
 <ul>
 <li><code>main.rs</code>や<code>lib.rs</code>について、パッケージ名と同じ名前を持つクレートルートであるという慣習があるので、Cargo.tomlでは省略できる</li>
 <li><code>src/bin</code>ディレクトリに置けば、複数のバイナリクレートを持たせることができる</li>
-</ul></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>規則がある
-
 <ul>
 <li>パッケージは0か1個のライブラリクレートを持つ</li>
 <li>バイナリクレートはn個持ってよい</li>
 <li>少なくとも1つのクレートを持つ必要がある</li>
-</ul></li>
-</ul></li>
-
-<li><p>モジュール</p>
-
+</ul>
+</li>
+</ul>
+</li>
+<li>モジュール
 <ul>
 <li>クレート内のコードをグループ化し、可読性と再利用性を上げるのに役立つ
-
 <ul>
 <li>関連する定義を1つにまとめ、関連する理由を名前で示せる
-
 <ul>
 <li>グループ単位でコードを読める</li>
 <li>新しい機能を追加するときはどこに置けばよいか分かりやすい</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>プライバシーも制御できる
-
 <ul>
 <li>コードの外側で使える(public)</li>
 <li>内部の実装の詳細であり、外部では使えない(private)</li>
-</ul></li>
+</ul>
+</li>
 <li>クレートルートと呼ばれる理由
-
 <ul>
 <li>モジュールツリーと呼ばれるクレートのモジュールの根っこ(ルート)にmain.rsとlib.rsの中身がcrateというモジュールを形成するから</li>
 <li>親子関係やディレクトリ構成によく似ている</li>
-</ul></li>
-
-<li><p>要素を見つけるためにどこを探せばいいのかを教えるためにパスを使う</p>
-
-<pre><code class="language-rust">mod name {
-mod
-struct
-enum
-const
-fn
+</ul>
+</li>
+<li>要素を見つけるためにどこを探せばいいのかを教えるためにパスを使う</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">mod</span> name {
+    <span style="color:#66d9ef">mod</span>
+    struct
+    <span style="color:#66d9ef">enum</span>
+    <span style="color:#a6e22e">const</span>
+    <span style="color:#66d9ef">fn</span>
 }
-</code></pre></li>
-</ul></li>
-
-<li><p>パス</p>
-
+</code></pre></div><ul>
+<li>パス
 <ul>
 <li>絶対パス
-
 <ul>
 <li><code>crate::xxx::yyy</code></li>
 <li>クレートルートからスタートする</li>
-</ul></li>
+</ul>
+</li>
 <li>相対パス
-
 <ul>
 <li><code>(self/super::)xxx::yyy</code></li>
 <li>現在のモジュールからスタートする</li>
-</ul></li>
+</ul>
+</li>
 <li>使い分け方
-
 <ul>
 <li>プロジェクトによって決める</li>
 <li>要素を定義するコードを、その要素を使うコードと別々に動かすか一緒に動かすか、どちらが起きそうか
-
 <ul>
 <li>両方動かすなら絶対パスを更新する必要があり</li>
 <li>関数だけ動かすなら相対パスを更新する必要がある</li>
-</ul></li>
-</ul></li>
-</ul></li>
-
-<li><p>プライバシー境界の設定</p>
-
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>プライバシー境界の設定
 <ul>
 <li>外部のコードが知ったり、呼び出したり、依存したりしてはいけない実装の詳細をカプセル化する線引き
-
 <ul>
 <li>関数や構造体を非公開にしたいならモジュールに入れればよい</li>
-</ul></li>
+</ul>
+</li>
 <li>標準で非公開という選択をRustはとっている
-
 <ul>
 <li>内部コードのどの部分が外部のコードを壊すことなく変更できるかを知れる</li>
-</ul></li>
+</ul>
+</li>
 <li>親モジュールの要素は子モジュールの非公開要素を使えない
-
 <ul>
 <li>子モジュールは実装の詳細を覆い隠す</li>
-</ul></li>
+</ul>
+</li>
 <li>子モジュールはその祖先モジュールの要素を使える
-
 <ul>
 <li>子モジュールは自分の定義される文脈を見ることができる</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 

@@ -20,14 +20,12 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="20201110log" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201110log" />
 <meta property="og:description" content="Samuel Becketの詩を思い出し、開発のために、上手な失敗を素早く失敗するためにどうするか、ということを考える。
-
 Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関して、その所有権とその実装例とそのメソッドについて。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/11/10/20201110log/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-11-10T13:33:08+00:00" />
 <meta property="article:modified_time" content="2020-11-10T13:33:08+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -36,7 +34,6 @@ Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関し�
 
 <meta name="twitter:title" content="20201110log"/>
 <meta name="twitter:description" content="Samuel Becketの詩を思い出し、開発のために、上手な失敗を素早く失敗するためにどうするか、ということを考える。
-
 Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関して、その所有権とその実装例とそのメソッドについて。"/>
 
   </head>
@@ -101,163 +98,136 @@ Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関し�
     <article class="article" class="blog-post">
       
     <p>Samuel Becketの詩を思い出し、開発のために、上手な失敗を素早く失敗するためにどうするか、ということを考える。</p>
-
 <p>Rustの勉強記録は、5.1節から5.3節にかけての、構造体に関して、その所有権とその実装例とそのメソッドについて。</p>
-
 <h1 id="diary">diary</h1>
-
 <h2 id="better-fail">better fail</h2>
-
 <p>Samuel Becketの詩の１つのうちに <em>ever tried, ever failed, no matter, try again, fail again, fail better</em> というフレーズがあると覚えている。</p>
-
 <p>これはコーディングやプロジェクトにおいても当てはまると思っている。それは、プロダクトから、チーム、個人、そして一定時間、問わない。</p>
-
 <p>プロジェクトにおいては、この期間でこれだけをやって、リリースして反応を見て、うまくいかなかったら(たいていうまくいかないし何か問題があるので)、その問題を分析して、原因を特定して、また次にトライして、と繰り返す。</p>
-
 <p>チームのコーディングにおいては、コードを書いてPR出して、レビューをもらって、ダメだったらそれを改善して、またRe-request Reviewして、と繰り返す。</p>
-
 <p>さらに、もっと短い時間で、一時間でこれだけやろうとして、けれどできなかったとなったら、自分の技術的に分からないところがあるのか、それとも、要件や成すべきことを把握していないか、それとも、想定よりも難しいことが存在していたことがわかる。そこから、また、それらのことを解決したり分割したりして、また予測して、やってみて、と繰り返す。</p>
-
 <p>挑戦して、失敗して、けれど失敗自体に問題はなくて、また挑戦して、失敗して、うまく失敗する。</p>
-
 <p>失敗は一つの選択肢である、というのはよく言った言葉である。
 開発においての失敗というのは大凡何らかのコミュニケーション不足や伝達不足(ユーザーとプロダクトの間、チーム間、自己認識いずれにおいても)があることが原因であり、それに早く気づき、それを早く解消し、早く形にするためには失敗に気づき、次にまたコミュニケーションをすることが開発の成功に繋がることである。</p>
-
 <h2 id="friend">friend</h2>
-
 <p>会いたい人と会う予定を立てることがとても楽しい。</p>
-
 <p>けれど、会いたい人が私と本当にこの予定を喜んでいるのか、不安になってしまうこともある。
 しかし、それもまたこそばゆい喜びを産んでくれる。</p>
-
 <p>今はとても幸せであり、こういう友を得られたことはとても良い。
 (これを喪失したときは、またとても悲しみを産むのであろう。)</p>
-
 <h1 id="今日の勉強">今日の勉強</h1>
-
 <h2 id="rust">rust</h2>
-
 <p>pp. 93 -100</p>
-
 <p>5.1節</p>
-
 <ul>
 <li>構造体データの所有権
-
 <ul>
 <li>フィールドの方は所有権のあるものを使う
-
 <ul>
 <li>例えば、所有権のある<code>String</code>を使い、<code>&amp;str</code>は使わない</li>
 <li>理由:
-
 <ul>
 <li>全データをそのインスタンスに所有してもらう必要があるから</li>
 <li>構造体全体が有効な間はずっと有効である必要がある</li>
-</ul></li>
-<li>他の何かに所有されているデータへの参照を保持させるにはライフタイムを使う</li>
-</ul></li>
-</ul></li>
 </ul>
-
+</li>
+<li>他の何かに所有されているデータへの参照を保持させるにはライフタイムを使う</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>5.2節</p>
-
 <ul>
 <li>単一の変数を使った実装から、タプルを使った実装へ、構造体を使った実装へとリファクタリングをしていく
-
 <ul>
 <li>単一の変数だと、引数に関連性があるのにそれを表現されないという問題がある
-
 <ul>
 <li>可読性と扱いやすさの問題がある</li>
 <li>変数をグループ化する</li>
-</ul></li>
+</ul>
+</li>
 <li>タプルで実装すると、要素に名前がないので、計算が不明瞭になるという問題がある
-
 <ul>
 <li>データの意味をコードに載せたい</li>
-</ul></li>
+</ul>
+</li>
 <li>ラベル付けするのに構造体を使う
-
 <ul>
 <li>関数に渡すのは借用を用いる(<code>&amp;</code>を用いる)
-
 <ul>
 <li>理由は、main関数で所有権を保つため</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>構造体を使う際に、デバッグ中にインスタンスを出力しフィールの値を確保したい場合
-
 <ul>
 <li>構造体なので、整形する方法が自明ではない、
-
 <ul>
 <li><code>{}</code>の代わりに、<code>{?}</code>かpretty-printな<code>{:?}</code>を使う。
-
 <ul>
 <li><code>Debug</code>を呼ばれる出力を使いたいと指示する</li>
-</ul></li>
+</ul>
+</li>
 <li>この機能を構造体で使うようにするのに、<code>derive</code>注釈をして、明示的に選択をしなければならない
-
 <ul>
 <li>(なお、これら一連のやるべきことはcompilerのError messageから何をやるべきかわかる)</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>5.3節</p>
-
 <ul>
 <li>メソッド記法
-
 <ul>
 <li>構造体と関数をより緊密に結びつける
-
 <ul>
 <li>他のどんな型でもうまく動作しなくする</li>
-</ul></li>
+</ul>
+</li>
 <li>メソッドについて
-
 <ul>
 <li>構造体(もしくは<code>enum</code>かTrait Object)の文脈で定義される</li>
 <li>最初の引数は必ず<code>self</code>
-
 <ul>
 <li><code>self</code>はメソッドが呼び出されている構造体インスタンスを表す</li>
-</ul></li>
-</ul></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p>メソッドの書き方は以下の通り:</p>
-
-<pre><code class="language-rust">impl 構造体名 {
-    fn 関数名(self (もしくは &amp;self)) {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> <span style="color:#960050;background-color:#1e0010">構造体名</span> {
+    <span style="color:#66d9ef">fn</span> <span style="color:#960050;background-color:#1e0010">関数名</span>(self (<span style="color:#960050;background-color:#1e0010">もしくは</span> <span style="color:#f92672">&amp;</span>self)) {
         ... self.xxx ...
     }
 }
-</code></pre>
-
-<ul>
+</code></pre></div><ul>
 <li>メソッドの使い方
-
 <ul>
 <li><code>インスタンス.関数名()</code></li>
 <li>メソッドの引数は、関数と同じで、所有権を奪えたり、不変借用したり、可変借用したりできる</li>
-</ul></li>
+</ul>
+</li>
 <li>メソッドの利点:
-
 <ul>
 <li><code>self</code>の型を繰り返し書く必要がなくなる</li>
 <li>体系化できる
-
 <ul>
 <li>ライブラリ内の各所を探させるのではなく、</li>
 <li>この方のインスタンスでできることを1つのimplにまとめられる。</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
 

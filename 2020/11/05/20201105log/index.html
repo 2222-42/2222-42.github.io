@@ -20,12 +20,11 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="20201105log" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201105log" />
 <meta property="og:description" content="窓口を明確にすることは本質を変えないが、楽にはしてくれる。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/11/05/20201105log/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-11-05T13:21:20+00:00" />
 <meta property="article:modified_time" content="2020-11-05T13:21:20+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -97,81 +96,66 @@
     <article class="article" class="blog-post">
       
     <p>窓口を明確にすることは本質を変えないが、楽にはしてくれる。</p>
-
 <h1 id="diary">diary</h1>
-
 <h2 id="interface">interface</h2>
-
 <p>窓口を作っても本質を変えるわけではないが、次の一手を探りやすくしてくれる。</p>
-
 <p>窓口やインターフェスを作ることは、伝えるためのフォーマットをこちらから相手に強制でき、かつ、相手は伝えたことを確証できるようにさせる。
 これにより、「言ったのに！」とか「いや、伝わっていない」とか、もしくは伝え方におけるミスいう事象を排除できる。</p>
-
 <p>そもそも、複数のエージェント間で、お互いが特定の知識を持っており、そのうえで、お互いがその知識を持っていることを知っているという、共有知識が成り立つためには、なんらかのアルゴリズムが必要である(アルゴリズムがなければ共有知識は成立しないが、アルゴリズムがあれば共有知識が成り立つわけではない)</p>
-
 <p>しかしながら、フォーマットを策定して、伝え方がよくなり、そして、共有知識を確保したところであっても、次のアクションがなければ意味がない。</p>
-
 <p>もちろんその通りであるが、相手が定まった形式で伝えてくることで、どういう内容を伝えてくるのかが受け手にはわかりやすくなり、そして、どういう流れでそのあとの話を進めるかも手探りしやすくなるというメリットが、フォーマットの策定には意義がある。
 (伝達でのミスを解消するためには誰かがハンドリングしないといけないが、その誰かをフォーマットにするのが楽である。(そのフォーマットに従わない邪悪な人は文化に従わせよう))</p>
-
 <p>人間のコミュニケーションが不完全であるから、1つずつやっていき、よりフィットするコミュニケーションのあり方を調べていく。</p>
-
 <h2 id="sandwitches">sandwitches</h2>
-
 <p>オフィス近くのステーキサンドイッチショップを見つけて、社内で共有したら、結構多くの同僚が行っているらしいことが判明した。</p>
-
 <p>美味しい店があっても人がこないと意味がないし、私の財布と胃袋は有限な上に、私の好みはあるので、色々な人に楽しんでもらいたい。
 よい共有を行えたと思う。</p>
-
 <h1 id="今日の勉強">今日の勉強</h1>
-
 <h2 id="rust">rust</h2>
-
 <p>TRPL</p>
-
 <ul>
 <li>pp. 65-68</li>
 <li>ヒープデータへのポインタを含む変数のコピーでは、確保されたメモリをコピーする代わりに、コピー元のスタック上のコピー元のを有効ではないとする、つまり、無効化された参照とする。
-
 <ul>
 <li>Copy Traitを実装していないからダメとCompileでエラーが起きる。</li>
 <li>shallow copyでない
-
 <ul>
 <li>ヒープデータのコピーなし、</li>
 <li>ptr, len, capacityの三つはコピーする</li>
 <li>しかし、最初の変数を無効化するわけではない</li>
-</ul></li>
+</ul>
+</li>
 <li>自動的にデータのdeep copyは行われない
-
 <ul>
 <li>自動で行わないから実行コストが低い</li>
 <li>ヒープデータまで含めたコピーをしたい場合は、メソッド<code>clone</code>を使う。</li>
-</ul></li>
+</ul>
+</li>
 <li><code>move</code>は、ptr, len, capacityをコピーして、前の参照を無効化する。</li>
-</ul></li>
+</ul>
+</li>
 <li>通常のコピー
-
 <ul>
 <li>スタック上にすっぽりおさまるようなもの</li>
 <li>その場合、shallow copyとdeep copyの違いがなく、<code>clone</code>しても変わらない</li>
-</ul></li>
+</ul>
+</li>
 <li>Copy Trait
-
 <ul>
 <li>スタック上に保持される方に対して配置される注釈</li>
 <li>代入後も古い変数が使用可能
-
 <ul>
 <li>何らかの形態のリソースだったりするものや、メモリ確保が必要なものはCopyではない</li>
-</ul></li>
+</ul>
+</li>
 <li>単純なスカラー値の集合はなんでもCopy</li>
-</ul></li>
+</ul>
+</li>
 <li>Drop Trait
-
 <ul>
 <li>これを実装している場合、Copy Traitによる注釈をさせてくれない。</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 
 

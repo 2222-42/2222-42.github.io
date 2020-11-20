@@ -20,12 +20,11 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="What I Learned from Using Hugo" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="What I Learned from Using Hugo" />
 <meta property="og:description" content="Trial on start using Hugo" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-10-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-10-12T00:00:00+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -97,30 +96,31 @@
     <article class="article" class="blog-post">
       
     <p>Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。</p>
-
 <h1 id="わかったこと">わかったこと</h1>
-
 <p>わかっていなかったことが複数見つかった。</p>
-
 <ul>
 <li>Dockerとdocker-composeのことがよくわかっていない。
-
 <ul>
-<li><code>docker-compose</code> で、複数の設定をどう使うか、知らなかった。</li>
+<li><code>docker-compose</code> で、複数の設定をどう使うか、知らなかった。
+<ul>
 <li><code>-f</code> 指定は<code>build</code>に対しては利用できないとか。</li>
+</ul>
+</li>
 <li>image名の重複が発生したときのエラーがどういうものか、などを知らなかった。</li>
-</ul></li>
+</ul>
+</li>
 <li>git のことをよくわかってない
-
 <ul>
 <li>submoduleがどういうものかわかっていなかった。-&gt; なんとなく使い方はわかった。</li>
-<li>staged changeをgitがどう管理されているかわかっていない。</li>
+<li>staged changeをgitがどう管理されているかわかっていない。
+<ul>
 <li>素朴にaddしたりcommitしたりしているが、どうgitがそれを管理しているのかよくわからない。</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
 <h1 id="今後やりたいこと">今後やりたいこと</h1>
-
 <ul>
 <li>CIで自動デプロイさせたい。</li>
 </ul>

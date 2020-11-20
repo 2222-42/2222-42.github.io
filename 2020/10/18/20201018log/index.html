@@ -20,12 +20,11 @@
 
 <script src="https://2222-42.github.io/js/bundle.js"></script>
 <script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.59.0" /><meta property="og:title" content="log" />
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="log" />
 <meta property="og:description" content="PCを買うよりも新しい机を買おうと思い直した。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://2222-42.github.io/2020/10/18/20201018log/" />
-
-<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
 <meta property="article:published_time" content="2020-10-18T13:05:03+00:00" />
 <meta property="article:modified_time" content="2020-10-18T13:05:03+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
 
@@ -97,74 +96,52 @@
     <article class="article" class="blog-post">
       
     <p>PCを買うよりも新しい机を買おうと思い直した。</p>
-
 <p>PCを新調しようと定期的に思いついてしまうが、いや、結局今のマシンでも十分であるし、その金で机を新しくしたほうがいいと思い直した。
 (つよつよPCを作るくらいなら、AWSでremote 開発環境を作った方が安く済む。また、PCの資産としての価値は低いから。)</p>
-
 <p>現在の机はIKEAのもので、だいぶぼろぼろになっている。また、机の広さも足りなさを感じている。</p>
-
 <h1 id="diary">diary</h1>
-
 <p>午前中。</p>
-
 <p>チキンのトマト煮を作った。
 間違えてカットトマトではなくホールトマト缶を買っていたことに気づいたが、うまく作れた。</p>
-
 <p>FEBCで日曜礼拝を聞く。</p>
-
 <p>午後は頭痛がひどくて、そして虚無が襲い掛かってきた。何にも手がつかなくなった。</p>
-
 <p>感情をコントロールするためには、体を動かす必要があるが、その気持ちすらわかない場合にどうすればいいのだろうか。</p>
-
 <h2 id="愛の実現のために">愛の実現のために</h2>
-
 <p>信仰は望んでいる事柄を確信し、見えない事実を確認すること。つまり、神の存在や神の愛を確認できる。</p>
-
 <p>行いが伴わないなら、信仰はそれだけでは死んだもの。信仰という心から神へ愛を伝えるチャネルを成長させるためには、行い・活動が必要である。信仰が愛を導き、行動がその愛の実現を導く。
 御言葉を読み、神が私達の魂に入り込む様を見、祈るという行動こそが、神様に愛を本物で成熟したものへと涵養する。</p>
-
 <p>私達が神を愛するのは、神がまず私達を愛してくださったから。神からの愛は、信仰や行動による報酬ではない。</p>
-
 <p>私は他人とその心や魂の存在を疑っている。だから、他人を愛することへの確信がない。だから、信仰を持ち、行動をし、神を通して、その存在に確信を持ち、愛を実現させる。</p>
-
 <h1 id="今日の勉強">今日の勉強</h1>
-
 <h2 id="sml">sml</h2>
-
 <p>『Standard ML 入門』</p>
-
 <ul>
 <li>pp. 259 - 261
-
 <ul>
 <li>筆者が、なにをやるか、どうやるかを明示してくれているので、読者の自分は、自分が有能なのではと勘違いしてしまっているところがある。</li>
-</ul></li>
+</ul>
+</li>
 <li>問18.30
-
 <ul>
 <li>CopyDirStreamの以前の実装があるので、リストアップはできそう。</li>
 <li>実装する方針は立てた。</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="isabelle">isabelle</h2>
-
 <p><em>Concrete Semantics</em></p>
-
 <ul>
 <li>Exercise 9.7をとき直そうと思い立つ
-
 <ul>
 <li>WhileTrueのケースの証明ができなくて詰まっていた</li>
 <li>先人の回答をカンニングした。</li>
 <li>条件を間違えていたことに気づいた。</li>
 <li><code>erase_correct</code>を終えたが、ほか2つの性質については示していない。</li>
-</ul></li>
+</ul>
+</li>
 <li>Sec_Typingの言わんとしていることを理解していないことがわかったので、次回以降はまた10章に戻る。</li>
 </ul>
-
 <p>カンニングしてわかったこととして、以下の書き方がある。</p>
-
 <pre><code>proof (csses)
     assume &quot;A&quot;
     ...
@@ -172,10 +149,7 @@ next
     assume &quot;\not A&quot;
     ...
 qed
-</code></pre>
-
-<p>と同じことは</p>
-
+</code></pre><p>と同じことは</p>
 <pre><code>proof (csses &quot;A&quot;)
     case True
     ...
@@ -183,9 +157,7 @@ next
     case False
     ...
 qed
-</code></pre>
-
-<p>というのが使えることがわかった。</p>
+</code></pre><p>というのが使えることがわかった。</p>
 
 
       
