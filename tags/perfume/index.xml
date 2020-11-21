@@ -14,6 +14,14 @@
 		<atom:link href="/tags/perfume/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201121log</title>
+			<link>https://2222-42.github.io/2020/11/21/20201121log/</link>
+			<pubDate>Sat, 21 Nov 2020 13:12:43 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/21/20201121log/</guid>
+			<description>&lt;p&gt;休息の日であった。先日からのPCの不具合の原因と思われるものを1つ特定した。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201120log</title>
 			<link>https://2222-42.github.io/2020/11/20/20201120log/</link>
 			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
@@ -83,15 +91,6 @@
 			<pubDate>Fri, 13 Nov 2020 12:00:56 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/13/20201113log/</guid>
 			<description>&lt;p&gt;22時に寝るようにするためにブログを簡略化することを決めた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201112log</title>
-			<link>https://2222-42.github.io/2020/11/12/20201112log/</link>
-			<pubDate>Thu, 12 Nov 2020 14:19:39 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/12/20201112log/</guid>
-			<description>&lt;p&gt;なじみのBarがまた消えた話。&lt;/p&gt;
-&lt;p&gt;rustのOption型に関する勉強メモ。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
