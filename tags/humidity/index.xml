@@ -14,6 +14,15 @@
 		<atom:link href="/tags/humidity/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201123log</title>
+			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
+			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
+			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201122log</title>
 			<link>https://2222-42.github.io/2020/11/22/20201122log/</link>
 			<pubDate>Sun, 22 Nov 2020 09:14:05 +0000</pubDate>
@@ -83,14 +92,6 @@
 			<pubDate>Sun, 15 Nov 2020 11:54:54 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/15/20201115log/</guid>
 			<description>&lt;p&gt;今日は休息の日とした&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201114log</title>
-			<link>https://2222-42.github.io/2020/11/14/20201114log/</link>
-			<pubDate>Sat, 14 Nov 2020 04:18:22 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/14/20201114log/</guid>
-			<description>&lt;p&gt;コーヒー飲んでずっと人を待つということをやっていた&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
