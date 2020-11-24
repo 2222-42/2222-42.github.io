@@ -14,6 +14,15 @@
 		<atom:link href="/tags/cdk/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201124log</title>
+			<link>https://2222-42.github.io/2020/11/23/20201124log/</link>
+			<pubDate>Mon, 23 Nov 2020 11:00:06 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/23/20201124log/</guid>
+			<description>&lt;p&gt;PCの問題の記録。コミュニケーション苦手と感じる理由は、音声という一次元的な情報の伝達手法に難を覚えていることと関連している。読むべきVPoEのインタビュー記事のリストアップ。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録(Result型周りの途中)。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201123log</title>
 			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
 			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
@@ -84,14 +93,6 @@
 			<pubDate>Mon, 16 Nov 2020 06:31:47 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/16/20201116log/</guid>
 			<description>&lt;p&gt;土曜日の体験からいくつか自分の特性について学んだことがあるのでその記録。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201115log</title>
-			<link>https://2222-42.github.io/2020/11/15/20201115log/</link>
-			<pubDate>Sun, 15 Nov 2020 11:54:54 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/15/20201115log/</guid>
-			<description>&lt;p&gt;今日は休息の日とした&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
