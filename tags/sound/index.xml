@@ -14,6 +14,15 @@
 		<atom:link href="/tags/sound/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201126log</title>
+			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
+			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
+			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
+そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201125log</title>
 			<link>https://2222-42.github.io/2020/11/25/20201125log/</link>
 			<pubDate>Wed, 25 Nov 2020 10:03:14 +0000</pubDate>
@@ -86,14 +95,6 @@
 			<pubDate>Wed, 18 Nov 2020 07:44:08 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</guid>
 			<description>&lt;p&gt;『Team Geek』の箇条書きを一つのページにまとめる。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201117log</title>
-			<link>https://2222-42.github.io/2020/11/17/20201117log/</link>
-			<pubDate>Tue, 17 Nov 2020 11:49:12 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/17/20201117log/</guid>
-			<description>&lt;p&gt;月曜日から始めたこととして、25分勉強して、5分TRUE DetectiveをPrimeVideoで見る。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
