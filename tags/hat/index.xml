@@ -1,0 +1,101 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>hat on Que Lock Si Jeus Nee</title>
+		<link>https://2222-42.github.io/tags/hat/</link>
+		<description>Recent content in hat </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>jp</language>
+		
+		<managingEditor>Page(/tags/hat) (2222-42)</managingEditor>
+    	
+  		<lastBuildDate>Sun, 15 Nov 2020 11:54:54 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/hat/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>20201126log</title>
+			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
+			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
+			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
+そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201125log</title>
+			<link>https://2222-42.github.io/2020/11/25/20201125log/</link>
+			<pubDate>Wed, 25 Nov 2020 10:03:14 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/25/20201125log/</guid>
+			<description>&lt;p&gt;PCで発生していた問題の原因と思われるものの1つを特定(私が悪い)。音声によるコミュニケーションの問題の一時対処をやっていることの気づき。&lt;/p&gt;
+&lt;p&gt;あと、色々勉強した記録(Rust、Isabelle、1on1)。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201124log</title>
+			<link>https://2222-42.github.io/2020/11/24/20201124log/</link>
+			<pubDate>Tue, 24 Nov 2020 11:00:06 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/24/20201124log/</guid>
+			<description>&lt;p&gt;PCの問題の記録。コミュニケーション苦手と感じる理由は、音声という一次元的な情報の伝達手法に難を覚えていることと関連している。読むべきVPoEのインタビュー記事のリストアップ。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録(Result型周りの途中)。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201123log</title>
+			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
+			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
+			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201122log</title>
+			<link>https://2222-42.github.io/2020/11/22/20201122log/</link>
+			<pubDate>Sun, 22 Nov 2020 09:14:05 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/22/20201122log/</guid>
+			<description>&lt;p&gt;内なる理由が見当たらない。自分の位置が分からない人は、自分の行く先もわからない。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201121log</title>
+			<link>https://2222-42.github.io/2020/11/21/20201121log/</link>
+			<pubDate>Sat, 21 Nov 2020 13:12:43 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/21/20201121log/</guid>
+			<description>&lt;p&gt;休息の日であった。先日からのPCの不具合の原因と思われるものを1つ特定した。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201120log</title>
+			<link>https://2222-42.github.io/2020/11/20/20201120log/</link>
+			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/20/20201120log/</guid>
+			<description>&lt;p&gt;増えたタスクに対してやりやすくしておくことが重要で、それが職業コードとしてよいコードであることなんだろうなと思った&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201119log</title>
+			<link>https://2222-42.github.io/2020/11/19/20201119log/</link>
+			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/19/20201119log/</guid>
+			<description>&lt;p&gt;潜水しているような気分が続く。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201118log</title>
+			<link>https://2222-42.github.io/2020/11/18/20201118log/</link>
+			<pubDate>Wed, 18 Nov 2020 07:45:25 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/20201118log/</guid>
+			<description>&lt;p&gt;潜水をしているような気分だ。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Summary of Team Geek</title>
+			<link>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</link>
+			<pubDate>Wed, 18 Nov 2020 07:44:08 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</guid>
+			<description>&lt;p&gt;『Team Geek』の箇条書きを一つのページにまとめる。&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>

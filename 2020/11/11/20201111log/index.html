@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>20201111log</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201111log" />
+<meta property="og:description" content="コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。
+Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2020/11/11/20201111log/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2020-11-11T08:31:19+00:00" />
+<meta property="article:modified_time" content="2020-11-11T08:31:19+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="20201111log"/>
+<meta name="twitter:description" content="コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。
+Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>20201111log</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Nov 11, 2020
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>コミュニケーションが下手であることを自覚することのメリット。壁に立ち向かう時の心構え。</p>
+<p>Rustの構造体や列挙型に関するメモ、Isabelleの定数畳み込みと定数伝播に関するメモ、チームのマネージャー・マネージメントに関するメモ。</p>
+<h1 id="diary">diary</h1>
+<h2 id="communication">communication</h2>
+<p>日々繰り返し、このブログで、コミュニケーションについて語っているが、ふと周りを見ると、いくつか気づいたことがある</p>
+<ul>
+<li>コミュニケーションについてそれほど真剣に悩んでいる人が少ないこと</li>
+<li>コミュニケーションがたいていの人が下手、もしくは下手なことに無自覚
+<ul>
+<li>お願いと相談の区別すらつかない</li>
+<li>同僚を子供か囚人のように扱っている人がいる</li>
+</ul>
+</li>
+<li>コミュニケーションをあえてやろうと挑む人が少ない
+<ul>
+<li>コミュニケーションをうまくやろうとする人が少ない？</li>
+</ul>
+</li>
+</ul>
+<p>だからと言って自分のことが免罪符になるわけではないが、
+自分は、自分がコミュニケーションが下手であることに気づき、どうすればよいか悩み、開発にはコミュニケーションが必要不可欠だから敢えてやらねばならない、そしてうまくやらねばならないと活動しているのだなぁと気づいた。</p>
+<h2 id="how-to-handle-wallbarrier">how to handle wall(barrier)</h2>
+<p>壁に対してどう立ち向かうか、というたとえ話をふと思い出した。
+(どこ出典かわからない。ググってもヒットしなかった)</p>
+<ul>
+<li>壁の前で跪くか</li>
+<li>壁を打ち砕くか</li>
+<li>壁をすり抜けるか</li>
+</ul>
+<p>これがどういう話だったのかを思い出せないのだが、自分で今これを解釈するのであれば、
+壁の前で跪くユーザーに寄り添い、壁を打ち砕かんとする創業者に耳を傾け、エンジニアは壁をすり抜けろ、ということになるのであろう。</p>
+<h1 id="今日の勉強">今日の勉強</h1>
+<h2 id="rust">rust</h2>
+<p>pp.100-110</p>
+<p>5章</p>
+<ul>
+<li>implの関数(メソッドの話をしている)には、自動参照および参照外しがある
+<ul>
+<li>C++のようなオブジェクトに対して直接でもオブジェクトのポインタに対しての区別をユーザーが行うのは不要である</li>
+<li>コンパイラがオブジェクトのシグニチャに合致するように自動でオブジェクトに以下のいずれかを付与する
+<ul>
+<li><code>&amp;</code>で読み込みのみか</li>
+<li><code>&amp;mut</code>で書き込みもか</li>
+<li><code>*</code>で所有権を奪うか</li>
+</ul>
+</li>
+<li><code>self</code>を自明な受けてという
+<ul>
+<li>これのおかげで自動参照及び参照外しが有瀧</li>
+</ul>
+</li>
+<li>メソッドの受け手に関して借用が明示されない、というのが、所有権を実際に使うのがRustにおいて簡単である大きな理由</li>
+</ul>
+</li>
+<li>implの関数で、複数の引数(<code>self</code>以外に追加する)にすることができる</li>
+<li>関連関数
+<ul>
+<li>implの別の有益な機能
+<ul>
+<li>selfを引数に取らない関数</li>
+<li>関数でありメソッドではない
+<ul>
+<li>なぜなら対象となる構造体のインスタンスが存在しないから</li>
+</ul>
+</li>
+<li>e.g., 新規インスタンスを返すコンストラクタなどがある</li>
+<li><code>::</code> という記法を使う。
+<ul>
+<li>この記法は関連関数とモジュールによって作りだされる名前空間両方に使用される。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1つの構造体に対して複数のimplブロックを作れる
+<ul>
+<li>分けることが有用になるケースは10章で扱うジェネリック型とトレイトの議論の中で表れる</li>
+</ul>
+</li>
+<li>まとめ
+<ul>
+<li>構造体: 自分の領域で意味のある独自の型を作成できる</li>
+<li>その使用: 関連のあるデータ片を相互に結合させたままにし、各部品に名前をつけ、コードを明確にする</li>
+<li>メソッド: 構造体のインスタンスが行う動作を指定する</li>
+<li>関連関数: インスタンスを利用することなく、構造体に特有な機能を名前空間分けすることができる。</li>
+</ul>
+</li>
+</ul>
+<p>6章</p>
+<ul>
+<li>列挙型(enum)
+<ul>
+<li>取りうる値を列挙することで型を定義させる
+<ul>
+<li>取りうる値を全て列挙できる
+<ul>
+<li>どちらか一方の値で、同時に両方にならない場合に役立つ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>代数的データ型に酷似している</li>
+<li>enumの値は列挙子のいずれか1つにしかなりえない
+<ul>
+<li>列挙子というのは、enumの要素のことである。</li>
+<li>列挙子は種類の語り方のみであり、値の保存を考えることは必須ではない。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>enumの書き方:</p>
+<pre><code>enum 列挙型名 {
+    xxx, 
+    yyy,
+}
+</code></pre><ul>
+<li>enumの値
+<ul>
+<li><code>型::列挙子</code>で各列挙子のインスタンスを生成する
+<ul>
+<li>型は一緒なので、それぞれの列挙子に対して、異なる関数は作らなくてよい</li>
+</ul>
+</li>
+<li>enumを使えば、構造体より簡潔な方法で、表現することができる場合がある
+<ul>
+<li>enumの各列挙子に直接データを添付することができ、</li>
+<li>列挙子に紐づけるデータの型と量は異なっても良い
+<ul>
+<li>これが構造体ではできないこと</li>
+<li>いかなる種類のデータでも格納できる
+<ul>
+<li>列挙型も入れられる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>構造体との類似点:
+<ul>
+<li>異なる種類の構造体定義を定義すること
+<ul>
+<li>ただし、enumの方が、構造体よりも、関数を簡単に作ることができる場合がある</li>
+</ul>
+</li>
+<li>implが使えるということ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="team">team</h2>
+<ul>
+<li>リーダーのいないチームは機能しない
+<ul>
+<li>かじ取りする人のいない船みたいなもの</li>
+<li>ソフトウェアの方向性に影響を与えるためには、エンジニアリングリーダーシップを隅々まで理解する必要がある</li>
+</ul>
+</li>
+<li>マネージャー
+<ul>
+<li>誕生
+<ul>
+<li>産業革命期</li>
+<li>労働者を監督するマネージャーという立場
+<ul>
+<li>労働者を人参と鞭とで管理していた</li>
+<li>今ではもう全く効果がない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>変化
+<ul>
+<li>エンジニアは数か月間かけて新しいチームに追いつく</li>
+<li>考えたり創造したりするためにの育成・時間・空間が必要</li>
+</ul>
+</li>
+<li>違い
+<ul>
+<li>昔のマネージャー
+<ul>
+<li>親と子の関係のようなもの</li>
+<li>どうやって仕事を完了させるかを考える</li>
+</ul>
+</li>
+<li>リーダー
+<ul>
+<li>HRTでエンジニアを信頼するようにすれば、エンジニアはその信頼に答える</li>
+<li>チームのための道を作り、安全と安心に気を配る</li>
+<li>何ができるかを考える
+<ul>
+<li>どうやって完了させるかはチームが考える</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>二種類のリーダーがGoogleにはある
+<ul>
+<li>TL(Team Lead): プロダクトの全部・一部の技術的な方向性に責任を持つ</li>
+<li>TLM(Technical Lead Manager): TLの責任に加え、チームにいるエンジニアのキャリアや幸せという、人の管理にも責任を持つ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Managerになることへの不安
+<ul>
+<li>コードを書く時間が減ることへの不安
+<ul>
+<li>定量化できないものが増えることへの不安
+<ul>
+<li>チームの幸せと生産性をたかめるのが仕事の指標である</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>無能なマネージャーになるのではないかという不安
+<ul>
+<li>ピーターの法則で、階級制度があるところでは、必ずその人の無能レベルまで昇進する</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Managerになるべき大きな理由
+<ul>
+<li>自分をスケールできるから</li>
+<li>マネージャーに向いているかもしれないから
+<ul>
+<li>実際、マネージャーに向いていた人が多くいる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>マネジメント病(管理したがり病)の負の再生産の問題について
+<ul>
+<li>サーバントリーダーシップで治療する
+<ul>
+<li>チームに奉仕すること</li>
+<li>HRTの雰囲気づくりをすること
+<ul>
+<li>アドバイスを与えたり、</li>
+<li>順調に進めるよう穴を埋めたり</li>
+<li>自らの手を汚す</li>
+</ul>
+</li>
+<li>技術的な側面とチームの人間関係の両方を扱う</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>マネジメントのアンチパターン</p>
+<ul>
+<li>言いなりになる人を採用する
+<ul>
+<li>仕事が増えるぞ</li>
+<li>むしろ、自分より球が良くて、代わりになる人を採用しよう
+<ul>
+<li>新しいチャンスを産む</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>パフォーマンスの低い人を無視する
+<ul>
+<li>数名でもパフォーマンスの低い人がいるだけでチームはうまくいかなくなる</li>
+<li>「願いは戦略ではない」
+<ul>
+<li>パフォーマンスの低い人にはコーチングをする
+<ul>
+<li>HRTとともに</li>
+<li>マイクロマネジメントをする
+<ul>
+<li>小さい目標から大きな目標へ</li>
+<li>マイルストーンには明確な期待を設定する
+<ul>
+<li>明確な期待が設定すると結果がわかりやすくなる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>期待に応えない人をどうするかというのが一番難しい問題
+<ul>
+<li>立ち去ってもらうことがチームにとって一番良いこと</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>人間の問題を無視する
+<ul>
+<li>人間的な側面を無視してしまうととんでもないことになる</li>
+<li>ちょっとした共感さえあればよかったことがしょっちゅうある</li>
+</ul>
+</li>
+<li>みんなの友達になる
+<ul>
+<li>友人関係のままであろうとするな
+<ul>
+<li>友人関係も失うことになる
+<ul>
+<li>上下関係があると人工的な友人関係を作りだしてしまう可能性がある</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>友人関係とチームをリードすることとを混同してはならない</li>
+<li>友人関係ではなく、不安を感じさせずに仲良くしたいなら、一緒にランチしろ</li>
+</ul>
+</li>
+<li>採用を妥協する
+<ul>
+<li>採用基準を満たす人を取れ</li>
+<li>採用すべきでない人の採用のコストは高い</li>
+</ul>
+</li>
+<li>チームを子供として扱う
+<ul>
+<li>子供・囚人として扱うことは、信頼していないということ
+<ul>
+<li>これのコストは馬鹿高い</li>
+</ul>
+</li>
+<li>信頼されていることを感じれば責任を感じるようになる</li>
+</ul>
+</li>
+</ul>
+<p>次はリーダーシップパターン</p>
+<h2 id="isabelle">isabelle</h2>
+<p>pp. 156-159</p>
+<p>定数畳み込みと定数伝播の続き</p>
+<ul>
+<li>定数値を保存するテーブル<code>t</code>が、runtime state <code>s</code>に漸近することの、<code>approx</code>の定義</li>
+<li>arithmetic expressions のfoldの <code>afold</code> の正しさの証明
+<ul>
+<li>induction貼って、あとは自動
+<ul>
+<li>自動と書いているが、自分で書いたら、sledgehammerでサジェストされなかったので、</li>
+<li><code>simp: approx_def</code>してsimplificationしたり、</li>
+<li>subgoalの形を見て、splitをしたりした。
+<ul>
+<li><code>split: option.split</code></li>
+<li><code>split: option.split aexp.split</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>言語ごとのfailure semanticsを保存するように定数畳み込みの定義には注意を払え
+<ul>
+<li>Invalid programに対して、validな結果を返すようなものもあるから</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>arithmetic expressionsに限定しない定数畳み込みと定数伝播の実装
+<ul>
+<li><code>fold :: com =&gt; tab =&gt; com</code>
+<ul>
+<li>基本的なアイディア
+<ul>
+<li>take a command</li>
+<li>take a table</li>
+<li>produce new command</li>
+</ul>
+</li>
+<li>sequential composition (<code>fold c_1;;c_2 t</code>)について考えないといけないこと
+<ul>
+<li>recustionに適用する</li>
+<li><code>fold c_2</code>に対しては、<code>c_1</code>の実行結果でアサインされたものの新しいvalueを取り上げるべきである
+<ul>
+<li>この認識は、最適化の分析から得られる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>foldの実装には補助関数<code>defs :: com =&gt; tab =&gt; tab</code>が必要
+<ul>
+<li>commandを実行した後の、既知の定数値と変数を記述するような新たなtableを生成する関数</li>
+</ul>
+</li>
+<li><code>primrec defs :: com =&gt; tab =&gt; tab</code>
+<ul>
+<li><code>IF</code>のケースでは、両方の枝で同じ値が割り当てられている確認して、そういうテーブルを作る
+<ul>
+<li><code>merge</code>という補助関数を使う</li>
+</ul>
+</li>
+<li><code>WHILE</code>のケースでは、
+<ul>
+<li>永遠にループするかどうかを静的に解析できない
+<ul>
+<li>13章までいけばできるらしいが</li>
+</ul>
+</li>
+<li>だから、tableに追加できない</li>
+<li>tableに追加できないだけではなく、tableに初期に保存していたものと矛盾する可能性がある</li>
+<li>だから、loop bodyの中に含まれるassignment statementのleft-handの変数を全部取り除く必要がある。
+<ul>
+<li><code>lvars</code>という補助変数で、assignmentsのleft-hand側、つまり、変数の集合を取る</li>
+<li>取り除くのには <code>t|`S = \lambda x. if x \in S then t x else None </code> というものを使っている。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>primrec fold :: com =&gt; tab =&gt; tab</code>の実装ができる
+<ul>
+<li><code>IF</code>のケースで<code>merge</code>を使っている</li>
+<li><code>WHILE</code>のケースでは、<code>defs</code>の場合と同様、loop bodyの中に含まれるassignment statementの変数を全部取り除く必要がある</li>
+</ul>
+</li>
+<li><code>primrec</code>について
+<ul>
+<li>原始再帰的関数のこと</li>
+<li>参考書類
+<ul>
+<li><a href="https://stackoverflow.com/questions/30419419/what-is-the-difference-between-primrec-and-fun-in-isabelle-hol">stackoverflow</a></li>
+<li><a href="https://isabelle.in.tum.de/library/HOL/HOL-ex/Primrec.html">Isabelle Theory Primrec</a></li>
+<li><a href="https://people.mpi-inf.mpg.de/~jblanche/prim-co-rec.pdf">Paper</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/communication/">communication</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/barrier/">barrier</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/isabelle/">isabelle</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/team/">team</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2020
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

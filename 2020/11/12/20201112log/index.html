@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>20201112log</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201112log" />
+<meta property="og:description" content="なじみのBarがまた消えた話。
+rustのOption型に関する勉強メモ。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2020/11/12/20201112log/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2020-11-12T14:19:39+00:00" />
+<meta property="article:modified_time" content="2020-11-12T14:19:39+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="20201112log"/>
+<meta name="twitter:description" content="なじみのBarがまた消えた話。
+rustのOption型に関する勉強メモ。"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>20201112log</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Nov 12, 2020
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>なじみのBarがまた消えた話。</p>
+<p>rustのOption型に関する勉強メモ。</p>
+<h1 id="diary">diary</h1>
+<h2 id="bar">bar</h2>
+<p>また一人のバーテンがなじみのバーからいなくなる。</p>
+<p>バーに行くことの楽しみは、その雰囲気やその人との会話を楽しむことである。
+ゆえに人がいないことはそのバーが消えたようなものである。(斧の刃を変えるのとは違う。)</p>
+<p>人がいなくなればそれだけそこに行く理由がなくなる。</p>
+<h2 id="alopecia-areata">alopecia areata</h2>
+<p>あごひげの一部に円形脱毛症が発生した。</p>
+<p>病院に行って、相談してみる。</p>
+<h1 id="今日の勉強">今日の勉強</h1>
+<h2 id="rust">rust</h2>
+<p>pp. 110-114</p>
+<ul>
+<li>enum
+<ul>
+<li>プログラムにデータ以上の情報をコードかできる</li>
+<li>Option型
+<ul>
+<li>値が何か、そうでないか</li>
+<li>値が存在するか不在か(有効でないか)という概念をenumでコード化する</li>
+</ul>
+</li>
+<li>Rustにはnullがない
+<ul>
+<li>nullのある言語では、変数は、常にnullかそうでないかの二者択一</li>
+<li>nullの表現しようとしている概念
+<ul>
+<li>何らかの理由で現在無効または存在していないこと</li>
+</ul>
+</li>
+<li>この概念ではなく特定の実装に問題がある
+<ul>
+<li>何らかの種類のエラーが出る</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Option&lt;T&gt;</code>と、<code>Some(T)</code>、<code>None</code>も初期化(prelude)に含まれている
+<ul>
+<li>明示的にスコープに導入する必要がない
+<ul>
+<li>つまり、<code>Some</code>と<code>None</code>の前に<code>Option::</code>の接頭辞なしで使える</li>
+</ul>
+</li>
+<li><code>&lt;T&gt;</code>: ジェネリック型</li>
+<li><code>None</code>を使う場合は、<code>Option&lt;T&gt;</code>と型注釈をしなければならない
+<ul>
+<li>なぜなら、Some列挙子が保持する型を<code>None</code>だけからは推論できないから</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Option&lt;T&gt;</code>と<code>&lt;T&gt;</code>とは型が異なる
+<ul>
+<li><code>Option&lt;T&gt;</code>値を確実に有効な値かのようには使用できない
+<ul>
+<li>なぜならコンパイラにはその使用方法が分からない</li>
+</ul>
+</li>
+<li><code>T</code>の型の値
+<ul>
+<li>Compilerが常に有効な値かを確認する
+<ul>
+<li>値がnullではないと安全に想定できる</li>
+</ul>
+</li>
+<li>常に自信を持って先に進める</li>
+</ul>
+</li>
+<li><code>Option&lt;T&gt;</code>がるとき、
+<ul>
+<li>この時<strong>のみ</strong>、値を保持していない可能性を心配する必要がある</li>
+<li>コンパイラはプログラマが値を使用する前にそのヨナ場面を扱っているか確認する</li>
+<li>nullになる可能性のある値を保持することにこの型を使うことで明示的に同意することになる</li>
+</ul>
+</li>
+<li>実際にはnullなのにおうではないかのように想定することへの問題
+<ul>
+<li><code>T</code>型の処理を使う前には、<code>Option&lt;T&gt;</code>から<code>T</code>に返還する必要がある
+<ul>
+<li>Some列挙子の値をどのように取り出せばよいか
+<ul>
+<li>ドキュメントを読め
+<ul>
+<li><code>.unwrap()</code>とか<code>.unwrap_or(default_value)</code>とかがある</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>各列挙子を処理するコードが欲しい時は<code>match</code>式を使おう(フロー制御文法要素となる)
+<ul>
+<li>enumの各列挙子によって違うコードが走り</li>
+<li>そのコードがマッチした値の中のデータを使用できるようになる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>matchフロー制御
+<ul>
+<li><code>match</code>: フロー制御演算子
+<ul>
+<li>一連のパターンに対して値を比較し、
+<ul>
+<li>最初に適合するパターンで</li>
+</ul>
+</li>
+<li>マッチしたパターンに応じてコードを実行する</li>
+</ul>
+</li>
+<li><code>match</code>式のパワーの由来
+<ul>
+<li>パターンの表現力と</li>
+<li>コンパイラが全てのありうるパターンを処理しているか確認してくれる事実</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">match</span> <span style="color:#960050;background-color:#1e0010">式</span> {
+    pat <span style="color:#f92672">=&gt;</span> code,
+    pat <span style="color:#f92672">=&gt;</span> code,
+    ...
+}
+</code></pre></div><p>補足:</p>
+<ul>
+<li>式は<code>if</code>の時とは異なり、任意の型でよい</li>
+<li><code>=&gt;</code>は区切り演算子</li>
+<li>区切り演算子の左がパターン
+<ul>
+<li>パターンは上から順に比較される。</li>
+</ul>
+</li>
+<li>区切り演算子の右が何らかのコード(マッチアーム)
+<ul>
+<li>codeは式であることが要求される</li>
+<li>マッチしたアームの式の結果がmatch式全体の戻り値になる</li>
+<li>マッチのアームで複数行を走らせたいときは<code>{}</code>でブロックを作ればよい</li>
+</ul>
+</li>
+</ul>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/bar/">bar</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/alopecia-areata/">alopecia areata</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2020
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

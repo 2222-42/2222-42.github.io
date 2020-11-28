@@ -14,84 +14,87 @@
 		<atom:link href="/tags/love/" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>20201019log</title>
-			<link>https://2222-42.github.io/2020/10/19/20201019log/</link>
-			<pubDate>Mon, 19 Oct 2020 11:23:50 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/19/20201019log/</guid>
-			<description>&lt;p&gt;今日は寝坊した。
-そして、昨晩より続いていた気分の落ち込みが依然としてひどいことに気づいた。&lt;/p&gt;</description>
+			<title>20201126log</title>
+			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
+			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
+			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
+そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>log</title>
-			<link>https://2222-42.github.io/2020/10/18/20201018log/</link>
-			<pubDate>Sun, 18 Oct 2020 13:05:03 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/18/20201018log/</guid>
-			<description>&lt;p&gt;PCを買うよりも新しい机を買おうと思い直した。&lt;/p&gt;</description>
+			<title>20201125log</title>
+			<link>https://2222-42.github.io/2020/11/25/20201125log/</link>
+			<pubDate>Wed, 25 Nov 2020 10:03:14 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/25/20201125log/</guid>
+			<description>&lt;p&gt;PCで発生していた問題の原因と思われるものの1つを特定(私が悪い)。音声によるコミュニケーションの問題の一時対処をやっていることの気づき。&lt;/p&gt;
+&lt;p&gt;あと、色々勉強した記録(Rust、Isabelle、1on1)。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>20201017log</title>
-			<link>https://2222-42.github.io/2020/10/17/20201017log/</link>
-			<pubDate>Sat, 17 Oct 2020 08:49:17 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/17/20201017log/</guid>
-			<description>&lt;p&gt;勤勉であるためには休息が必要である。&lt;/p&gt;</description>
+			<title>20201124log</title>
+			<link>https://2222-42.github.io/2020/11/24/20201124log/</link>
+			<pubDate>Tue, 24 Nov 2020 11:00:06 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/24/20201124log/</guid>
+			<description>&lt;p&gt;PCの問題の記録。コミュニケーション苦手と感じる理由は、音声という一次元的な情報の伝達手法に難を覚えていることと関連している。読むべきVPoEのインタビュー記事のリストアップ。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録(Result型周りの途中)。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>log</title>
-			<link>https://2222-42.github.io/2020/10/16/20201016log/</link>
-			<pubDate>Fri, 16 Oct 2020 11:52:14 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/16/20201016log/</guid>
-			<description>&lt;p&gt;朝が寒すぎて、出社時の検温で、35度6分となってた。&lt;/p&gt;</description>
+			<title>20201123log</title>
+			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
+			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
+			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>log</title>
-			<link>https://2222-42.github.io/2020/10/15/20201015log/</link>
-			<pubDate>Thu, 15 Oct 2020 11:52:43 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/15/20201015log/</guid>
-			<description>&lt;p&gt;自分が本当に挑戦しているのか、わからない。(対アルコール)&lt;/p&gt;</description>
+			<title>20201122log</title>
+			<link>https://2222-42.github.io/2020/11/22/20201122log/</link>
+			<pubDate>Sun, 22 Nov 2020 09:14:05 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/22/20201122log/</guid>
+			<description>&lt;p&gt;内なる理由が見当たらない。自分の位置が分からない人は、自分の行く先もわからない。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>20201014log</title>
-			<link>https://2222-42.github.io/2020/10/14/20201014log/</link>
-			<pubDate>Wed, 14 Oct 2020 10:43:30 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/14/20201014log/</guid>
-			<description>&lt;p&gt;レモンサワーよりもレモン果汁が好きである。&lt;/p&gt;</description>
+			<title>20201121log</title>
+			<link>https://2222-42.github.io/2020/11/21/20201121log/</link>
+			<pubDate>Sat, 21 Nov 2020 13:12:43 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/21/20201121log/</guid>
+			<description>&lt;p&gt;休息の日であった。先日からのPCの不具合の原因と思われるものを1つ特定した。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>What I Failed to Use CM</title>
-			<link>https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/</link>
-			<pubDate>Wed, 14 Oct 2020 00:57:09 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/14/what-i-failed-to-use-cm/</guid>
-			<description>&lt;p&gt;昨日、&lt;code&gt;CM.make&lt;/code&gt; が失敗するという&lt;a href=&#34;https://github.com/2222-42/studyIntroductionToStandardML/issues/58&#34;&gt;ISSUE&lt;/a&gt;を建てたが、それの原因がわかった。&lt;/p&gt;</description>
+			<title>20201120log</title>
+			<link>https://2222-42.github.io/2020/11/20/20201120log/</link>
+			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/20/20201120log/</guid>
+			<description>&lt;p&gt;増えたタスクに対してやりやすくしておくことが重要で、それが職業コードとしてよいコードであることなんだろうなと思った&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>20201013log</title>
-			<link>https://2222-42.github.io/2020/10/13/20201013log/</link>
-			<pubDate>Tue, 13 Oct 2020 12:43:30 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/13/20201013log/</guid>
-			<description>&lt;p&gt;汚い言葉ではなく、感謝の言葉を。舌は山火事のもとである。&lt;/p&gt;</description>
+			<title>20201119log</title>
+			<link>https://2222-42.github.io/2020/11/19/20201119log/</link>
+			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/19/20201119log/</guid>
+			<description>&lt;p&gt;潜水しているような気分が続く。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>What I Learned from Using Hugo</title>
-			<link>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</link>
-			<pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/12/what-i-learned-from-using-hugo/</guid>
-			<description>&lt;p&gt;Hugoをローカルに入れたくなくて、docker imageを使うことにしたが、それを使って行く中で気づいた、私の知らなかったことリスト。&lt;/p&gt;</description>
+			<title>20201118log</title>
+			<link>https://2222-42.github.io/2020/11/18/20201118log/</link>
+			<pubDate>Wed, 18 Nov 2020 07:45:25 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/20201118log/</guid>
+			<description>&lt;p&gt;潜水をしているような気分だ。&lt;/p&gt;</description>
 		</item>
       	
 		<item>
-			<title>First Post</title>
-			<link>https://2222-42.github.io/2020/10/11/first-post/</link>
-			<pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/10/11/first-post/</guid>
-			<description>&lt;p&gt;これは私の投稿です。&lt;/p&gt;</description>
+			<title>Summary of Team Geek</title>
+			<link>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</link>
+			<pubDate>Wed, 18 Nov 2020 07:44:08 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</guid>
+			<description>&lt;p&gt;『Team Geek』の箇条書きを一つのページにまとめる。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>20201109log</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201109log" />
+<meta property="og:description" content="コミュニケーション苦手ととらえ始めた時期があったことと、その原因と、どうしてコミュニケーションがある程度できるようになったかの項目のピックアップ。
+あと、OGP設定の話とか、Clean Architeture を意識して作ったMockのレポジトリの話とか。
+今日の勉強は、Rustのスライスの話と構造体の話、Isabelleでの定数畳み込みと定数伝播、そして、Teamのハイレベルの同期の話。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2020/11/09/20201109log/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2020-11-09T05:24:02+00:00" />
+<meta property="article:modified_time" content="2020-11-09T05:24:02+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="20201109log"/>
+<meta name="twitter:description" content="コミュニケーション苦手ととらえ始めた時期があったことと、その原因と、どうしてコミュニケーションがある程度できるようになったかの項目のピックアップ。
+あと、OGP設定の話とか、Clean Architeture を意識して作ったMockのレポジトリの話とか。
+今日の勉強は、Rustのスライスの話と構造体の話、Isabelleでの定数畳み込みと定数伝播、そして、Teamのハイレベルの同期の話。"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>20201109log</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Nov 9, 2020
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>コミュニケーション苦手ととらえ始めた時期があったことと、その原因と、どうしてコミュニケーションがある程度できるようになったかの項目のピックアップ。
+あと、OGP設定の話とか、Clean Architeture を意識して作ったMockのレポジトリの話とか。</p>
+<p>今日の勉強は、Rustのスライスの話と構造体の話、Isabelleでの定数畳み込みと定数伝播、そして、Teamのハイレベルの同期の話。</p>
+<h1 id="diary">diary</h1>
+<h2 id="communication">communication</h2>
+<p>コミュニケーションが下手だと自己診断するようになったのは、コミュニケーションでの失敗の痛みを重く受け止めすぎていたことがある。
+それは、オフライン上でのコミュニケーションも、オンライン上でのコミュニケーション、いずれであっても。
+(今でも、自分のコミュニケーションにおけるコミットメントは重く捉えてしまっている。というのも、相手が自分の発言を重く捉えている可能性もあるからだ。(相手の人生ではなく、その場のコミュニケーションや自分の役割や責務という範囲で絞ったコミットメントにしようと最近心掛けていることに気づいた。))</p>
+<p>なんで人に自分の気持ちが伝わらないのかと悲観的になっていた。
+(うまいところは逃げるという選択をいつでも用意していたことである。そして、その問題を他人に伝え、新たな手法を模索していたことである。)</p>
+<p>振り返れば、自分が若すぎたということや、自分と他人との境界線に気づけていなかったことなどの問題が考えられる。</p>
+<p>今となっては、そのコミュニケーションが不得意であることを認識し、それを改善する機会がいくつかあったことがたくさんあったのだ。</p>
+<ul>
+<li>父親から、口角を上げなさい、と教えられた
+<ul>
+<li>口角は上げられるようになったので、それだけで相手への印象は変わった
+<ul>
+<li>目は笑っていないのだが</li>
+<li>父親も目が常に笑っていない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>学部生の時、どうやったら相手に明確な文章を伝えられるか、自分で分かっていないところを明確にしなければならないこと学んだこと
+<ul>
+<li>指導教官の大辻さんは、わからないことをわかならいと明確に言い、私の中で不明瞭な点を明確に示してくれたこと</li>
+<li>東大の鈴木さんは、ずばずば私の不十分なところを指摘してきていた。彼は天才だったので、本当に尊敬している。
+<ul>
+<li>この二人はあまりに言葉が鋭すぎて、私はついていけなかった感じがある。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>修士課程での指導教官の振舞いから、間違えたことにはすぐ訂正し、謝る
+<ul>
+<li>指導教官の1人であるところの中戸川教授は、間違えたことに気づいたらすぐに「ごめんなさい、今のは嘘です」と発言していた。
+<ul>
+<li>これは素早く失敗し、それからフィードバックループを回すという生産的な行動である</li>
+<li>その一方で、間違いは恥ではないことに気づいたこと</li>
+<li>さらに、ただ一つの真理に至るためには、一時の失敗など大したことがないこと</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>相手に尊敬の念を払えるようになったことが大きなメリットを人間関係で産むこと
+<ul>
+<li>潤滑油としてすごく機能する
+<ul>
+<li>それがうまくできなくて失敗しているところをさんざん見てきた</li>
+</ul>
+</li>
+<li>自分が知らないことを尋ねることは相手への尊敬がないと相手から引き出せない
+<ul>
+<li>特に、煙草ショップの山岸さんから、パイプやタバコについて色々話を聞くことができていたのは、そこに自然と、無意識に、尊敬の念が含められていたことであろう。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>大人になるということについて意識を向けさせてもらったこと
+<ul>
+<li>修士時代の同僚(その人は30代で一度労働されていた方)から、どういう人になりたいかを考えた方が、採用試験で評価されるよ、と言われた
+<ul>
+<li>一方で、指導教官の1人である千葉先生には、まだ20代前半でそれは分かるようなものではないから、意識して生きていけばいいよと提案された</li>
+</ul>
+</li>
+<li>会社の同僚(こちらは40代ですごい環境を生き延びてきた方)から、いいかげん大人になりましょうと言われたこと
+<ul>
+<li>大人になるとはどういうことか、と聞いたら、約束をしたらそれを守る、破るときは謝ること</li>
+</ul>
+</li>
+<li>聖書がキリストについて教えてくれたこと
+<ul>
+<li>キリストもできないことはできないとして逃げたこと</li>
+<li>キリストは自分が何者であるかを明確に語ったこと</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>今、こうして見ると、変化するためのポイントはあったことがわかる。
+が、これ以上のドラマ、連続した変化があったはずである。(BARに行くようになって、バーテンの上手な)
+それが何かわからないが、意識的に行動が変わったところとか、コミュニケーションが徐々にうまくなっていったところはあるのだろう。</p>
+<h2 id="ogp">OGP</h2>
+<p>OGPとTwitter Cardの設定を土曜日に実施していた。
+内容とかは全く表示できていないし、画像も表示できていないが、とりあえず初期設定は完了した。</p>
+<p><a href="https://gohugo.io/templates/internal#open-graph">公式に書いてあること</a>をそのまま設定しただけなので、何もしていない感がある。</p>
+<h2 id="clean-architecture">clean architecture</h2>
+<p><a href="https://github.com/2222-42/UserMockGo">UserMockGo</a>という、ログインや二段階認証を含むGoのRepositoryを会社の勉強会で作った。</p>
+<p>本当にMockだけなのだが、Clean Architectureというか、責務回りを意識した実装を行った。</p>
+<p>クリーンアーキテクチャのみならず、他の諸々の使用しているツールの知識に関して学ぶことができたので、勉強になった。</p>
+<h1 id="今日の勉強">今日の勉強</h1>
+<h2 id="rust">rust</h2>
+<p>pp.85-93</p>
+<p>4章</p>
+<ul>
+<li>文字列はバイナリに埋め込まれる
+<ul>
+<li>文字列リテラルはスライス
+<ul>
+<li>型が<code>&amp;str</code>となっている</li>
+<li>不変な参照えある</li>
+<li>バイナリのその特定の位置を指すスライスである</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>引数の型に<code>String</code>ではなく<code>&amp;str</code>を使うようにするメリット
+<ul>
+<li><code>String</code>値と<code>&amp;str</code>値の両方を取れる
+<ul>
+<li>つまり、Stringのスライスも</li>
+<li>文字列リテラルのスライスも、文字列リテラルも取れる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>i32</code>の配列から、配列の一部を参照したい場合に、そのスライスを作ることもできる</li>
+<li>所有権、借用、スライス
+<ul>
+<li>コンパイル時に、Rustプログラムにおいて、メモリの安全性を保証してくれる</li>
+<li>所有権がスコープを抜けたときに、データの所有者に自動的にデータを片づけてくれる</li>
+</ul>
+</li>
+</ul>
+<p>5章(構造体)</p>
+<ul>
+<li><code>struct</code>(構造体)
+<ul>
+<li>自分のプログラム領域で新しい型を作れる
+<ul>
+<li>コンパイル時の型精査機をフル活用できるようになる</li>
+</ul>
+</li>
+<li>独自のデータ型
+<ul>
+<li>意味のあるグループを形成する複数の関連した値をまとめる</li>
+<li>名前付ける</li>
+</ul>
+</li>
+<li>メソッドや関連関数がある</li>
+<li>構造体に紐づく振る舞いを指定できる</li>
+</ul>
+</li>
+</ul>
+<p>タプルと構造体の違い:</p>
+<table>
+<thead>
+<tr>
+<th>データ</th>
+<th>中身の一部を異なる型に</th>
+<th>データ片に名付け</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>タプル</td>
+<td>できる</td>
+<td>できない</td>
+</tr>
+<tr>
+<td>構造体</td>
+<td>できる</td>
+<td>できる</td>
+</tr>
+</tbody>
+</table>
+<p>構造体の書き方の基本:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">strcut <span style="color:#960050;background-color:#1e0010">構造体名</span> {
+    <span style="color:#960050;background-color:#1e0010">データ片の名前</span>　<span style="color:#960050;background-color:#1e0010">型</span>
+    <span style="color:#960050;background-color:#1e0010">データ片の名前</span>　<span style="color:#960050;background-color:#1e0010">型</span>
+}
+</code></pre></div><ul>
+<li>
+<p>構造体名</p>
+<ul>
+<li>グループ化されるデータ片の意義を表すものであること</li>
+</ul>
+</li>
+<li>
+<p>波かっこ内のものをまとめてフィールドと呼ぶ</p>
+</li>
+<li>
+<p>データ片の名前のことをフィールド名と呼ぶ</p>
+</li>
+<li>
+<p><code>struct</code>を使いたい時</p>
+<ul>
+<li>インスタンスを生成する
+<ul>
+<li>インスタンスは、各フィールドに対して具体的な値を指定する必要がある</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>構造体から特定の値を取りたい時</p>
+<ul>
+<li>ドット記法で</li>
+</ul>
+</li>
+<li>
+<p>フィールドの一部を変更したい</p>
+<ul>
+<li>インスタンス全体を可変にしておく必要がある</li>
+<li>ドット記法使って代入すればいい</li>
+</ul>
+</li>
+<li>
+<p>式とどうように構造体の新規インスタンスを関数本体の最後の式として生成して、そのインスタンスを返すことを暗示できる</p>
+<ul>
+<li>フィールド名と変数を繰り返すということでできるが、略記法がある</li>
+<li>フィールド初期化省略記法
+<ul>
+<li>仮引数と構造体のフィールド名が一致している場合、</li>
+<li>フィールド名を抜きに、仮引数名だけ書けばよい</li>
+</ul>
+</li>
+<li>構造体更新記法
+<ul>
+<li><code>..instance_name</code>という記法で、</li>
+<li>明示的にセットされていない残りのフィールドが、与えられたインスタンスのフィールドと同じ値となるよう指定できる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>タプル構造体</p>
+<ul>
+<li>構造体名はある
+<ul>
+<li>フィールドの型が同じであっても、構造体名が違えば、独自の型となる</li>
+</ul>
+</li>
+<li>フィールドに紐づけられた名前なし</li>
+<li>型だけ</li>
+<li>タプルに似た構造体</li>
+</ul>
+</li>
+<li>
+<p>ユニット構造体</p>
+<ul>
+<li>フィールドのない構造体</li>
+<li>ある方にトレイトを実装するけれども、型事態に保持させるデータは一切ない場面で有効</li>
+</ul>
+</li>
+</ul>
+<h2 id="isabelle">isabelle</h2>
+<p><em>Concrete Semantics</em></p>
+<ul>
+<li>
+<p>pp.154-156</p>
+</li>
+<li>
+<p>予備知識:<a href="https://ja.wikipedia.org/w/index.php?title=%E5%AE%9A%E6%95%B0%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF&amp;oldid=79799352">定数畳み込みと定数伝播</a>の話</p>
+<ul>
+<li>コンパイラでよく使われる最適化技法</li>
+<li>定数畳み込み
+<ul>
+<li>コンパイル時に定数式の値を計算し、
+<ul>
+<li>定数式には、リテラルと値が変更されない変数の両方が含まれる</li>
+</ul>
+</li>
+<li>計算の値を代入する、</li>
+<li>これによって、単純化する
+<ul>
+<li><code>bool</code>値で効率的である</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>定数伝播
+<ul>
+<li>コンパイル時に、変数が既知の定数値を持っているかを定め、</li>
+<li>定数値をその変数のuse-occurrencesに伝播させる</li>
+</ul>
+</li>
+<li>Live Analysisで、使用していない変数、生きていない変数と結論付け、パフォーマンスをよくするために消すということも行われる</li>
+</ul>
+</li>
+<li>
+<p>Constant Folding(定数畳み込み)をtrickyに使う言語が多い</p>
+<ul>
+<li>だからこそ、correctnessの証明が求められる</li>
+</ul>
+</li>
+<li>
+<p>各種問題</p>
+<ul>
+<li>浮動小数点の畳み込みはマシーンのrounding modeに依存するという問題がある</li>
+<li>ゼロで割ったり、overflowしたときの対処がだいぶ異なる
+<ul>
+<li>runtime時にraiseする</li>
+<li>そのようなprogramはcompilerに許させない</li>
+<li>任意コードを実行できるようにcompilerに許す</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>各種問題に対応するためにテストを素朴にすることの問題点</p>
+<ul>
+<li>ハードウェアが正しいという仮定の下で、</li>
+<li>incorrect hardwareからcorrectであることを区別しようとするのはよくないmoveである。</li>
+</ul>
+</li>
+<li>
+<p>やること:</p>
+<ul>
+<li>実際の動き</li>
+<li>形式化</li>
+<li>証明</li>
+</ul>
+</li>
+<li>
+<p>Foldingとして、まずはarithmetic expressionsを見る</p>
+<ul>
+<li>算術の表現をとって、</li>
+<li>そのうちにあるconstant subexpressionsを全て静的に評価する</li>
+</ul>
+</li>
+<li>
+<p>Foldingとpropagationをmixして行う</p>
+<ul>
+<li>そのためには、テーブルか環境が必要
+<ul>
+<li>どの変数が定数値を持っているか</li>
+<li>その値は何か</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>afold</code>(<code>:: aexp =&gt; tab =&gt; aexp</code>)の定義(cf: <a href="http://isabelle.in.tum.de/library/HOL/HOL-IMP/Fold.html">Theory Fold</a>)</p>
+</li>
+<li>
+<p>このsimple optimizationの正しさの基準</p>
+<ul>
+<li>optimizationを伴う実行結果が、それなしのものと等しいこと、
+<ul>
+<li>つまり、<code>aval (afold a t) s = aval a s</code></li>
+</ul>
+</li>
+<li>追加の仮定が必要
+<ul>
+<li>静的テーブル<code>t</code>が、runtime state <code>s</code>と、一致すること、もしくは近似すること</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="team">team</h2>
+<ul>
+<li>チームのハイレベルの同期
+<ul>
+<li>高いレベルで共通の目的を持つ</li>
+<li>進捗を伝えるベストプラクティスに従う</li>
+<li>ハイレベルの同期のためには、
+<ul>
+<li>ミッションステートメントの共有</li>
+<li>ミーティング
+<ul>
+<li>地理的障害があることを意識する</li>
+<li>設計文書の共有</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ミッションステートメント
+<ul>
+<li>やることは単純
+<ul>
+<li>チームの方向性を定義して、</li>
+<li>プロダクトのスコープを制限する
+<ul>
+<li><a href="http://www.gwtproject.org/makinggwtbetter.html">Making GWT Better</a>の例を見よ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ミッションステートメントを書くことで
+<ul>
+<li>認識の違いを明らかにし</li>
+<li>方向性に合意でき
+<ul>
+<li>これがなければ、スピードが落ちるか、停止するかのどちらかになる</li>
+</ul>
+</li>
+<li>共有することができる</li>
+</ul>
+</li>
+<li>再評価する
+<ul>
+<li>会社の方向性に合わせねばならない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ミーティングについての5つのルール</p>
+<ol>
+<li>絶対に必要な人だけ
+<ol>
+<li>新しいものの設計で5人以上は不要</li>
+<li>その時間に別作業している人は会議に参加しなくてもよい人だから誘うのを間違えている。</li>
+</ol>
+</li>
+<li>アジェンダを作って、ミーティング開始前に配布する
+<ol>
+<li>ミーティングを設けない日や時間を設けて、クリエイターの時間を設ける</li>
+</ol>
+</li>
+<li>ミーティングのゴールを達成したら時間前でも終了する</li>
+<li>ミーティングを順調に進める
+<ol>
+<li>取り仕切る人がいるようにする</li>
+<li>15分以上のスタンディングミーティングをやめろ</li>
+</ol>
+</li>
+<li>ミーティングの開始時間を強制的に中断される時間の前に設定する</li>
+</ol>
+<ul>
+<li>地理的障害のあるチームで働くことを意識する
+<ul>
+<li>「メーリングリストで議論がなかったら何も起きていない」というモットー
+<ul>
+<li>チャットの後「リアル」としてのメーリングリストに投稿</li>
+</ul>
+</li>
+<li>リモートから話しかける時
+<ul>
+<li>机に向かって歩いていくかのような自然な感じであれ</li>
+<li>積極的にチームとコミュニケーションをし
+<ul>
+<li>自分の存在だけでなく</li>
+<li>こちらの仕事も知ってもらう</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>フェイストゥーフェイスの帯域を過小評価してはいけない
+<ul>
+<li>(これは、このブログでもさんざん述べているが、かなり情報量が多い)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>設計文書を、コードの前に、書くこと
+<ul>
+<li>未来のハイレベルな青写真
+<ul>
+<li>何をどうしたいのかを低コストでチームに伝える手段でもある。</li>
+</ul>
+</li>
+<li>設計文書は、コーディング開始後で「生きた文書」として扱う
+<ul>
+<li>プロジェクトの進行に従って、更新していくべき</li>
+</ul>
+</li>
+<li>設計文書を書くか、スクラッチから作るかは、経験で判断すること
+<ul>
+<li>設計文書を書く時間で何度もスクラッチから書き直せるなら、その文書は時間の無駄であったりする</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>ハイレベルのゴールに合意できた後で、</p>
+<ul>
+<li>チームの日々の調整に使うツールを与える
+<ul>
+<li>ツールはたいてい帯域が狭い
+<ul>
+<li>誤解やHRTの欠如に繋がる</li>
+</ul>
+</li>
+<li>でも欠かせられない
+<ul>
+<li>少しの手間で生産性を大きく高められる</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>メーリングリスト
+<ul>
+<li>議事録・ミーティングのメモ・決定事項・設計文書を記録するのには使った方がいい</li>
+<li>検索可能にしておこう</li>
+</ul>
+</li>
+<li>オンラインチャット
+<ul>
+<li>いいぞ</li>
+<li>物理空間の事情を考えなくていい
+<ul>
+<li>前提としては、通知をOFFにしていること</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>課題管理ツールを使おう
+<ul>
+<li>ただの掲示板</li>
+<li>課題をオフィシャルにして、みんなの目に触れられるようにする
+<ul>
+<li>オフィシャルであるとは
+<ul>
+<li>粗暴な振る舞いを許すな</li>
+<li>話や議論が長くなったらメーリングリストでやれ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>エンジニアのコミュニケーションについて</p>
+<ul>
+<li>
+<p>コードコメント</p>
+<ul>
+<li>「なぜ」を説明するもの
+<ul>
+<li>「何」ではない</li>
+</ul>
+</li>
+<li>中庸を知れ</li>
+<li>コメントスタイルをチームで決めよ
+<ul>
+<li>一貫性を守る方が大切
+<ul>
+<li>関係なパターンマッチングによる推測が可能になる</li>
+</ul>
+</li>
+<li>使用を制限する機能についても決めておこう</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Authorタグをつけるな</p>
+</li>
+<li>
+<p>全てのコミットにコードレビューせよ</p>
+<ul>
+<li>変更はレビューしやすいように小さく</li>
+<li>コードレビューは
+<ul>
+<li>品質を向上させ</li>
+<li>品質に対するチームの誇りを育む</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>リアルなテストとリリースプロセス</p>
+<ul>
+<li>自動テストを増やせば、バグ修正や機能追加の際に自信を持てる</li>
+<li>テストをコーディングやレビューのプロセスの一部にする
+<ul>
+<li>徹底的にテストを行え</li>
+</ul>
+</li>
+<li>頻繁にリリースできるようにリリースプロセスを調整せよ
+<ul>
+<li>ユーザーからの信頼を獲得せよ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>文化やコミュニケーションの習慣</p>
+<ul>
+<li>好みの反映
+<ul>
+<li>「好み」には適切な人と正しい価値が必要</li>
+</ul>
+</li>
+<li>主観的ではない</li>
+<li>自然発生ではない</li>
+<li>チームリーダーと創業者が
+<ul>
+<li>機能不全のチームのコストを理解して、</li>
+<li>丁寧に種を播いて育てていくもの</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>文化の定義や防御よりもコードの設計や記述に時間をかけれる</p>
+<ul>
+<li>防御には、新来者への説明を含む</li>
+<li>コードを書くことを目的とする強いチームを作ることには膨大なコミュニケーションが必要
+<ul>
+<li>コードは、人と人とのコミュニケーションである。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/communciation/">communciation</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/isabelle/">isabelle</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/team/">team</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/ogp/">ogp</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/clean-architecture/">clean architecture</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2020
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
