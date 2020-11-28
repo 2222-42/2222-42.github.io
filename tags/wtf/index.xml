@@ -14,12 +14,29 @@
 		<atom:link href="/tags/wtf/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201128log</title>
+			<link>https://2222-42.github.io/2020/11/28/20201128log/</link>
+			<pubDate>Sat, 28 Nov 2020 07:51:11 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/28/20201128log/</guid>
+			<description>&lt;p&gt;今日は安息の日とした。
+自分の問題は、自分がどこにいるのかを捉えることであることだと思う。そして、自分の環境がどうであるかを見極めることである。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201127log</title>
+			<link>https://2222-42.github.io/2020/11/28/20201127log/</link>
+			<pubDate>Sat, 28 Nov 2020 07:51:04 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/28/20201127log/</guid>
+			<description>&lt;p&gt;ひどい一日だった。お酒に逃げた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201126log</title>
 			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
 			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
 			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
-そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。&lt;/p&gt;</description>
+そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。(PCの問題は解決しました。全部私が悪い。)&lt;/p&gt;</description>
 		</item>
       	
 		<item>
@@ -79,22 +96,6 @@
 			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/19/20201119log/</guid>
 			<description>&lt;p&gt;潜水しているような気分が続く。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201118log</title>
-			<link>https://2222-42.github.io/2020/11/18/20201118log/</link>
-			<pubDate>Wed, 18 Nov 2020 07:45:25 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/18/20201118log/</guid>
-			<description>&lt;p&gt;潜水をしているような気分だ。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>Summary of Team Geek</title>
-			<link>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</link>
-			<pubDate>Wed, 18 Nov 2020 07:44:08 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/18/summary-of-team-geek/</guid>
-			<description>&lt;p&gt;『Team Geek』の箇条書きを一つのページにまとめる。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
