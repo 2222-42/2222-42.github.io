@@ -14,6 +14,14 @@
 		<atom:link href="/tags/life/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201129log</title>
+			<link>https://2222-42.github.io/2020/11/29/20201129log/</link>
+			<pubDate>Sun, 29 Nov 2020 12:08:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/29/20201129log/</guid>
+			<description>&lt;p&gt;休日を謳歌するという挑戦をした。革の手入れ、肉、映画。しかし、渇きは収まらない。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201128log</title>
 			<link>https://2222-42.github.io/2020/11/28/20201128log/</link>
 			<pubDate>Sat, 28 Nov 2020 07:51:11 +0000</pubDate>
@@ -88,14 +96,6 @@
 			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/20/20201120log/</guid>
 			<description>&lt;p&gt;増えたタスクに対してやりやすくしておくことが重要で、それが職業コードとしてよいコードであることなんだろうなと思った&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201119log</title>
-			<link>https://2222-42.github.io/2020/11/19/20201119log/</link>
-			<pubDate>Thu, 19 Nov 2020 12:59:41 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/19/20201119log/</guid>
-			<description>&lt;p&gt;潜水しているような気分が続く。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
