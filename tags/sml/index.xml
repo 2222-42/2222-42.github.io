@@ -14,6 +14,14 @@
 		<atom:link href="/tags/sml/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201130log</title>
+			<link>https://2222-42.github.io/2020/11/30/20201130log/</link>
+			<pubDate>Mon, 30 Nov 2020 10:51:39 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/30/20201130log/</guid>
+			<description>&lt;p&gt;寝坊しても、どこかの時間で絶対に少しだけでも勉強するぞ、という強い気持ちをもって活動する。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201129log</title>
 			<link>https://2222-42.github.io/2020/11/29/20201129log/</link>
 			<pubDate>Sun, 29 Nov 2020 12:08:13 +0000</pubDate>
@@ -88,14 +96,6 @@
 			<pubDate>Sat, 21 Nov 2020 13:12:43 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/21/20201121log/</guid>
 			<description>&lt;p&gt;休息の日であった。先日からのPCの不具合の原因と思われるものを1つ特定した。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201120log</title>
-			<link>https://2222-42.github.io/2020/11/20/20201120log/</link>
-			<pubDate>Fri, 20 Nov 2020 12:29:03 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/20/20201120log/</guid>
-			<description>&lt;p&gt;増えたタスクに対してやりやすくしておくことが重要で、それが職業コードとしてよいコードであることなんだろうなと思った&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
