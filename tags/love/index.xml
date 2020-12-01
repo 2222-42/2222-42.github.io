@@ -14,6 +14,14 @@
 		<atom:link href="/tags/love/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201201log</title>
+			<link>https://2222-42.github.io/2020/12/01/20201201log/</link>
+			<pubDate>Tue, 01 Dec 2020 11:22:58 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/01/20201201log/</guid>
+			<description>&lt;p&gt;新たなディスプレイの到着と、その感想。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201130log</title>
 			<link>https://2222-42.github.io/2020/11/30/20201130log/</link>
 			<pubDate>Mon, 30 Nov 2020 10:51:39 +0000</pubDate>
@@ -88,14 +96,6 @@
 			<pubDate>Sun, 22 Nov 2020 09:14:05 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/22/20201122log/</guid>
 			<description>&lt;p&gt;内なる理由が見当たらない。自分の位置が分からない人は、自分の行く先もわからない。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201121log</title>
-			<link>https://2222-42.github.io/2020/11/21/20201121log/</link>
-			<pubDate>Sat, 21 Nov 2020 13:12:43 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/21/20201121log/</guid>
-			<description>&lt;p&gt;休息の日であった。先日からのPCの不具合の原因と思われるものを1つ特定した。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
