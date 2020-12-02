@@ -1,0 +1,102 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>game on Que Lock Si Jeus Nee</title>
+		<link>https://2222-42.github.io/tags/game/</link>
+		<description>Recent content in game </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>jp</language>
+		
+		<managingEditor>Page(/tags/game) (2222-42)</managingEditor>
+    	
+  		<lastBuildDate>Wed, 02 Dec 2020 12:07:44 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/game/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>20201202log</title>
+			<link>https://2222-42.github.io/2020/12/02/20201202log/</link>
+			<pubDate>Wed, 02 Dec 2020 12:07:44 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/02/20201202log/</guid>
+			<description>&lt;p&gt;今日は皮膚科に行ったり&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201201log</title>
+			<link>https://2222-42.github.io/2020/12/01/20201201log/</link>
+			<pubDate>Tue, 01 Dec 2020 11:22:58 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/01/20201201log/</guid>
+			<description>&lt;p&gt;新たなディスプレイの到着と、その感想。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201130log</title>
+			<link>https://2222-42.github.io/2020/11/30/20201130log/</link>
+			<pubDate>Mon, 30 Nov 2020 10:51:39 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/30/20201130log/</guid>
+			<description>&lt;p&gt;寝坊しても、どこかの時間で絶対に少しだけでも勉強するぞ、という強い気持ちをもって活動する。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201129log</title>
+			<link>https://2222-42.github.io/2020/11/29/20201129log/</link>
+			<pubDate>Sun, 29 Nov 2020 12:08:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/29/20201129log/</guid>
+			<description>&lt;p&gt;休日を謳歌するという挑戦をした。革の手入れ、肉、映画。しかし、渇きは収まらない。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201128log</title>
+			<link>https://2222-42.github.io/2020/11/28/20201128log/</link>
+			<pubDate>Sat, 28 Nov 2020 07:51:11 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/28/20201128log/</guid>
+			<description>&lt;p&gt;今日は安息の日とした。
+自分の問題は、自分がどこにいるのかを捉えることであることだと思う。そして、自分の環境がどうであるかを見極めることである。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201127log</title>
+			<link>https://2222-42.github.io/2020/11/27/20201127log/</link>
+			<pubDate>Fri, 27 Nov 2020 07:51:04 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/27/20201127log/</guid>
+			<description>&lt;p&gt;ひどい一日だった。お酒に逃げた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201126log</title>
+			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
+			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
+			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
+そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。(PCの問題は解決しました。全部私が悪い。)&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201125log</title>
+			<link>https://2222-42.github.io/2020/11/25/20201125log/</link>
+			<pubDate>Wed, 25 Nov 2020 10:03:14 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/25/20201125log/</guid>
+			<description>&lt;p&gt;PCで発生していた問題の原因と思われるものの1つを特定(私が悪い)。音声によるコミュニケーションの問題の一時対処をやっていることの気づき。&lt;/p&gt;
+&lt;p&gt;あと、色々勉強した記録(Rust、Isabelle、1on1)。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201124log</title>
+			<link>https://2222-42.github.io/2020/11/24/20201124log/</link>
+			<pubDate>Tue, 24 Nov 2020 11:00:06 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/24/20201124log/</guid>
+			<description>&lt;p&gt;PCの問題の記録。コミュニケーション苦手と感じる理由は、音声という一次元的な情報の伝達手法に難を覚えていることと関連している。読むべきVPoEのインタビュー記事のリストアップ。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録(Result型周りの途中)。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201123log</title>
+			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
+			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
+			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
+&lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>

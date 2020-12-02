@@ -14,6 +14,14 @@
 		<atom:link href="/tags/seasonal-depression/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201202log</title>
+			<link>https://2222-42.github.io/2020/12/02/20201202log/</link>
+			<pubDate>Wed, 02 Dec 2020 12:07:44 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/02/20201202log/</guid>
+			<description>&lt;p&gt;今日は皮膚科に行ったり&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201201log</title>
 			<link>https://2222-42.github.io/2020/12/01/20201201log/</link>
 			<pubDate>Tue, 01 Dec 2020 11:22:58 +0000</pubDate>
@@ -88,14 +96,6 @@
 			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
 			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
 &lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201122log</title>
-			<link>https://2222-42.github.io/2020/11/22/20201122log/</link>
-			<pubDate>Sun, 22 Nov 2020 09:14:05 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/22/20201122log/</guid>
-			<description>&lt;p&gt;内なる理由が見当たらない。自分の位置が分からない人は、自分の行く先もわからない。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
