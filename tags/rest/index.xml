@@ -14,6 +14,14 @@
 		<atom:link href="/tags/rest/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201203log</title>
+			<link>https://2222-42.github.io/2020/12/03/20201203log/</link>
+			<pubDate>Thu, 03 Dec 2020 13:03:35 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/03/20201203log/</guid>
+			<description>&lt;p&gt;特になし。疲れている。今日は朝勉強もできなかった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201202log</title>
 			<link>https://2222-42.github.io/2020/12/02/20201202log/</link>
 			<pubDate>Wed, 02 Dec 2020 12:07:44 +0000</pubDate>
@@ -87,15 +95,6 @@
 			<guid>https://2222-42.github.io/2020/11/24/20201124log/</guid>
 			<description>&lt;p&gt;PCの問題の記録。コミュニケーション苦手と感じる理由は、音声という一次元的な情報の伝達手法に難を覚えていることと関連している。読むべきVPoEのインタビュー記事のリストアップ。&lt;/p&gt;
 &lt;p&gt;あと、Rustの勉強記録(Result型周りの途中)。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201123log</title>
-			<link>https://2222-42.github.io/2020/11/23/20201123log/</link>
-			<pubDate>Mon, 23 Nov 2020 09:54:13 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/23/20201123log/</guid>
-			<description>&lt;p&gt;自分の短期的なモチベーションと、隣人の必要に焦点を合わせ貢献をするという視点から、自分のなりたい像についてのぼんやりとしたビジョンと、サンプルを探すことへの決断。&lt;/p&gt;
-&lt;p&gt;あと、Rustの勉強記録。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
