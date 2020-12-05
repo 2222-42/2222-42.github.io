@@ -14,6 +14,14 @@
 		<atom:link href="/tags/issue/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201205log</title>
+			<link>https://2222-42.github.io/2020/12/05/20201205log/</link>
+			<pubDate>Sat, 05 Dec 2020 11:55:48 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/05/20201205log/</guid>
+			<description>&lt;p&gt;寝坊したが、すっきりした一日を送れた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201204log</title>
 			<link>https://2222-42.github.io/2020/12/04/20201204log/</link>
 			<pubDate>Fri, 04 Dec 2020 11:45:51 +0000</pubDate>
@@ -85,15 +93,6 @@
 			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
 			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
 そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。(PCの問題は解決しました。全部私が悪い。)&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201125log</title>
-			<link>https://2222-42.github.io/2020/11/25/20201125log/</link>
-			<pubDate>Wed, 25 Nov 2020 10:03:14 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/25/20201125log/</guid>
-			<description>&lt;p&gt;PCで発生していた問題の原因と思われるものの1つを特定(私が悪い)。音声によるコミュニケーションの問題の一時対処をやっていることの気づき。&lt;/p&gt;
-&lt;p&gt;あと、色々勉強した記録(Rust、Isabelle、1on1)。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
