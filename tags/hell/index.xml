@@ -14,6 +14,15 @@
 		<atom:link href="/tags/hell/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201206log</title>
+			<link>https://2222-42.github.io/2020/12/06/20201206log/</link>
+			<pubDate>Sun, 06 Dec 2020 00:43:39 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/06/20201206log/</guid>
+			<description>&lt;p&gt;日曜日、午前中は、Rustの勉強と、日曜礼拝、そして、自分のミッションを見つめ直す時間を設けた。&lt;/p&gt;
+&lt;p&gt;午後はIsabelleを少ししたら、会社からの連絡があったので、諸々の準備をし、出社し、労働。日課が崩れた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201205log</title>
 			<link>https://2222-42.github.io/2020/12/05/20201205log/</link>
 			<pubDate>Sat, 05 Dec 2020 11:55:48 +0000</pubDate>
@@ -84,15 +93,6 @@
 			<pubDate>Fri, 27 Nov 2020 07:51:04 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/11/27/20201127log/</guid>
 			<description>&lt;p&gt;ひどい一日だった。お酒に逃げた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201126log</title>
-			<link>https://2222-42.github.io/2020/11/26/20201126log/</link>
-			<pubDate>Thu, 26 Nov 2020 10:07:32 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/26/20201126log/</guid>
-			<description>&lt;p&gt;ブログを付けていると、自分の悩みを追いかけやすく、かつ深く考えやすくなるなと実感している。
-そして、自分の一か月での変化にも気づく。さらに、反省をしやすく、明日によりつなげやすくなる。今日はそんな話。(PCの問題は解決しました。全部私が悪い。)&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
