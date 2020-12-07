@@ -14,6 +14,14 @@
 		<atom:link href="/tags/www/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201207log</title>
+			<link>https://2222-42.github.io/2020/12/07/20201207log/</link>
+			<pubDate>Mon, 07 Dec 2020 09:33:47 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/07/20201207log/</guid>
+			<description>&lt;p&gt;寝坊。6時半起床。人生について日中は考えない日だった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201206log</title>
 			<link>https://2222-42.github.io/2020/12/06/20201206log/</link>
 			<pubDate>Sun, 06 Dec 2020 00:43:39 +0000</pubDate>
@@ -85,14 +93,6 @@
 			<guid>https://2222-42.github.io/2020/11/28/20201128log/</guid>
 			<description>&lt;p&gt;今日は安息の日とした。
 自分の問題は、自分がどこにいるのかを捉えることであることだと思う。そして、自分の環境がどうであるかを見極めることである。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201127log</title>
-			<link>https://2222-42.github.io/2020/11/27/20201127log/</link>
-			<pubDate>Fri, 27 Nov 2020 07:51:04 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/27/20201127log/</guid>
-			<description>&lt;p&gt;ひどい一日だった。お酒に逃げた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
