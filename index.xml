@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(&#34;Que Lock Si Jeus Nee&#34;) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Wed, 09 Dec 2020 07:32:14 +0000</lastBuildDate>
+  		<lastBuildDate>Thu, 10 Dec 2020 10:55:01 +0000</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>20201210log</title>
+			<link>https://2222-42.github.io/2020/12/10/20201210log/</link>
+			<pubDate>Thu, 10 Dec 2020 10:55:01 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/10/20201210log/</guid>
+			<description>&lt;p&gt;体調が悪くて、寝込んでいた。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201209log</title>
 			<link>https://2222-42.github.io/2020/12/09/20201209log/</link>
@@ -84,14 +92,6 @@
 			<pubDate>Tue, 01 Dec 2020 11:22:58 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/01/20201201log/</guid>
 			<description>&lt;p&gt;新たなディスプレイの到着と、その感想。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201130log</title>
-			<link>https://2222-42.github.io/2020/11/30/20201130log/</link>
-			<pubDate>Mon, 30 Nov 2020 10:51:39 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/11/30/20201130log/</guid>
-			<description>&lt;p&gt;寝坊しても、どこかの時間で絶対に少しだけでも勉強するぞ、という強い気持ちをもって活動する。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
