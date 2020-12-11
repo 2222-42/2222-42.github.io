@@ -14,6 +14,14 @@
 		<atom:link href="/tags/seasonal-depression/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201211log</title>
+			<link>https://2222-42.github.io/2020/12/11/20201211log/</link>
+			<pubDate>Fri, 11 Dec 2020 11:59:19 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/11/20201211log/</guid>
+			<description>&lt;p&gt;昨日の体調不良からだいぶ回復した。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201210log</title>
 			<link>https://2222-42.github.io/2020/12/10/20201210log/</link>
 			<pubDate>Thu, 10 Dec 2020 10:55:01 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Wed, 02 Dec 2020 12:07:44 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/02/20201202log/</guid>
 			<description>&lt;p&gt;今日は皮膚科に行ったり&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201201log</title>
-			<link>https://2222-42.github.io/2020/12/01/20201201log/</link>
-			<pubDate>Tue, 01 Dec 2020 11:22:58 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/01/20201201log/</guid>
-			<description>&lt;p&gt;新たなディスプレイの到着と、その感想。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
