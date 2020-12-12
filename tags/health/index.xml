@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(/tags/health) (2222-42)</managingEditor>
     	
-  		<lastBuildDate>Fri, 11 Dec 2020 11:59:19 +0000</lastBuildDate>
+  		<lastBuildDate>Sat, 12 Dec 2020 10:39:42 +0000</lastBuildDate>
 		
 		<atom:link href="/tags/health/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>20201212log</title>
+			<link>https://2222-42.github.io/2020/12/12/20201212log/</link>
+			<pubDate>Sat, 12 Dec 2020 10:39:42 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/12/20201212log/</guid>
+			<description>&lt;p&gt;体調が崩れていることに完全に自覚した。&lt;/p&gt;</description>
+		</item>
+      	
 		<item>
 			<title>20201211log</title>
 			<link>https://2222-42.github.io/2020/12/11/20201211log/</link>
@@ -84,14 +92,6 @@
 			<pubDate>Thu, 03 Dec 2020 13:03:35 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/03/20201203log/</guid>
 			<description>&lt;p&gt;特になし。疲れている。今日は朝勉強もできなかった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201202log</title>
-			<link>https://2222-42.github.io/2020/12/02/20201202log/</link>
-			<pubDate>Wed, 02 Dec 2020 12:07:44 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/02/20201202log/</guid>
-			<description>&lt;p&gt;今日は皮膚科に行ったり&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
