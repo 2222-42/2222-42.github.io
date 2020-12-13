@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>20201213log</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="20201213log" />
+<meta property="og:description" content="だいぶ体調が復活してきた。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2020/12/13/20201213log/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2020-12-13T05:19:18+00:00" />
+<meta property="article:modified_time" content="2020-12-13T05:19:18+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="20201213log"/>
+<meta name="twitter:description" content="だいぶ体調が復活してきた。"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>20201213log</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Dec 13, 2020
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>だいぶ体調が復活してきた。</p>
+<h1 id="diary">diary</h1>
+<h2 id="health">health</h2>
+<p>体調がよくなってきた。</p>
+<h2 id="febc">febc</h2>
+<p>今日のFEBCは神水教会だった。
+熊本にいたころ何度か訪れたことがある。</p>
+<p>また、日本福音ルーテルの式文は馴染んでいるものであり、各種のフレーズや音程もすぐに口から出てきた。</p>
+<p>これは自分の悪いところなのであるが、礼拝の内容をすぐに忘れてしまう。
+何度も似たような話を聞いているからでもあるが、
+なんというか身が入らない。
+やはり、直接礼拝堂に赴かないと、私は集中できないのだろうか。</p>
+<h3 id="pray">pray</h3>
+<p>主よ、あなたの声に耳を傾けさせてください。</p>
+<p>弱っているときも、しっかりしているときも、あなたが共におられることを私の心に思い出させてください。</p>
+<h2 id="food">food</h2>
+<p>ご飯をそこそこ多く食べることができるようになった。
+運動を二日に一回しっかりとするようになったおかげでもあろう。
+また、無理な温冷シャワーを避け、仕事をする日の朝だけにしたことも実は効果があるのかもしれない。</p>
+<p>また、食事の好みにおいては、発酵食品が最近は好んで食べるようになった。
+特に、納豆については、毎朝食べるようになった。
+一種類だけの発酵食品をとるのはあまりよくないので、べったら漬けも今日は買った。</p>
+<h1 id="今日の勉強">今日の勉強</h1>
+<h2 id="rust">rust</h2>
+<p><em>TRPL</em> pp.267-278</p>
+<p>リファクタリングの方針</p>
+<ol>
+<li>機能を小分けにして、各関数が1つの仕事のみに責任を持つようにするのが最善</li>
+<li>設定用変数を1つの構造に押し込め、目的を明瞭化するのが最善</li>
+<li>エラーメッセージで間違った情報をユーザーに与えないようにする</li>
+<li>エラー処理のコードを全て一か所にまとめ、将来エラー処理ロジックが変更になった時にメンテナンスで一か所のコードのみを考慮すればよいようにするのが最善</li>
+</ol>
+<h3 id="機能のこわけ">機能のこわけ</h3>
+<p>バイナリプログラムの個別の責任を分割するためのガイドライン</p>
+<ul>
+<li>プログラムをmain.rsとlib.rsに分け、ロジックをlib.rsに移動する</li>
+<li>解析ロジックが小規模な限り、main.rsにおいてもよい</li>
+<li>解析ロジックが複雑化の様相を呈し始めたら、mainから抽出してlibに移動する</li>
+</ul>
+<p>mainに残るのは呼び出し、他の設定、エラー処理であり、読めばその正当性を評価できるだけの小規模なもの。libにはロジック全てをおき、テスト可能にする。</p>
+<p>引数関数を抽出し、コマンドライン引数と変数がどう対応するかを決定する責任をmainから剥がす。</p>
+<h3 id="設定用変数を構造体に押し込める">設定用変数を構造体に押し込める</h3>
+<p>正しい抽象化がまだできていない兆候:</p>
+<ul>
+<li>タプルを返して、即座にタプルを分解し、再度個別の値にしている。</li>
+<li>2つの値の関数がタプルにまとめていること以外、データの構造に、その意味を載せていない。</li>
+</ul>
+<p>そこで、構造体に置き換え、構造体とフィールドそれぞれに意味のある名前をつける
+(Configという名前、それぞれのフィールド名、それで、フィールド名同士の関連を明らかにし、また、構造体名でプログラムの振る舞いを設定することという目的を明確に伝えられる。)</p>
+<p>文字列スライスではなく、Cloneを使って、Stringをフィールドに持たせる。
+Cloneは価値ある代償である。</p>
+<ul>
+<li>非効率さ
+<ul>
+<li>総コピーが生成されるので、文字列データへの参照を保持するよりも時間とメモリを消費する
+<ul>
+<li>RustaceanはCloneを避けるが、サイズや回数によっては、とりあえず使ってもよい
+<ul>
+<li>もっとRustの経験を積んでから考えろ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>単純さ
+<ul>
+<li>参照のライフタイムを管理する必要がない。</li>
+</ul>
+</li>
+</ul>
+<h4 id="構造体のimplに変える">構造体のimplに変える</h4>
+<p>parse関数の目的が、Configインスタンスを生成することであるから、Config構造体にimplブロックで紐づくnew関数に移すことで、1つのリファクタリングができる。</p>
+<h3 id="エラー処理の修正">エラー処理の修正</h3>
+<p>添え字アクセスする前に、スライスが十分長いことを実証するチェックを追加し、それをResult型で処理する。</p>
+<ul>
+<li>チェックに失敗したら、panic!マクロを呼び出す案。
+<ul>
+<li>panic!の呼び出しはユーザーに与えたくない追加の情報を含んでしまう。</li>
+<li>panic!の呼び出しは仕様の問題よりもプログラム上の問題により適している</li>
+</ul>
+</li>
+<li>Result型を返すようにする
+<ul>
+<li>panic!を呼び出す代わりにErr値を返し、
+<ul>
+<li>ユーザー向けのより実用的なエラーに変換することができる</li>
+</ul>
+</li>
+<li>Config戻り値をOkに包んで返す</li>
+</ul>
+</li>
+<li>Result型を処理する
+<ul>
+<li><code>unwrap_or_else(|err| {...})</code></li>
+<li>Okならunwrapして</li>
+<li>Errならクロージャー内でコードを呼び出す
+<ul>
+<li>クロージャーは自ら定義して引数として渡す匿名関数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>process::exit(n)</code>:
+<ul>
+<li>プログラムを即座に停止し、渡された数字を終了コードとして返す</li>
+<li>0以外の終了コードは、我々のプログラムを呼び出したプロセスにプログラムがエラー状態で終了したことを知らせる慣習</li>
+</ul>
+</li>
+</ul>
+<h3 id="プログラムのロジックの抽出">プログラムのロジックの抽出</h3>
+<p>セットアップやエラー処理に関わらない部分の全てを保持する<code>run</code>関数へ抽出</p>
+<p><code>Result&lt;(), Box&lt;Error&gt;&gt;</code>を返すようにする</p>
+<ul>
+<li><code>Ok(())</code>でユニット型の値をOk値に包む
+<ul>
+<li>runを副作用のためだけに呼び出していると示唆する慣習でもある</li>
+</ul>
+</li>
+<li><code>Box&lt;Error&gt;</code>はトレイトオブジェクト
+<ul>
+<li>関数がErrorトレイトを実装する型を意味し</li>
+<li>具体的に型を指定しなくてもよい
+<ul>
+<li>異なる型のエラー値を返す柔軟性を得る</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>expectではなく?演算子を使うようにする
+<ul>
+<li>?演算子は呼び出し元が処理できるように、失敗時に、現在の関数からエラーを返す。</li>
+</ul>
+</li>
+</ul>
+<p>返されるResultの処理で、エラーを検知することのみに興味があるのであれば、<code>unwrap_or_else</code>ではなく<code>if let</code>でErr値を返したかどうかを確認する。</p>
+<h2 id="isabelle">isabelle</h2>
+<p><em>Concrete Semantics</em> pp.175-178, pp.179-180</p>
+<p>最小のfixpointをcomu0ptueする方法と、その決定可能性の補題。</p>
+<p><code>rvars</code>の導入</p>
+<p>Whileの場合のLの実行可能な定義の確認。</p>
+<p>Forward/Backward</p>
+<ul>
+<li>Forward Analysis: プログラムの<strong>最初から最後</strong>へと情報を伝播する</li>
+<li>Backward Analysis: プログラムの<strong>最後から最初</strong>へと情報を伝播する
+<ul>
+<li>この前後の捉え方の違いがわからない。</li>
+</ul>
+</li>
+</ul>
+<p>May/Must</p>
+<ul>
+<li>May Analysis: <strong>ある</strong>pathにおいて、与えられた性質が真かどうかチェックする</li>
+<li>Must Analysis: <strong>全ての</strong>pathにおいて、与えられた性質が真かどうかチェックする</li>
+</ul>
+<p>分類</p>
+<ul>
+<li>Definite Initialization: Forward Must
+<ul>
+<li>変数はそれが使用される<strong>前に</strong>、<strong>全ての</strong>pathにおいて、assignされていなければならない</li>
+</ul>
+</li>
+<li>Constant Propagation: Forward Must
+<ul>
+<li>変数はそれが使用される<strong>前に</strong>、<strong>全ての</strong>pathにおいて、何らかのconstantを持っていなければならない</li>
+</ul>
+</li>
+<li>Live Variable Analysis: Backward May
+<ul>
+<li><strong>ある</strong>pathにおいて、ある変数があり、それが書き換えられる前に、使われているならば、変数はliveである</li>
+</ul>
+</li>
+</ul>
+<p>11章のDenotational Semanticsに突入。</p>
+<p>Denotational Semanticsは、あるsyntacitc constantに対して、その合成されたものの意味は、部分の意味を引数とする原始再帰的な関数として定義される</p>
+<ul>
+<li>avalやbvalはdenotational semanticsであるが、</li>
+<li>Big_Stepはそうではない
+<ul>
+<li><code>WHILE b DO c</code>は、WhileTrueにおいて、<code>b</code>と<code>c</code>の意味だけではなく、<code>WHILE b DO c</code>の意味に機能的に依存する</li>
+</ul>
+</li>
+</ul>
+<p>Denotational Semanticsのモチヴェーション:</p>
+<ol>
+<li>証明は、
+<ol>
+<li>等式推論の単純で有効な証明原理と</li>
+<li>syntax上の構造に関する機能法とによって、</li>
+</ol>
+</li>
+<li>実行される</li>
+</ol>
+<h2 id="1on1">1on1</h2>
+<p>『ヤフーの1on1』を読み終えた。</p>
+<p>後半は、ヤフーはこういう会社で、だから1on1を重視して、こう活用している、と結構会社の文化紹介を強く感じる内容であった。
+が、全体のまとめという側面もあり、文化紹介であっても、その文化と関連しているから1on1を導入して、うまく活用できている、ということが察せられた。</p>
+<p>この本を読み直し、まとめることは非常に効果があると思う。
+というのも、良い失敗経験がこの本には書かれており、どうすれば良い1on1ができるのかについてよく記述しているからである。</p>
+<p>しかしながら、少し興味が1on1から逸れてきていること、
+この本を読んで、会社における1on1をよりよくするための制度がまだ足りていない、ということを自覚したこと、
+これら2点から、腰を据えて、まとめるのはまだ先でいいかな、と思うようになった。</p>
+<p>あと、Team Geekのまとめの発表がまだ社内で終わっていないし、ネタを作成するのにまだ足りない感じがする。</p>
+<h3 id="team-geek">team geek</h3>
+<p>このまとめについては、スライド形式にして、YouTube Liveとかで発表するとちょうどいいかもしれない。</p>
+<h3 id="next-to-read">next to read</h3>
+<p>次に読むのはデボラ・ザック『SINGLE TASK 一点集中術』にしよう。</p>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/health/">health</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/church/">church</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/isabelle/">isabelle</a>&nbsp;
+          
+            <a href="https://2222-42.github.io//tags/1on1/">1on1</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2020
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

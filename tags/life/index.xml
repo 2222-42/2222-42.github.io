@@ -14,6 +14,14 @@
 		<atom:link href="/tags/life/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201213log</title>
+			<link>https://2222-42.github.io/2020/12/13/20201213log/</link>
+			<pubDate>Sun, 13 Dec 2020 05:19:18 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/13/20201213log/</guid>
+			<description>&lt;p&gt;だいぶ体調が復活してきた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201212log</title>
 			<link>https://2222-42.github.io/2020/12/12/20201212log/</link>
 			<pubDate>Sat, 12 Dec 2020 10:39:42 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Fri, 04 Dec 2020 11:45:51 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/04/20201204log/</guid>
 			<description>&lt;p&gt;健康診断。メモリ増設。アイデンティティは神の捉え方との反復。TRPL10章を終えた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201203log</title>
-			<link>https://2222-42.github.io/2020/12/03/20201203log/</link>
-			<pubDate>Thu, 03 Dec 2020 13:03:35 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/03/20201203log/</guid>
-			<description>&lt;p&gt;特になし。疲れている。今日は朝勉強もできなかった。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
