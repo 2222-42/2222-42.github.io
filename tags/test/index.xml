@@ -14,6 +14,14 @@
 		<atom:link href="/tags/test/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201214log</title>
+			<link>https://2222-42.github.io/2020/12/14/20201214log/</link>
+			<pubDate>Mon, 14 Dec 2020 11:56:34 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/14/20201214log/</guid>
+			<description>&lt;p&gt;余裕がない時こそ、余裕を設けることの重要さに気づくタイミングがあった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201213log</title>
 			<link>https://2222-42.github.io/2020/12/13/20201213log/</link>
 			<pubDate>Sun, 13 Dec 2020 05:19:18 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Sat, 05 Dec 2020 11:55:48 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/05/20201205log/</guid>
 			<description>&lt;p&gt;寝坊したが、すっきりした一日を送れた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201204log</title>
-			<link>https://2222-42.github.io/2020/12/04/20201204log/</link>
-			<pubDate>Fri, 04 Dec 2020 11:45:51 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/04/20201204log/</guid>
-			<description>&lt;p&gt;健康診断。メモリ増設。アイデンティティは神の捉え方との反復。TRPL10章を終えた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
