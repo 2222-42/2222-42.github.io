@@ -14,6 +14,22 @@
 		<atom:link href="/tags/hanlon/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201220log</title>
+			<link>https://2222-42.github.io/2020/12/20/20201220log/</link>
+			<pubDate>Sun, 20 Dec 2020 12:15:19 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/20/20201220log/</guid>
+			<description>&lt;p&gt;ここ数日寝込んでいた。寝込んでいた理由は以下の通りである。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201215log</title>
+			<link>https://2222-42.github.io/2020/12/15/20201215log/</link>
+			<pubDate>Tue, 15 Dec 2020 10:10:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/15/20201215log/</guid>
+			<description>&lt;p&gt;SSDが認識されなかったり、ブレーカーから異音がしたり、会社のWi-Fiの調子が悪くなったり、インフラに振り回される一日だった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201214log</title>
 			<link>https://2222-42.github.io/2020/12/14/20201214log/</link>
 			<pubDate>Mon, 14 Dec 2020 11:56:34 +0000</pubDate>
@@ -75,23 +91,6 @@
 			<pubDate>Mon, 07 Dec 2020 09:33:47 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/07/20201207log/</guid>
 			<description>&lt;p&gt;寝坊。6時半起床。人生について日中は考えない日だった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201206log</title>
-			<link>https://2222-42.github.io/2020/12/06/20201206log/</link>
-			<pubDate>Sun, 06 Dec 2020 00:43:39 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/06/20201206log/</guid>
-			<description>&lt;p&gt;日曜日、午前中は、Rustの勉強と、日曜礼拝、そして、自分のミッションを見つめ直す時間を設けた。&lt;/p&gt;
-&lt;p&gt;午後はIsabelleを少ししたら、会社からの連絡があったので、諸々の準備をし、出社し、労働。日課が崩れた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201205log</title>
-			<link>https://2222-42.github.io/2020/12/05/20201205log/</link>
-			<pubDate>Sat, 05 Dec 2020 11:55:48 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/05/20201205log/</guid>
-			<description>&lt;p&gt;寝坊したが、すっきりした一日を送れた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
