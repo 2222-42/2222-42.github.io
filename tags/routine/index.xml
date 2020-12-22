@@ -14,6 +14,14 @@
 		<atom:link href="/tags/routine/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201222log</title>
+			<link>https://2222-42.github.io/2020/12/22/20201222log/</link>
+			<pubDate>Tue, 22 Dec 2020 12:22:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/22/20201222log/</guid>
+			<description>&lt;p&gt;今日はある程度まとまった生活を送ることができた。コミュニケーションの重要性について改めて感じる。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201221log</title>
 			<link>https://2222-42.github.io/2020/12/21/20201221log/</link>
 			<pubDate>Mon, 21 Dec 2020 13:05:54 +0000</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 09 Dec 2020 07:32:14 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/09/20201209log/</guid>
 			<description>&lt;p&gt;昨晩から体調がおかしくなって、遊び呆ける。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201208log</title>
-			<link>https://2222-42.github.io/2020/12/08/20201208log/</link>
-			<pubDate>Tue, 08 Dec 2020 07:30:29 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/08/20201208log/</guid>
-			<description>&lt;p&gt;集中できない、テンションが上がらない、うまく心を操れない。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
