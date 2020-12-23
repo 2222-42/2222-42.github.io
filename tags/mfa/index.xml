@@ -14,6 +14,23 @@
 		<atom:link href="/tags/mfa/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20201223log</title>
+			<link>https://2222-42.github.io/2020/12/23/20201223log/</link>
+			<pubDate>Wed, 23 Dec 2020 10:17:04 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/23/20201223log/</guid>
+			<description>&lt;p&gt;今日は健康に気を遣う日だった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>log-of-studying-rust-1</title>
+			<link>https://2222-42.github.io/2020/12/23/log-of-studying-rust-1/</link>
+			<pubDate>Wed, 23 Dec 2020 10:15:37 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/23/log-of-studying-rust-1/</guid>
+			<description>&lt;p&gt;15日から18日の分までのrustの勉強記録&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TRPL&lt;/em&gt; pp.286-303&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201222log</title>
 			<link>https://2222-42.github.io/2020/12/22/20201222log/</link>
 			<pubDate>Tue, 22 Dec 2020 12:22:56 +0000</pubDate>
@@ -75,22 +92,6 @@
 			<pubDate>Fri, 11 Dec 2020 11:59:19 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/11/20201211log/</guid>
 			<description>&lt;p&gt;昨日の体調不良からだいぶ回復した。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201210log</title>
-			<link>https://2222-42.github.io/2020/12/10/20201210log/</link>
-			<pubDate>Thu, 10 Dec 2020 10:55:01 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/10/20201210log/</guid>
-			<description>&lt;p&gt;体調が悪くて、寝込んでいた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201209log</title>
-			<link>https://2222-42.github.io/2020/12/09/20201209log/</link>
-			<pubDate>Wed, 09 Dec 2020 07:32:14 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/09/20201209log/</guid>
-			<description>&lt;p&gt;昨晩から体調がおかしくなって、遊び呆ける。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

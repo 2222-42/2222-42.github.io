@@ -1,0 +1,98 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>pipe on Que Lock Si Jeus Nee</title>
+		<link>https://2222-42.github.io/tags/pipe/</link>
+		<description>Recent content in pipe </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>jp</language>
+		
+		<managingEditor>Page(/tags/pipe) (2222-42)</managingEditor>
+    	
+  		<lastBuildDate>Wed, 23 Dec 2020 10:17:04 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/pipe/" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>20201223log</title>
+			<link>https://2222-42.github.io/2020/12/23/20201223log/</link>
+			<pubDate>Wed, 23 Dec 2020 10:17:04 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/23/20201223log/</guid>
+			<description>&lt;p&gt;今日は健康に気を遣う日だった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>log-of-studying-rust-1</title>
+			<link>https://2222-42.github.io/2020/12/23/log-of-studying-rust-1/</link>
+			<pubDate>Wed, 23 Dec 2020 10:15:37 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/23/log-of-studying-rust-1/</guid>
+			<description>&lt;p&gt;15日から18日の分までのrustの勉強記録&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TRPL&lt;/em&gt; pp.286-303&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201222log</title>
+			<link>https://2222-42.github.io/2020/12/22/20201222log/</link>
+			<pubDate>Tue, 22 Dec 2020 12:22:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/22/20201222log/</guid>
+			<description>&lt;p&gt;今日はある程度まとまった生活を送ることができた。コミュニケーションの重要性について改めて感じる。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201221log</title>
+			<link>https://2222-42.github.io/2020/12/21/20201221log/</link>
+			<pubDate>Mon, 21 Dec 2020 13:05:54 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/21/20201221log/</guid>
+			<description>&lt;p&gt;いいかげん、腹をくくったので、明日病院へ予約する。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201220log</title>
+			<link>https://2222-42.github.io/2020/12/20/20201220log/</link>
+			<pubDate>Sun, 20 Dec 2020 12:15:19 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/20/20201220log/</guid>
+			<description>&lt;p&gt;ここ数日寝込んでいた。寝込んでいた理由は以下の通りである。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201215log</title>
+			<link>https://2222-42.github.io/2020/12/15/20201215log/</link>
+			<pubDate>Tue, 15 Dec 2020 10:10:56 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/15/20201215log/</guid>
+			<description>&lt;p&gt;SSDが認識されなかったり、ブレーカーから異音がしたり、会社のWi-Fiの調子が悪くなったり、インフラに振り回される一日だった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201214log</title>
+			<link>https://2222-42.github.io/2020/12/14/20201214log/</link>
+			<pubDate>Mon, 14 Dec 2020 11:56:34 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/14/20201214log/</guid>
+			<description>&lt;p&gt;余裕がない時こそ、余裕を設けることの重要さに気づくタイミングがあった。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201213log</title>
+			<link>https://2222-42.github.io/2020/12/13/20201213log/</link>
+			<pubDate>Sun, 13 Dec 2020 05:19:18 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/13/20201213log/</guid>
+			<description>&lt;p&gt;だいぶ体調が復活してきた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201212log</title>
+			<link>https://2222-42.github.io/2020/12/12/20201212log/</link>
+			<pubDate>Sat, 12 Dec 2020 10:39:42 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/12/20201212log/</guid>
+			<description>&lt;p&gt;体調が崩れていることに完全に自覚した。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>20201211log</title>
+			<link>https://2222-42.github.io/2020/12/11/20201211log/</link>
+			<pubDate>Fri, 11 Dec 2020 11:59:19 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/11/20201211log/</guid>
+			<description>&lt;p&gt;昨日の体調不良からだいぶ回復した。&lt;/p&gt;</description>
+		</item>
+      	
+	</channel>
+</rss>
