@@ -14,6 +14,14 @@
 		<atom:link href="/tags/game/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>How to Exchange Memory 1(First, to Contact)</title>
+			<link>https://2222-42.github.io/2020/12/24/how-to-exchange-memory-1/</link>
+			<pubDate>Thu, 24 Dec 2020 11:38:13 +0000</pubDate>
+			<guid>https://2222-42.github.io/2020/12/24/how-to-exchange-memory-1/</guid>
+			<description>&lt;p&gt;CORSAIRのメモリの交換対応依頼をしたので、後続の人のために記録しておく。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20201223log</title>
 			<link>https://2222-42.github.io/2020/12/23/20201223log/</link>
 			<pubDate>Wed, 23 Dec 2020 10:17:04 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Sat, 12 Dec 2020 10:39:42 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/12/20201212log/</guid>
 			<description>&lt;p&gt;体調が崩れていることに完全に自覚した。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201211log</title>
-			<link>https://2222-42.github.io/2020/12/11/20201211log/</link>
-			<pubDate>Fri, 11 Dec 2020 11:59:19 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/11/20201211log/</guid>
-			<description>&lt;p&gt;昨日の体調不良からだいぶ回復した。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
