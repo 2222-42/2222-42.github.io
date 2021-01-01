@@ -14,6 +14,14 @@
 		<atom:link href="/tags/study/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>What I Learned in 2020</title>
+			<link>https://2222-42.github.io/2021/01/01/what-i-learned-in-2020/</link>
+			<pubDate>Fri, 01 Jan 2021 01:30:03 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/01/01/what-i-learned-in-2020/</guid>
+			<description>&lt;p&gt;2020年に学んだことリスト&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>How to Exchange Memory 1(First, to Contact)</title>
 			<link>https://2222-42.github.io/2020/12/24/how-to-exchange-memory-1/</link>
 			<pubDate>Thu, 24 Dec 2020 11:38:13 +0000</pubDate>
@@ -84,14 +92,6 @@
 			<pubDate>Sun, 13 Dec 2020 05:19:18 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/13/20201213log/</guid>
 			<description>&lt;p&gt;だいぶ体調が復活してきた。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201212log</title>
-			<link>https://2222-42.github.io/2020/12/12/20201212log/</link>
-			<pubDate>Sat, 12 Dec 2020 10:39:42 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/12/20201212log/</guid>
-			<description>&lt;p&gt;体調が崩れていることに完全に自覚した。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
