@@ -14,6 +14,15 @@
 		<atom:link href="/tags/vision/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>20210102log</title>
+			<link>https://2222-42.github.io/2021/01/02/20210102log/</link>
+			<pubDate>Sat, 02 Jan 2021 09:51:42 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/01/02/20210102log/</guid>
+			<description>&lt;p&gt;新年であれど変わらず、けれど、季節のものは食べるようにした。&lt;/p&gt;
+&lt;p&gt;『SINGLE TASK　一点集中術』を読んだので、それについてまとめた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>What I Learned in 2020</title>
 			<link>https://2222-42.github.io/2021/01/01/what-i-learned-in-2020/</link>
 			<pubDate>Fri, 01 Jan 2021 01:30:03 +0000</pubDate>
@@ -84,14 +93,6 @@
 			<pubDate>Mon, 14 Dec 2020 11:56:34 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/14/20201214log/</guid>
 			<description>&lt;p&gt;余裕がない時こそ、余裕を設けることの重要さに気づくタイミングがあった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201213log</title>
-			<link>https://2222-42.github.io/2020/12/13/20201213log/</link>
-			<pubDate>Sun, 13 Dec 2020 05:19:18 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/13/20201213log/</guid>
-			<description>&lt;p&gt;だいぶ体調が復活してきた。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
