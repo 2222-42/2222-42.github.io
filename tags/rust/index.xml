@@ -14,6 +14,15 @@
 		<atom:link href="/tags/rust/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>What I Want to Do in 2021</title>
+			<link>https://2222-42.github.io/2021/01/03/what-i-want-to-do-in-2021/</link>
+			<pubDate>Sun, 03 Jan 2021 10:05:15 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/01/03/what-i-want-to-do-in-2021/</guid>
+			<description>&lt;p&gt;今年の目標を立てる。
+資格、プログラミング、形式手法、文化、健康、それらに関して目標を立てた。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>20210102log</title>
 			<link>https://2222-42.github.io/2021/01/02/20210102log/</link>
 			<pubDate>Sat, 02 Jan 2021 09:51:42 +0000</pubDate>
@@ -85,14 +94,6 @@
 			<pubDate>Tue, 15 Dec 2020 10:10:56 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/15/20201215log/</guid>
 			<description>&lt;p&gt;SSDが認識されなかったり、ブレーカーから異音がしたり、会社のWi-Fiの調子が悪くなったり、インフラに振り回される一日だった。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201214log</title>
-			<link>https://2222-42.github.io/2020/12/14/20201214log/</link>
-			<pubDate>Mon, 14 Dec 2020 11:56:34 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/14/20201214log/</guid>
-			<description>&lt;p&gt;余裕がない時こそ、余裕を設けることの重要さに気づくタイミングがあった。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
