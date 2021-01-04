@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>Log of Studying Rust 2</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="Log of Studying Rust 2" />
+<meta property="og:description" content="2020年12月22日から2020年12月25日
+のRustの勉強記録
+TRPL pp. 303-324" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2021/01/04/log-of-studying-rust-2/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2021-01-04T08:34:53+00:00" />
+<meta property="article:modified_time" content="2021-01-04T08:34:53+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="Log of Studying Rust 2"/>
+<meta name="twitter:description" content="2020年12月22日から2020年12月25日
+のRustの勉強記録
+TRPL pp. 303-324"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>Log of Studying Rust 2</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Jan 4, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>2020年12月22日から2020年12月25日
+のRustの勉強記録</p>
+<p><em>TRPL</em> pp. 303-324</p>
+<h3 id="1313">13.1.3</h3>
+<p>クロージャやクロージャの呼び出し結果の値を保持する構造体を作る</p>
+<ol>
+<li>結果の値が必要な場合
+<ol>
+<li>その構造体に格納されている値があるかを確認
+<ol>
+<li>あったら、それを使う。(クロージャを実行しない)</li>
+<li>なければ、クロージャを実行し、その結果の値をキャッシュする</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>これはメモ化、遅延評価と呼ばれるパターンで、残りのコードは結果を保存し再利用する責任を追わずに済む。</p>
+<p>クロージャを保持する構造体を作成したい</p>
+<ul>
+<li>クロージャの型を指定する必要がある。
+<ul>
+<li>各クロージャインスタンスには独自の匿名の型がある。</li>
+</ul>
+</li>
+<li>クロージャを使用する構造体、enum、関数引数を定義するには、ジェネリックスとトレイト境界を使用する。
+<ul>
+<li><code>Fn</code> トレイト境界に型を追加して、このトレイト境界に合致するクロージャが持つべき引数と戻り値の型を示す</li>
+</ul>
+</li>
+<li>クロージャは以下のいずれかのトレイトを実装する。(なお、関数は3つのトレイト全部を実装する。環境から値をキャプチャする必要がなければ関数を使用できる)
+<ul>
+<li><code>Fn</code></li>
+<li><code>FnMut</code></li>
+<li><code>FnOnce</code></li>
+</ul>
+</li>
+<li>クロージャとその結果を保存する構造体をimplする
+<ul>
+<li>フィールドは非公開にする
+<ul>
+<li>なぜなら、呼び出し元は変更できないように、つまり、Cacherに構造体のフィールドの値を管理してほしいから。</li>
+</ul>
+</li>
+<li>評価結果が欲しければ、<code>value</code>メソッドを呼ぶようにする
+<ul>
+<li><code>Some</code>ならば、その結果を</li>
+<li><code>None</code>ならば、クロージャを呼び出し、その結果を構造体に保存し、その結果を返す</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>この構造体のメリット:
+<ul>
+<li>重い計算を最大1回で済ませられるようにする</li>
+<li>この保証をするのに必要なロジックの面倒は構造体が見る
+<ul>
+<li>呼び出し元はビジネスロジックに集中できる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>クロージャを変数に直接保存する代わりに、クロージャを保持する構造体の新規インスタンスを保存する。</p>
+<h3 id="1314">13.1.4</h3>
+<p>Cacher実装で課題になること: 他の文脈での再利用性</p>
+<ol>
+<li>常に<code>value</code>メソッドの引数<code>arg</code>に対して、同じ値を想定しており、更新できない。
+<ol>
+<li>-&gt; ハッシュマップを保持するようにしよう</li>
+</ol>
+</li>
+<li>引数の型、返り値の型が固定で、柔軟ではない
+<ol>
+<li>-&gt; ジェネリックな引数を導入するようにしよう</li>
+</ol>
+</li>
+</ol>
+<h3 id="1315">13.1.5</h3>
+<p>クロージャは:</p>
+<ul>
+<li>環境をキャプチャし、</li>
+<li>自分が定義されたスコープにアクセスできる
+<ul>
+<li>メモリを使用して、クロージャ本体で使用できるように、その値を保存する
+<ul>
+<li>これはオーバーヘッド</li>
+<li>関数は環境をキャプチャすることが赦されていないので、オーバーヘッドを招かない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>クロージャの環境から値をキャプチャする3つの方法</p>
+<ul>
+<li><code>Fn</code>
+<ul>
+<li>不変借用</li>
+</ul>
+</li>
+<li><code>FnMut</code>
+<ul>
+<li>可変借用</li>
+</ul>
+</li>
+<li><code>FnOnce</code>
+<ul>
+<li>所有権を奪い、自分にムーブする
+<ul>
+<li>2回以上奪えないから<code>Once</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>所有権を奪うことをクロージャーに強制したいなら、引数リストの前に<code>move</code>キーワードを付ける</p>
+<p><code>Fn</code>トレイトのどれかを指定するほとんどの場合のプラクティス:</p>
+<ol>
+<li><code>Fn</code>から始める</li>
+<li>コンパイラが<code>FnMut</code>や<code>FnOnce</code>が必要な場合は教えてくれる</li>
+</ol>
+<p>環境をキャプチャできるクロージャが関数の引数として有用な場面はイテレータ</p>
+<h2 id="132">13.2</h2>
+<p>イテレータパターンにより、一連の要素に順番に何らかの作業を行うことができる。</p>
+<p>イテレータ:</p>
+<ul>
+<li>各要素を繰り返し、シーケンスが終わったことを決定するロジックの責任を負う。
+<ul>
+<li>イテレータが存在しない言語だと、変数を添え字0から始め、添え字アクセスし、総要素数に到達するまでループするよう、その変数の値をインクリメントする、というロジックを書く必要がある。</li>
+</ul>
+</li>
+<li>添え字を使えるデータ構造以外でも同じロジックを使える</li>
+</ul>
+<p>イテレータの生成とその使用は別個であるが、<code>for</code>でまとめてもよい。</p>
+<h3 id="1321">13.2.1</h3>
+<p><code>Iterator</code>トレイトは以下のようなものであり、1つのメソッドのみを定義することを実装者に要求する。それは<code>next</code>。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Iterator {
+    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Item</span>
+    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self) -&gt; Option(Self::Item)
+}
+</code></pre></div><p><code>Item</code>型がイテレータから帰ってくる型になる。これを関連型と言う。</p>
+<p>なお、<code>next</code>は直接呼ぶことも可能。</p>
+<p><code>next</code>:</p>
+<ul>
+<li>シーケンスのどこにいるかを追いかけるために、イテレータを消費する、各呼び出しごとに、イテレータが使用している内部状態が変わる
+<ul>
+<li>イテレータを可変にする必要がある
+<ul>
+<li><code>for</code>ループでは、ループが<code>iter</code>の所有権を奪い、陰で可変にしている。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>next</code>で得られる値は不変な参照</li>
+</ul>
+<p><code>iter</code>:</p>
+<ul>
+<li><code>into_iter</code>では、
+<ul>
+<li>元の所有権を奪い、所有された値を返す</li>
+<li>イテレータを生成できる</li>
+</ul>
+</li>
+<li><code>iter_mut</code>では、可変参照を繰り返せる</li>
+</ul>
+<h3 id="1322">13.2.2</h3>
+<p><code>Iterator</code>トレイトは、デフォルト実装のある多くの異なるメソッドがある。</p>
+<p><code>next</code>を呼び出すメソッドは、イテレータを消費することから、消費アダプタ(consuming adaptor)と呼ばれる</p>
+<p>例: <code>sum</code>メソッド:</p>
+<ul>
+<li>各要素を一時的な合計に追加し、繰り返しが完了したらその合計を返す</li>
+<li>イテレータの所有権を奪うので、その後に元のイテレータは使用できなくなる。</li>
+</ul>
+<h2 id="133">13.3</h2>
+<p>イテレータアダプタ</p>
+<ul>
+<li><code>Iterator</code>トレイトに定義された消費アダプタ以外のメソッド</li>
+<li>イテレータを別の種類のイテレータに変えさせてくれる
+<ul>
+<li>複数回呼び出しを連結して、複雑な動作を読みやすい形で行える</li>
+</ul>
+</li>
+<li>消費アダプタメソッドのどれかを呼び出さないと何もしない
+<ul>
+<li>なぜなら、イテレータは怠惰だから
+<ul>
+<li>消費アダプタが呼ばれ、消費されるまで、何もしない
+<ul>
+<li>それまでは、<code>map</code>で指定したクロージャを実行しない</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>イテレータアダプタの例: <code>map(クロージャ)</code></p>
+<ul>
+<li>クロージャをとるので、各要素に対して行いたいどんな処理でも指定できる</li>
+<li><code>Iterator</code>トレイトが提供する繰り返し動作を再利用しつつ、クロージャにより一部の動作をカスタマイズできる好例である。</li>
+</ul>
+<h3 id="1331">13.3.1</h3>
+<p><code>filter</code></p>
+<ul>
+<li>イテレータアダプタ</li>
+<li>イテレータの各要素を取り、論理値を返すクロージャを取る
+<ul>
+<li>クロージャが<code>true</code>を返すなら、
+<ul>
+<li>結果のイテレータにその値が含まれる</li>
+</ul>
+</li>
+<li>クロージャが<code>false</code>を返すなら、
+<ul>
+<li>結果のイテレータにその値が含まれない</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>クロージャを取るので、環境から変数をキャプチャうることができる。</li>
+</ul>
+<h3 id="1332">13.3.2</h3>
+<p>イテレータの作成。ベクタ、ハッシュマップなど、コレクション型からできる。</p>
+<p><code>Iterator</code>トレイトを自分で実装することでしたいことをなんでもするイテレータを作成できる。必要な定義の提供は<code>next</code>メソッドのみ。</p>
+<p>デモ:</p>
+<ul>
+<li>構造体を作る</li>
+<li>Iteratorトレイトを実装</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> Iterator <span style="color:#66d9ef">for</span> SomeStruct {
+    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Item</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">&#39;a</span>;
+    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">next</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self) -&gt; Option<span style="color:#f92672">&lt;</span>Self::Item<span style="color:#f92672">&gt;</span> {
+        ...
+    }
+}
+</code></pre></div><p>これで<code>next</code>メソッドも他のIteratorトレイトメソッドを使用することができるようになる。</p>
+<p>デモで使っている<code>zip</code>は、入力イテレータのどちらかがNoneを返したら、Noneを返す。</p>
+<h3 id="1341">13.4.1</h3>
+<p>やりたいこと: 非効率な<code>clone</code>呼び出しを除外したい</p>
+<p>疑問: なぜ<code>clone</code>を使っていたか？</p>
+<ul>
+<li>スライスを借用していたから</li>
+<li>Configインスタンスの所有権を返すため</li>
+</ul>
+<p>方法: イテレータでどうするか？</p>
+<ul>
+<li>引数としてイテレータの所有権を奪うように変更する
+<ul>
+<li>借用する添え字アクセス処理をやめ、</li>
+<li>イテレータからString値をConfigにムーブするようにする</li>
+</ul>
+</li>
+</ul>
+<h4 id="13411">13.4.1.1</h4>
+<p><code>env::args</code>:</p>
+<ul>
+<li>イテレータを返す</li>
+<li>それをそのまま渡すようにする</li>
+</ul>
+<p>libのシグニチャを更新する:</p>
+<ul>
+<li><code>env::Args</code>を型に取り</li>
+<li>かつ、所有権を奪い、繰り返しを行うので、可変<code>mut</code>にする</li>
+</ul>
+<p>本体を更新する:</p>
+<p>添え字アクセスをやめ、添え字の場合の長さのチェックをやめ、<code>next</code>メソッドを使い、<code>Some</code>/<code>None</code>でチェックする</p>
+<h4 id="1342">13.4.2</h4>
+<p>イテレータアダプタメソッドを使用すれば、可変な状態の良を最小化し、(イテレータアダプタとそのやっていることの間隔を掴めば、)コードが明瞭化され、ループの高難度の目的に集中できる。</p>
+<p>いろんなループを少しずつ弄んだり、新しいベクタを作ったりということをしなくて済む。</p>
+<p>イテレータアダプタメソッドを使うか、ループを使うかは、スタイルやパフォーマンスの問題がある。</p>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2021
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
