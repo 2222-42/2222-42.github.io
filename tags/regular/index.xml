@@ -14,6 +14,16 @@
 		<atom:link href="/tags/regular/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Log of Studying Rust 3</title>
+			<link>https://2222-42.github.io/2021/01/16/log-of-studying-rust-3/</link>
+			<pubDate>Sat, 16 Jan 2021 06:08:59 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/01/16/log-of-studying-rust-3/</guid>
+			<description>&lt;p&gt;2020年12月26日から2020年12月31日
+のRustの勉強記録&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TRPL&lt;/em&gt; pp. 324-347&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>Log of Studying Rust 2</title>
 			<link>https://2222-42.github.io/2021/01/04/log-of-studying-rust-2/</link>
 			<pubDate>Mon, 04 Jan 2021 08:34:53 +0000</pubDate>
@@ -88,14 +98,6 @@
 			<pubDate>Mon, 21 Dec 2020 13:05:54 +0000</pubDate>
 			<guid>https://2222-42.github.io/2020/12/21/20201221log/</guid>
 			<description>&lt;p&gt;いいかげん、腹をくくったので、明日病院へ予約する。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201220log</title>
-			<link>https://2222-42.github.io/2020/12/20/20201220log/</link>
-			<pubDate>Sun, 20 Dec 2020 12:15:19 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/20/20201220log/</guid>
-			<description>&lt;p&gt;ここ数日寝込んでいた。寝込んでいた理由は以下の通りである。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>
