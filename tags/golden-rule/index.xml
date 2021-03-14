@@ -14,6 +14,24 @@
 		<atom:link href="/tags/golden-rule/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>How to Exchange Memory 2</title>
+			<link>https://2222-42.github.io/2021/03/14/how-to-exchange-memory-2/</link>
+			<pubDate>Sun, 14 Mar 2021 08:11:43 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/03/14/how-to-exchange-memory-2/</guid>
+			<description>&lt;p&gt;だいぶ前にCORSAIRのメモリを交換したので、残りについて記録しておく。&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
+			<title>Log of Studying Rust 4</title>
+			<link>https://2222-42.github.io/2021/01/24/log-of-studying-rust-4/</link>
+			<pubDate>Sun, 24 Jan 2021 09:13:49 +0000</pubDate>
+			<guid>https://2222-42.github.io/2021/01/24/log-of-studying-rust-4/</guid>
+			<description>&lt;p&gt;2021年1月1日から2021年1月2日
+のRustの勉強記録&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TRPL&lt;/em&gt; pp. 348-360&lt;/p&gt;</description>
+		</item>
+      	
+		<item>
 			<title>Log of Studying Rust 3</title>
 			<link>https://2222-42.github.io/2021/01/16/log-of-studying-rust-3/</link>
 			<pubDate>Sat, 16 Jan 2021 06:08:59 +0000</pubDate>
@@ -82,22 +100,6 @@
 			<guid>https://2222-42.github.io/2020/12/23/log-of-studying-rust-1/</guid>
 			<description>&lt;p&gt;15日から18日の分までのrustの勉強記録&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;TRPL&lt;/em&gt; pp.286-303&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201222log</title>
-			<link>https://2222-42.github.io/2020/12/22/20201222log/</link>
-			<pubDate>Tue, 22 Dec 2020 12:22:56 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/22/20201222log/</guid>
-			<description>&lt;p&gt;今日はある程度まとまった生活を送ることができた。コミュニケーションの重要性について改めて感じる。&lt;/p&gt;</description>
-		</item>
-      	
-		<item>
-			<title>20201221log</title>
-			<link>https://2222-42.github.io/2020/12/21/20201221log/</link>
-			<pubDate>Mon, 21 Dec 2020 13:05:54 +0000</pubDate>
-			<guid>https://2222-42.github.io/2020/12/21/20201221log/</guid>
-			<description>&lt;p&gt;いいかげん、腹をくくったので、明日病院へ予約する。&lt;/p&gt;</description>
 		</item>
       	
 	</channel>

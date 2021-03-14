@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8" />
+<title>Log of Studying Rust 4</title>
+
+<meta name="description" content="2222-42&#39;s weblog" />
+
+
+  
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" href="https://2222-42.github.io/index.xml" title="Que Lock Si Jeus Nee">
+
+<link id="dark-mode-theme" rel="stylesheet" href="https://2222-42.github.io/css/dark.css" />
+<link rel="stylesheet" href="https://2222-42.github.io/fontawesome/css/all.min.css" />
+
+
+<script src="https://2222-42.github.io/js/bundle.js"></script>
+<script src="https://2222-42.github.io/js/instantpage.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.74.3" /><meta property="og:title" content="Log of Studying Rust 4" />
+<meta property="og:description" content="2021年1月1日から2021年1月2日
+のRustの勉強記録
+TRPL pp. 348-360" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2222-42.github.io/2021/01/24/log-of-studying-rust-4/" />
+<meta property="og:image" content="https://2222-42.github.io/myIcon.jpg"/>
+<meta property="article:published_time" content="2021-01-24T09:13:49+00:00" />
+<meta property="article:modified_time" content="2021-01-24T09:13:49+00:00" /><meta property="og:site_name" content="Que Lock Si Jeus Nee" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://2222-42.github.io/myIcon.jpg"/>
+
+<meta name="twitter:title" content="Log of Studying Rust 4"/>
+<meta name="twitter:description" content="2021年1月1日から2021年1月2日
+のRustの勉強記録
+TRPL pp. 348-360"/>
+
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://2222-42.github.io/" class="nav-logo">
+      <img src="https://2222-42.github.io/images/myIcon.jpg"
+           width="50"
+           height="50"
+           alt="Logo">
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li><a href="/about/" name="About"><i class="fas fa-user fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/tags/" name="Tags"><i class="fas fa-tag fa-lg"></i></a></li>
+        
+      
+        
+          <li><a href="/search/" name="Search"><i class="fas fa-search fa-lg"></i></a></li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>Log of Studying Rust 4</h1>
+          
+          
+            <span class="meta-post">
+  <i class="fa fa-calendar-alt"></i>&nbsp;Jan 24, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+    <p>2021年1月1日から2021年1月2日
+のRustの勉強記録</p>
+<p><em>TRPL</em> pp. 348-360</p>
+<h1 id="15">15</h1>
+<p>ポインタ</p>
+<ul>
+<li>メモリのアドレスを含む変数の一般的な概念
+<ul>
+<li>アドレスは何らかの他のデータを参照、または「指す」</li>
+</ul>
+</li>
+<li>Rustのもっともありふれた種類のポインタは参照
+<ul>
+<li>データを参照すること以外特別な能力は何もない
+<ul>
+<li>オーバーヘッドもない</li>
+</ul>
+</li>
+<li>参照はデータを借用するだけのポインタ</li>
+</ul>
+</li>
+</ul>
+<p>スマートポインタ</p>
+<ul>
+<li>ポインタのように振舞う</li>
+<li>追加のメタデータと能力がある
+<ul>
+<li>例えば、参照カウント方式のスマートポインタ
+<ul>
+<li><code>String</code>, <code>Vec&lt;T&gt;</code>もそれ</li>
+<li>所有者の数を追いかけることでデータに複数の所有者を持たせることができ、所有者がいなくなったらデータの片づけをしてくれる。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>スマートポインタは指しているデータを所有する構造体を使用して実装されるが、通常の構造体と区別する特徴は以下の2つのトレイトを実装していること</p>
+<ul>
+<li><code>Deref</code>
+<ul>
+<li>その構造体のインスタンスは参照のようにふるまう</li>
+</ul>
+</li>
+<li><code>Drop</code>
+<ul>
+<li>インスタンスがスコープを外れたときに走るコードをカスタマイズできる</li>
+</ul>
+</li>
+</ul>
+<p>スマートポインタはたくさんあり、ここでは標準ライブラリの最もありふれたスマートポインタを学ぶ</p>
+<ul>
+<li><code>Box&lt;T&gt;</code>
+<ul>
+<li>ヒープに値を確保する</li>
+</ul>
+</li>
+<li><code>Rc&lt;T&gt;</code>
+<ul>
+<li>複数の所有権を可能にする参照カウント型</li>
+</ul>
+</li>
+<li><code>Ref&lt;T&gt;</code>, <code>RefMut&lt;T&gt;</code>
+<ul>
+<li><code>RefCell&lt;T&gt;</code>を通してアクセスされ、コンパイル時ではなく、実行時に借用規則を強制する型</li>
+</ul>
+</li>
+</ul>
+<h2 id="151">15.1</h2>
+<p>ボックス<code>Box&lt;T&gt;</code>は、スタックではなく、ヒープにデータを格納することができて、スタックに残るのはヒープデータへのポインタ</p>
+<p>使用される場面:</p>
+<ul>
+<li>コンパイル時にはサイズを知ることができない型があり、正確なサイズを要求する文脈でその型の値を使用するとき</li>
+<li>多くのデータがあり、所有権を転送したいが、その際にデータがコピーされないようにしたいとき
+<ul>
+<li>少量のポインタのデータのみをスタック上でコピーするのでパフォーマンスの向上が見込まれる</li>
+</ul>
+</li>
+<li>値を所有する必要があり、特定の型ではなく特定のトレイトを実装する型であることのみ気にかけているとき
+<ul>
+<li>トレイトオブジェクトとして知られる。17章で学ぶ</li>
+</ul>
+</li>
+</ul>
+<h3 id="1511">15.1.1</h3>
+<p><code>Box&lt;T&gt;</code>の記法と、<code>Box&lt;T&gt;</code>内に格納されている値を読み書きする方法</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> b <span style="color:#f92672">=</span> Box::new(<span style="color:#ae81ff">5</span>)
+println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;b = {}&#34;</span>, b)
+</code></pre></div><ul>
+<li><code>Box::new</code>で生成する。
+<ul>
+<li>サンプルのヒープに単独の値を置くことはあまり有用ではない</li>
+</ul>
+</li>
+<li>データがスタックにあるのと同じような方法でボックスのデータにアクセスできる。</li>
+<li>ボックスがスコープを抜けたらメモリから解放される。スタックに格納されているボックスとヒープに格納されている指している先のデータ、両方が解放される。</li>
+</ul>
+<h3 id="1512">15.1.2</h3>
+<p>コンパイル時にコンパイラはある型がとる領域を知る必要がある。</p>
+<p>コンパイル時にサイズがわからない型の一つは再帰的な型である。なぜなら、再帰的な型は型の一部として同じ型の他の値を持つものであり、それは無限に続きうる。</p>
+<p>一方で、ボックスは既知のサイズである。なぜなら、再帰的な型の定義にボックスを挟むことで、最適な型を存在させることができる。</p>
+<p>コンスリストを再帰的な型の例として扱い、調べよう。</p>
+<h4 id="15121">15.1.2.1</h4>
+<p><code>cons</code>関数は</p>
+<ul>
+<li>要素<code>x</code>を新しいコンテナの始めに起き</li>
+<li>コンテナを続けて</li>
+<li>新しいコンテナのインスタンスを生成する</li>
+</ul>
+<p>コンスリストの要素</p>
+<ul>
+<li>現在の要素の値と</li>
+<li>次の要素
+<ul>
+<li>最後の要素は<code>Nil</code>
+<ul>
+<li><code>Nil</code>は、<code>null</code>や<code>nil</code>とは異なり、無効だったり存在しない値ではない。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Rustで要素のリストがある場合は、ほとんどの場合、<code>Vec&lt;T&gt;</code>を使用するのがよりよい選択になる</p>
+<p>コンスリストのenum定義</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">List</span> {
+    Cons(<span style="color:#66d9ef">i32</span>, List),
+    Nil,
+}
+</code></pre></div><p><code>List</code>が自身の別の値を直接保持しており、<code>Nil</code>は非再帰的な列挙子。</p>
+<p>e.g., <code>Cons(1, Cons(2, Cons(3, Nil)))</code>というのがあるが、これはコンパイルエラーが起きる。<code>&quot;recursion type 'List' has infinite size&quot;</code>とエラーメッセージで、自身の別の値を直接保持しているために、必要な領域が計算できないことである。</p>
+<p>非再帰的な型の値を格納するのに必要な領域を同コンパイラあ決定しているか。</p>
+<h4 id="15122">15.1.2.2</h4>
+<p>コンパイラは、各列挙子を見て、どの列挙子が最も領域を必要とするかを確認し、非再帰的だとそれで最大の領域が分かる。</p>
+<p>再帰的だと、その過程は無限に続き、メモリ量を計算できないのでエラーを返す。</p>
+<h4 id="15123">15.1.2.3</h4>
+<p>間接参照は、値を直接格納する代わりに、データ構造を変更して、値へのポインタを代わりに格納することで、値を間接的に格納すること。</p>
+<p>値へのポインタを代わりに格納することは、<code>Box&lt;T&gt;</code>でなす。ポインタは、指しているデータの量によって変わらず、必要とする領域が分かる。よって、ListのCons列挙子の中に置くのに使える。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">List</span> {
+    Cons(<span style="color:#66d9ef">i32</span>, Box<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span>),
+    Nil,
+}
+</code></pre></div><p><code>i32</code>と<code>Box&lt;List&gt;</code>は、それぞれ1つの<code>i32</code>のサイズとボックスのポインタデータを格納する領域で、<code>Nil</code>はもっと小さい。これによって、無限の再帰的な繰り返しを破壊し、<code>List</code>値を格納するのに必要なサイズがわかる。</p>
+<p>ボックスは間接参照とヒープメモリの確保だけを提供する。そのほかに特別な能力は何もない。</p>
+<p>スマートポインタのトレイトについて</p>
+<ul>
+<li><code>Deref</code>トレイト: 参照のように扱える</li>
+<li><code>Drop</code>トレイト: ヒープデータも片づけられる</li>
+</ul>
+<h2 id="152">15.2</h2>
+<p><code>Deref</code>トレイトを実装すると、参照外し演算子の<code>*</code>の振る舞いをカスタマイズできる</p>
+<p>学ぶこと:</p>
+<ol>
+<li>参照外し演算子が<strong>普通の参照</strong>に対してどう動作するか</li>
+<li><code>Box&lt;T&gt;</code>のように振舞う独自の型で、参照外しがうまく動作しない理由の確認</li>
+<li><code>Deref</code>トレイトを実装することでスマートポインタがうまく動作できるようにする方法を探求</li>
+<li>参照外し型強制とそれにより参照やスマートポインタと強調できる方法を見る</li>
+</ol>
+<h3 id="1521-から-1523">15.2.1 から 15.2.3</h3>
+<p>参照(<code>&amp;x</code>)は一種のポインタであり、どこか他の場所に格納された値への矢印</p>
+<p>参照とその値は異なる型であり、比較できない。比較するためには参照外し(<code>*x</code>)をする必要がある。
+<code>Box::new(x)</code>と<code>Box</code>を使って参照のようにし、それに対して参照外しができる。</p>
+<p>独自に作ってみることも可能である。まず、一要素のタプル構造体を作り、どんな型の値も保存させたいから、ジェネリック引数の<code>T</code>を宣言。</p>
+<ul>
+<li><code>struct MyBox&lt;T&gt;(T)</code></li>
+<li><code>new</code>関数をimplする</li>
+</ul>
+<p>次に、参照外しの能力を実装し、参照外しをできるようにする。</p>
+<h3 id="1524">15.2.4</h3>
+<p><code>Deref</code>トレイトの必須メソッド<code>deref</code>に実装を提供する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>T<span style="color:#f92672">&gt;</span> Deref <span style="color:#66d9ef">for</span> Some {
+    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">target</span> <span style="color:#f92672">=</span> T;
+    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">deref</span>(<span style="color:#f92672">&amp;</span>self) -&gt; <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">T</span> {
+        <span style="color:#f92672">&amp;</span>self.<span style="color:#ae81ff">0</span>
+    }
+}
+</code></pre></div><p><code>type target = T</code>は<code>Deref</code>トレイトが使用する関連型を定義している。</p>
+<p><code>deref</code>メソッドでは、<code>self</code>を借用して、<code>*</code>演算子でアクセスしたい値への参照を返すようにする。</p>
+<p>参照外し<code>*y</code>をすると、コンパイラーは、<code>*(y.deref())</code>と、<code>deref</code>メソッドを読んで、参照外しの呼び出しを行うよう、水面下でコンパイラが行っている(ユーザーは考えなくてよい)。これは一回だけ<code>deref</code>が呼び出され、<code>*</code>の置き換えは無限に繰り返されない。</p>
+<p>参照外しの呼び出しが必要な理由は、所有権システムにあり、</p>
+<ul>
+<li>参照でなく値を直接返したら値が<code>self</code>から外にムーブされ、</li>
+<li>参照外し演算子を用いるときに、所有権は奪いたくない</li>
+</ul>
+<h3 id="1525">15.2.5</h3>
+<p>参照外し型強制</p>
+<p><code>Deref</code>を実装する型への参照を、<code>deref</code>の呼び出しによって変換し、<code>Deref</code>が元の型を変換できる型への参照とする。</p>
+<p>この変換は、特定の型の値への参照を関数やメソッド定義の引数型と一致しない引数として、関数やメソッドに渡すときに自動的に発生する。</p>
+<p>参照外し型強制のメリット:</p>
+<ul>
+<li>読むのも書くのも簡単になる。
+<ul>
+<li><code>&amp;</code>や<code>*</code>を多くの明示的な参照や参照外しとして追記する必要な愛</li>
+<li>参照あるいはスマートポインタのどちらかで動くコードをもっと書くことができる</li>
+</ul>
+</li>
+</ul>
+<p>メリットを具体例で示す。</p>
+<p><code>MyBox&lt;String&gt;</code>は<code>MyBox&lt;T&gt;</code>にDerefトレイトを実装しているとする。このとき、<code>fn hello(name: &amp;str)</code>に<code>&amp;MyBox&lt;String&gt;</code>を入れられる。なぜなら:</p>
+<ul>
+<li><code>&amp;MyBox&lt;String&gt;</code>をコンパイラーはderefで<code>&amp;String</code>にする。</li>
+<li><code>&amp;String</code>は、標準ライブラリのStringにDeref実装があるので、<code>&amp;str</code>になる。</li>
+</ul>
+<p>参照外し型強制により、コンパイラはこれらの変換を自動的に行う。</p>
+<h3 id="1526">15.2.6</h3>
+<p><code>DerefMut</code>トレイトを使用して、可変参照の<code>*</code>演算子をオーバーライドできる</p>
+<p>参照外し型強制のパターン</p>
+<ol>
+<li><code>T: Deref&lt;Target=U&gt; : &amp;T -&gt; &amp;U</code></li>
+<li><code>T: DerefMut&lt;Target=U&gt; : &amp;mut T -&gt; &amp;mut U</code></li>
+<li><code>T: Deref&lt;Target=U&gt; : &amp;mut T -&gt; &amp;U</code></li>
+</ol>
+<p>1と2は、<code>T</code>が何らかの型<code>U</code>へのDerefを実装しているなら、透過的に<code>&amp;U</code>を得られる。同じことが可変参照についても起こる。</p>
+<p>3は、可変参照を不変参照に型強制できることを示している。この時借用規則を破壊していない。</p>
+<p>もちろん、不変から可変はできない。</p>
+<ul>
+<li>なぜなら、借用規則により、可変参照はそのデータへの唯一の参照に違いないから。</li>
+<li>これが可能であるという前提を敷けない。
+<ul>
+<li>できるとするなら、そのデータへの不変参照がたった1つしかないこと
+<ul>
+<li>これを借用規則は保証できない。　</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+      
+        <div class="blog-tags">
+          
+            <a href="https://2222-42.github.io//tags/rust/">rust</a>&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+      
+</div>
+
+    <footer>
+  
+<div>
+    
+    <a href="https://twitter.com/9_6_42" name="twitter"><em class="fab fa-twitter"></em></a>
+    
+    <a href="https://github.com/2222-42" name="github"><em class="fab fa-github"></em></a>
+    
+</div>
+
+
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://2222-42.github.io/about">2222-42</a>
+      &nbsp;&copy;
+      2021
+      
+      &nbsp;/&nbsp;
+      <a href="https://2222-42.github.io/">Que Lock Si Jeus Nee</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <i class="fas fa-moon" id="dark-mode-toggle"></i>
+
+    <p class="credits theme-by">
+       <a href="https://gohugo.io">Hugo</a>&nbsp;
+      
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>
